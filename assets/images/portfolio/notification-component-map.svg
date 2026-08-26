@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img">
+  <rect width="960" height="540" fill="#f7fbfc"/>
+  <rect x="48" y="44" width="864" height="452" rx="18" fill="#fff" stroke="#d8e3ea"/>
+  <text x="82" y="92" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="900">Expanded component map</text>
+  <rect x="92" y="142" width="170" height="310" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
+  <rect x="308" y="142" width="344" height="310" rx="14" fill="#fff" stroke="#d8e3ea"/>
+  <rect x="698" y="142" width="170" height="310" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
+  <g fill="#fff" stroke="#d8e3ea"><rect x="118" y="186" width="118" height="42" rx="9"/><rect x="118" y="260" width="118" height="42" rx="9"/><rect x="118" y="334" width="118" height="42" rx="9"/><rect x="340" y="180" width="122" height="42" rx="9"/><rect x="498" y="180" width="122" height="42" rx="9"/><rect x="340" y="260" width="122" height="42" rx="9"/><rect x="498" y="260" width="122" height="42" rx="9"/><rect x="340" y="340" width="122" height="42" rx="9"/><rect x="498" y="340" width="122" height="42" rx="9"/><rect x="724" y="214" width="118" height="42" rx="9"/><rect x="724" y="302" width="118" height="42" rx="9"/></g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800" fill="#102033"><text x="142" y="212">Event data</text><text x="140" y="286">User state</text><text x="140" y="360">App source</text><text x="370" y="206">Validate</text><text x="522" y="206">Encode</text><text x="362" y="286">Predict</text><text x="522" y="286">Threshold</text><text x="364" y="366">Evaluate</text><text x="524" y="366">Export</text><text x="748" y="240">Decision</text><text x="748" y="328">Feedback</text></g>
+  <g stroke="#0e9bb0" stroke-width="6" stroke-linecap="round"><path d="M236 207h104M236 281h104M236 355h104M462 201h36M462 281h36M462 361h36M620 281h104M783 344c0 72-548 70-548 16" stroke="#f6a15e"/></g>
+</svg>

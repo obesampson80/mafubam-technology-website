@@ -204,3 +204,34 @@ Public-safety status:
 - No private file paths or local development ports.
 - Dataset labels are generalised.
 - Numeric values are rounded or abstracted where needed for public display.
+
+## 9. Technical Diagram Case Study Visuals
+
+Saved assets:
+
+- `mafubam-website/assets/images/portfolio/notification-architecture-case.svg`
+- `mafubam-website/assets/images/portfolio/notification-component-map.svg`
+- `mafubam-website/assets/images/portfolio/notification-sequence-flow.svg`
+- `mafubam-website/assets/images/portfolio/notification-class-model.svg`
+
+Source inspiration:
+
+A completed private technical documentation project for a context-aware notification-management research prototype. The original project contained baseline/proposed architecture, component, use-case, sequence and class diagrams.
+
+Public-safety status:
+
+- Diagrams are recreated from scratch.
+- The project-owner name is not used.
+- No raw screenshots or exact images are published.
+- Labels are generalised and simplified.
+- No private file paths, local folders or organisation details are exposed.
+
+## 10. Superseded Technical Diagram Generic Visual
+
+Removed asset:
+
+- `mafubam-website/assets/images/portfolio/technical-diagram-case.svg`
+
+Reason:
+
+The generic architecture thumbnail was replaced by the specific notification-system architecture case-study visual set.
