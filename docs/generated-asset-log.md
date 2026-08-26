@@ -112,3 +112,22 @@ Public-safety status:
 Recommended use:
 
 Portfolio index cards and six portfolio case-study detail pages.
+
+## 4. Data Analysis Case Study Supporting SVGs
+
+Saved assets:
+
+- `mafubam-website/assets/images/portfolio/data-analysis-cleaning.svg`
+- `mafubam-website/assets/images/portfolio/data-analysis-results.svg`
+- `mafubam-website/assets/images/portfolio/data-analysis-report.svg`
+
+Purpose:
+
+Supporting public-safe visuals for the completed `portfolio-data-analysis.html` case-study page.
+
+Public-safety status:
+
+- Recreated visual summaries only.
+- No raw dataset content.
+- No student, school, file path or client identifiers.
+- No similarity report or thesis page material.
