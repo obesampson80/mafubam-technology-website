@@ -2131,3 +2131,230 @@ h3 {
     grid-column: auto;
   }
 }
+
+/* Editorial project case study layout */
+.project-cover {
+  padding: 72px 20px 64px;
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 88% 20%, color-mix(in srgb, var(--accent), transparent 84%), transparent 30%),
+    linear-gradient(135deg, var(--bg-soft), var(--bg));
+}
+
+.project-cover-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(430px, 1fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.case-back {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.case-back::before {
+  content: "";
+  width: 18px;
+  height: 10px;
+  margin: 0.48em 8px 0 0;
+  background:
+    linear-gradient(90deg, currentColor, currentColor) 2px 50% / 16px 2px no-repeat,
+    linear-gradient(-45deg, transparent 45%, currentColor 46% 54%, transparent 55%) 0 1px / 8px 8px no-repeat;
+}
+
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0 0;
+}
+
+.project-meta div {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.project-meta dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.project-meta dd {
+  margin: 4px 0 0;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.project-cover-image,
+.wide-proof,
+.case-visual-grid figure {
+  margin: 0;
+}
+
+.project-cover-image {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.project-cover-image img,
+.wide-proof img {
+  width: 100%;
+  height: auto;
+}
+
+.project-story {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.28fr) minmax(0, 1fr);
+  gap: 44px;
+  align-items: start;
+}
+
+.story-label {
+  position: sticky;
+  top: 98px;
+}
+
+.story-label span {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+  background: color-mix(in srgb, var(--accent), transparent 84%);
+  color: var(--accent);
+  font-weight: 950;
+}
+
+.story-label h2 {
+  font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+}
+
+.story-copy {
+  max-width: 900px;
+}
+
+.story-copy > p:not(.lead) {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.challenge-grid,
+.timeline-list,
+.outcome-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.challenge-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.challenge-grid article,
+.timeline-list div,
+.outcome-grid article {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.wide-proof {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.wide-proof figcaption,
+.case-visual-grid figcaption {
+  padding: 12px 14px 14px;
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.timeline-list {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.timeline-list strong,
+.outcome-grid strong {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.timeline-list p,
+.outcome-grid span {
+  margin: 0;
+  color: var(--muted);
+}
+
+.outcome-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 24px 0;
+}
+
+.confidential-note {
+  border-left: 4px solid var(--accent);
+  padding: 14px 18px;
+  background: color-mix(in srgb, var(--bg-soft), var(--surface) 45%);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.project-final-cta .actions {
+  margin-top: 0;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1120px) {
+  .project-cover-grid,
+  .project-story {
+    grid-template-columns: 1fr;
+  }
+
+  .story-label {
+    position: static;
+  }
+
+  .challenge-grid,
+  .timeline-list,
+  .outcome-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-final-cta .actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 680px) {
+  .project-cover {
+    padding: 54px 16px 44px;
+  }
+
+  .project-meta,
+  .challenge-grid,
+  .timeline-list,
+  .outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cover-image,
+  .wide-proof {
+    max-width: 100%;
+  }
+}

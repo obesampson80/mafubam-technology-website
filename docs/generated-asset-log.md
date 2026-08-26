@@ -165,3 +165,21 @@ Removed assets:
 Reason:
 
 These generic visuals were replaced by the more specific machine-condition case-study visual set so the portfolio page feels like a real project rather than a service template.
+
+## 7. Data Analysis Case Study Editorial Rewrite
+
+Updated page:
+
+- `mafubam-website/portfolio-data-analysis.html`
+
+Reason:
+
+The previous version still read like a service page. The current rewrite follows a tighter project case-study structure: cover, brief, challenge, analysis flow, interface evidence, outcome and one final enquiry section.
+
+Public-safety status:
+
+- No private project owner name.
+- No raw project screenshots.
+- No private file paths or local ports.
+- No exact dataset labels from the source project.
+- Recreated visuals remain the public proof layer.
