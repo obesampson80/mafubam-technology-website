@@ -183,3 +183,24 @@ Public-safety status:
 - No private file paths or local ports.
 - No exact dataset labels from the source project.
 - Recreated visuals remain the public proof layer.
+
+## 8. Machine Condition SVG Accuracy Pass
+
+Updated assets:
+
+- `mafubam-website/assets/images/portfolio/machine-condition-dashboard.svg`
+- `mafubam-website/assets/images/portfolio/machine-condition-evidence.svg`
+- `mafubam-website/assets/images/portfolio/machine-condition-model-results.svg`
+- `mafubam-website/assets/images/portfolio/machine-condition-report-flow.svg`
+
+Improvement:
+
+The SVGs were revised to follow the actual project artefact types more closely: run configuration tabs, saved-run log, source/target window counts, primary model metrics, prediction evidence panels, macro-F1 comparison, confusion-matrix style output and notebook-to-report traceability.
+
+Public-safety status:
+
+- No raw screenshots copied.
+- No student or project-owner names.
+- No private file paths or local development ports.
+- Dataset labels are generalised.
+- Numeric values are rounded or abstracted where needed for public display.
