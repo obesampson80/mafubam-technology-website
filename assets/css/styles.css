@@ -2076,3 +2076,58 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Specific case-study proof sections */
+.metric-stack {
+  display: grid;
+  gap: 5px;
+  margin: 18px 0 4px;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--accent), var(--border) 45%);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent), transparent 91%);
+}
+
+.metric-stack strong {
+  color: var(--primary);
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  line-height: 1;
+}
+
+.metric-stack span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.snapshot-grid article {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: color-mix(in srgb, var(--bg-soft), var(--surface) 55%);
+}
+
+.case-visual-grid-four {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.case-visual-grid-four figure:first-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 680px) {
+  .snapshot-grid,
+  .case-visual-grid-four {
+    grid-template-columns: 1fr;
+  }
+
+  .case-visual-grid-four figure:first-child {
+    grid-column: auto;
+  }
+}

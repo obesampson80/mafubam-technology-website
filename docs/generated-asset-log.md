@@ -131,3 +131,37 @@ Public-safety status:
 - No raw dataset content.
 - No student, school, file path or client identifiers.
 - No similarity report or thesis page material.
+
+## 5. Specific Data Analysis Case Study Visuals
+
+Saved assets:
+
+- `mafubam-website/assets/images/portfolio/machine-condition-dashboard.svg`
+- `mafubam-website/assets/images/portfolio/machine-condition-evidence.svg`
+- `mafubam-website/assets/images/portfolio/machine-condition-model-results.svg`
+- `mafubam-website/assets/images/portfolio/machine-condition-report-flow.svg`
+
+Source inspiration:
+
+A completed private predictive-maintenance research analytics project involving machine-condition signal data, feature extraction, model evaluation, result reporting and a demonstration interface.
+
+Public-safety status:
+
+- The student name and folder name are not used publicly.
+- Visuals are recreated, not raw screenshots.
+- Exact labels and presentation details are changed.
+- No private file paths, institution details, raw datasets or submission material are exposed.
+- Public wording describes the project as a neutral machine-condition analysis case study.
+
+## 6. Superseded Data Analysis Generic Visuals
+
+Removed assets:
+
+- `mafubam-website/assets/images/portfolio/data-analysis-case.svg`
+- `mafubam-website/assets/images/portfolio/data-analysis-cleaning.svg`
+- `mafubam-website/assets/images/portfolio/data-analysis-results.svg`
+- `mafubam-website/assets/images/portfolio/data-analysis-report.svg`
+
+Reason:
+
+These generic visuals were replaced by the more specific machine-condition case-study visual set so the portfolio page feels like a real project rather than a service template.
