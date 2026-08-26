@@ -1,0 +1,114 @@
+# Generated Asset Log
+
+This file records generated or recreated website visuals so the project remains transparent and traceable.
+
+## 1. Hero Proof Workbench V1
+
+Saved asset:
+
+`mafubam-website/assets/images/hero/hero-proof-workbench-v1.png`
+
+Generated from:
+
+Built-in image generation/editing workflow using real project visuals as references only.
+
+Reference inputs:
+
+- `Atedi\article\media\system_architecture.png`
+- `Umar\bearing_failure_detection\research\results\figures\figure4_7_feature_correlation_heatmap.png`
+- `Mary\figures\appendix\appendix_f3_app_reports_dashboard.jpeg`
+- `Ella\EnhancedProtoNet_App\app_screenshots\app_prediction_summary.png`
+
+Public-safety status:
+
+- No raw source screenshot pasted directly.
+- No client names.
+- No student names.
+- No school names.
+- No file paths.
+- No Turnitin evidence.
+- No thesis page content.
+- Uses generic labels only: Architecture, Analysis, Dashboard, Report.
+
+Recommended use:
+
+- Homepage hero proof visual.
+- Possibly social preview direction after resizing.
+- Should be paired with text explaining MAFUBAM's services, not used as a standalone claim.
+
+Prompt summary:
+
+Create a polished, anonymised proof-workbench visual for MAFUBAM Technology's website, inspired by real project references but not copying them directly. Show layered evidence of technical architecture, data analysis, dashboard/interface work and report/document output. Use a clean professional palette with deep navy, teal/cyan, white and light grey. Avoid personal identifiers, Turnitin references, raw thesis pages, generic AI visuals and abstract tech decoration.
+
+Design assessment:
+
+- Strong fit for the human-first, proof-led design direction.
+- Professional and visually clean.
+- Suitable for a static website hero.
+- Communicates breadth of work without exposing sensitive material.
+
+## 2. Hero Proof Workbench V2
+
+Saved assets:
+
+- `mafubam-website/assets/images/hero/hero-proof-workbench-v2.png`
+- `mafubam-website/assets/images/hero/hero-proof-workbench-v2@2x.png`
+
+Dimensions:
+
+- V2 standard: 1716 x 916
+- V2 large-screen master: 3432 x 1832
+
+Generated from:
+
+Built-in image generation workflow using V1 as the approved reference.
+
+Purpose:
+
+- Sharper production version of the approved proof-workbench visual.
+- `hero-proof-workbench-v2@2x.png` should be treated as the large-screen/high-density master.
+
+Recommended use:
+
+- Use V2 or an optimized derivative for normal desktop/mobile delivery.
+- Use V2@2x as the source master for large screens, responsive `srcset`, or future compressed WebP/AVIF exports.
+- Do not stretch the standard V2 beyond its natural width in final implementation.
+
+Public-safety status:
+
+- No client names.
+- No student names.
+- No school names.
+- No file paths.
+- No Turnitin references.
+- No thesis page content.
+- Uses generic labels only.
+
+## 3. Portfolio Case Study SVG Set
+
+Saved assets:
+
+- `mafubam-website/assets/images/portfolio/data-analysis-case.svg`
+- `mafubam-website/assets/images/portfolio/technical-diagram-case.svg`
+- `mafubam-website/assets/images/portfolio/prototype-case.svg`
+- `mafubam-website/assets/images/portfolio/document-formatting-case.svg`
+- `mafubam-website/assets/images/portfolio/presentation-slides-case.svg`
+- `mafubam-website/assets/images/portfolio/web-interface-case.svg`
+
+Generated from:
+
+Recreated public-safe visuals based on the observed categories of project files in `D:\2025 MSC Project`. The visuals are illustrative, anonymised and do not reproduce private project screenshots.
+
+Public-safety status:
+
+- No student names.
+- No institution names.
+- No raw thesis pages.
+- No client files.
+- No private datasets.
+- No similarity report content.
+- Generic interface labels and abstracted charts only.
+
+Recommended use:
+
+Portfolio index cards and six portfolio case-study detail pages.

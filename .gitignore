@@ -1,0 +1,26 @@
+﻿# OS and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Local dependencies and build output
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Generated QA screenshots
+*.png
+!assets/images/**/*.png
+!assets/images/**/*.jpg
+!assets/images/**/*.jpeg
+!assets/images/**/*.webp
+!assets/images/**/*.avif

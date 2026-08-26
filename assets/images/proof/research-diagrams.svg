@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-labelledby="title desc">
+  <title id="title">Anonymised technical diagram preview</title>
+  <desc id="desc">A clean architecture and workflow diagram with connected nodes and labelled layers.</desc>
+  <rect width="900" height="380" rx="18" fill="#f7fbfc"/>
+  <rect x="34" y="36" width="832" height="308" rx="16" fill="#ffffff" stroke="#d8e3ea"/>
+  <rect x="70" y="74" width="166" height="70" rx="10" fill="#e7f7fa" stroke="#9ed8e1"/>
+  <text x="112" y="116" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Input</text>
+  <rect x="365" y="64" width="170" height="70" rx="10" fill="#fff7ed" stroke="#f2bd82"/>
+  <text x="404" y="106" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Process</text>
+  <rect x="664" y="74" width="166" height="70" rx="10" fill="#e9eef2" stroke="#aebdca"/>
+  <text x="708" y="116" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Output</text>
+  <rect x="218" y="224" width="166" height="70" rx="10" fill="#f9fcfd" stroke="#c9d6df"/>
+  <text x="250" y="266" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Storage</text>
+  <rect x="512" y="224" width="166" height="70" rx="10" fill="#e7f7fa" stroke="#9ed8e1"/>
+  <text x="557" y="266" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Review</text>
+  <path d="M236 109 H365" stroke="#0e9bb0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M535 99 C590 99 610 109 664 109" stroke="#08233f" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M450 134 V174 C450 198 420 212 384 244" stroke="#c8841a" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M384 258 H512" stroke="#21b8d0" stroke-width="6" stroke-linecap="round"/>
+  <path d="M595 224 C625 194 676 174 747 144" stroke="#5f7488" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="300" cy="258" r="7" fill="#0e9bb0"/>
+  <circle cx="595" cy="258" r="7" fill="#0e9bb0"/>
+  <rect x="70" y="176" width="96" height="10" rx="5" fill="#d8e3ea"/>
+  <rect x="70" y="200" width="132" height="10" rx="5" fill="#d8e3ea"/>
+  <rect x="698" y="176" width="96" height="10" rx="5" fill="#d8e3ea"/>
+  <rect x="662" y="200" width="132" height="10" rx="5" fill="#d8e3ea"/>
+</svg>

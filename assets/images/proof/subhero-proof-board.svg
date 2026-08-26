@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio proof board preview</title>
+  <desc id="desc">A clean portfolio proof board showing anonymised chart, document, diagram and interface samples.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#08233f" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="900" height="420" rx="28" fill="#ffffff"/>
+  <rect width="122" height="420" rx="28" fill="#5f7488"/>
+  <rect x="122" width="778" height="420" rx="28" fill="#ffffff"/>
+  <rect x="164" y="48" width="294" height="142" rx="16" fill="#f8fcfd" stroke="#d8e3ea" filter="url(#shadow)"/>
+  <text x="190" y="84" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Analysis</text>
+  <rect x="196" y="146" width="24" height="24" rx="4" fill="#0e9bb0"/>
+  <rect x="234" y="120" width="24" height="50" rx="4" fill="#f6a15e"/>
+  <rect x="272" y="98" width="24" height="72" rx="4" fill="#21b8d0"/>
+  <rect x="310" y="132" width="24" height="38" rx="4" fill="#08233f"/>
+  <path d="M196 154 C226 128 248 134 274 106 C296 82 318 96 346 70" fill="none" stroke="#c8841a" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(376 94)">
+    <rect width="18" height="18" fill="#f6a15e"/><rect x="22" width="18" height="18" fill="#ffd4a6"/><rect x="44" width="18" height="18" fill="#eaf5f6"/><rect x="66" width="18" height="18" fill="#9fd5ef"/>
+    <rect y="22" width="18" height="18" fill="#ffd4a6"/><rect x="22" y="22" width="18" height="18" fill="#f6a15e"/><rect x="44" y="22" width="18" height="18" fill="#b9e5f1"/><rect x="66" y="22" width="18" height="18" fill="#0d3155"/>
+    <rect y="44" width="18" height="18" fill="#eaf5f6"/><rect x="22" y="44" width="18" height="18" fill="#b9e5f1"/><rect x="44" y="44" width="18" height="18" fill="#f6a15e"/><rect x="66" y="44" width="18" height="18" fill="#97d5ed"/>
+  </g>
+  <rect x="492" y="48" width="310" height="142" rx="16" fill="#f8fcfd" stroke="#d8e3ea" filter="url(#shadow)"/>
+  <text x="518" y="84" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Architecture</text>
+  <rect x="530" y="114" width="74" height="34" rx="7" fill="#e7f7fa" stroke="#9ed8e1"/>
+  <rect x="632" y="104" width="86" height="34" rx="7" fill="#fff7ed" stroke="#f2bd82"/>
+  <rect x="746" y="114" width="74" height="34" rx="7" fill="#e9eef2" stroke="#c9d6df"/>
+  <rect x="600" y="154" width="74" height="28" rx="7" fill="#f8fcfd" stroke="#d8e3ea"/>
+  <rect x="704" y="154" width="74" height="28" rx="7" fill="#e7f7fa" stroke="#9ed8e1"/>
+  <path d="M604 130 H632M718 122 C736 122 738 130 746 130M675 138 C676 152 650 154 637 154M746 148 C734 160 720 164 704 168" stroke="#0e9bb0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <rect x="164" y="224" width="258" height="142" rx="16" fill="#f8fcfd" stroke="#d8e3ea" filter="url(#shadow)"/>
+  <rect x="192" y="252" width="52" height="84" rx="10" fill="#08233f"/>
+  <rect x="270" y="260" width="112" height="12" rx="6" fill="#08233f"/>
+  <rect x="270" y="292" width="138" height="9" rx="5" fill="#d8e3ea"/>
+  <rect x="270" y="316" width="112" height="9" rx="5" fill="#d8e3ea"/>
+  <rect x="316" y="338" width="66" height="8" rx="4" fill="#0e9bb0"/>
+  <rect x="458" y="224" width="344" height="142" rx="16" fill="#f8fcfd" stroke="#d8e3ea" filter="url(#shadow)"/>
+  <rect x="486" y="252" width="176" height="86" rx="12" fill="#ffffff" stroke="#d8e3ea"/>
+  <rect x="512" y="304" width="26" height="28" rx="4" fill="#0e9bb0"/>
+  <rect x="552" y="284" width="26" height="48" rx="4" fill="#f6a15e"/>
+  <rect x="592" y="314" width="26" height="18" rx="4" fill="#21b8d0"/>
+  <rect x="632" y="270" width="26" height="62" rx="4" fill="#08233f"/>
+  <rect x="690" y="252" width="86" height="22" rx="6" fill="#ffffff" stroke="#d8e3ea"/>
+  <rect x="690" y="292" width="86" height="22" rx="6" fill="#ffffff" stroke="#d8e3ea"/>
+  <rect x="706" y="260" width="42" height="6" rx="3" fill="#08233f"/>
+  <rect x="706" y="300" width="54" height="6" rx="3" fill="#0e9bb0"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">MAFUBAM Technology brand mark</title>
+  <desc id="desc">A clean shield-inspired M mark for MAFUBAM Technology.</desc>
+  <rect width="64" height="64" rx="14" fill="#08233F"/>
+  <path d="M32 9c6.8 5.7 14.2 8 23 8v13.2c0 13.7-8 22.7-23 29.8C17 52.9 9 43.9 9 30.2V17c8.8 0 16.2-2.3 23-8Z" fill="#0D3155" stroke="#21B36B" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M17 44V21h7.5L32 33.2 39.5 21H47v23h-6.8V32.5l-6.5 10.2h-3.4l-6.5-10.2V44H17Z" fill="#F7FAFC"/>
+  <path d="M20 49h24" stroke="#2EC4D6" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="48" cy="18" r="3" fill="#2EC4D6"/>
+</svg>
