@@ -2,6 +2,14 @@
   <rect width="960" height="540" fill="#f7fbfc"/>
   <rect x="48" y="42" width="864" height="456" rx="16" fill="#fff" stroke="#d8e3ea" stroke-width="2"/>
   <text x="82" y="90" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="900">Expanded subsystem diagram</text>
+  <defs>
+    <marker id="flowArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0e9bb0"/>
+    </marker>
+    <marker id="feedbackArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f28f45"/>
+    </marker>
+  </defs>
   <g font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="900">
     <rect x="88" y="138" width="190" height="288" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
     <text x="120" y="170" fill="#08233f">Data Sources</text>
@@ -23,5 +31,26 @@
     <rect x="722" y="286" width="120" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/><text x="744" y="310" fill="#102033">Decision</text>
     <rect x="722" y="348" width="120" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/><text x="752" y="372" fill="#102033">Report</text>
   </g>
-  <g stroke="#0e9bb0" stroke-width="6" fill="none" stroke-linecap="round"><path d="M248 223h116"/><path d="M248 285h116"/><path d="M248 347h116"/><path d="M470 211h28"/><path d="M417 232v38"/><path d="M551 232v38"/><path d="M470 291h28"/><path d="M537 371h185"/><path d="M780 386c-108 76-494 76-620-20" stroke="#f6a15e"/></g>
+  <g stroke="#0e9bb0" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#flowArrow)">
+    <path d="M248 223h104"/>
+    <path d="M248 285h104"/>
+    <path d="M248 347h86q18 0 18-18v-19"/>
+    <path d="M470 211h28"/>
+    <path d="M417 232v38"/>
+    <path d="M551 232v38"/>
+    <path d="M470 291h28"/>
+    <path d="M417 312v28q0 10 10 10h32"/>
+    <path d="M551 312v28q0 10-10 10h-32"/>
+    <path d="M537 371h185"/>
+    <path d="M604 211h56q18 0 18 18v14q0 18 18 18h26"/>
+    <path d="M604 291h56q18 0 18 18q0 18 18 18h26"/>
+  </g>
+  <g stroke="#f28f45" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#feedbackArrow)">
+    <path d="M782 386c-70 55-196 84-340 78c-112-5-211-35-276-87"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" fill="#6e4b2c">
+    <rect x="413" y="447" width="142" height="24" rx="12" fill="#fff5ec" stroke="#f5c79d"/>
+    <text x="431" y="463">Feedback history</text>
+  </g>
 </svg>
+

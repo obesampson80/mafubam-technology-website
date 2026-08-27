@@ -1,4 +1,4 @@
-# Generated Asset Log
+﻿# Generated Asset Log
 
 This file records generated or recreated website visuals so the project remains transparent and traceable.
 
@@ -248,3 +248,10 @@ Updated assets:
 Improvement:
 
 Rendered the SVGs to PNG for review, then revised them to be more formal and diagram-like: clearer node hierarchy, fewer decorative elements, larger labels, stronger subsystem boundaries and cleaner arrows for thumbnail and case-study viewing.
+## 12. Component Map Connector Correction
+
+- File: `assets/images/portfolio/notification-component-map.svg`
+- Reason: Corrected the subsystem diagram after visual review showed unclear connector endpoints.
+- Changes: Added arrow markers, routed each connector to a visible target, aligned the fusion-to-report line, and labelled the feedback history loop.
+- QA: SVG XML validation passed and `portfolio-technical-diagrams.html` was rendered through the local Edge screenshot workflow.
+
