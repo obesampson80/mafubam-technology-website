@@ -1,77 +1,84 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Component interaction map for a context-aware notification system</title>
+  <desc id="desc">A clean left-to-right technical diagram showing data sources, processing stages, decision engine, outputs and feedback history.</desc>
   <rect width="960" height="540" fill="#f7fbfc"/>
-  <rect x="48" y="42" width="864" height="456" rx="16" fill="#fff" stroke="#d8e3ea" stroke-width="2"/>
-  <text x="82" y="90" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="900">Expanded subsystem diagram</text>
+  <rect x="48" y="42" width="864" height="456" rx="16" fill="#ffffff" stroke="#d8e3ea" stroke-width="2"/>
 
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="900">
-    <rect x="88" y="138" width="190" height="288" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
-    <text x="120" y="170" fill="#08233f">Data Sources</text>
-    <rect x="118" y="204" width="130" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/>
-    <text x="144" y="228" fill="#102033">Events</text>
-    <rect x="118" y="266" width="130" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/>
-    <text x="142" y="290" fill="#102033">Context</text>
-    <rect x="118" y="328" width="130" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/>
-    <text x="142" y="352" fill="#102033">History</text>
-
-    <rect x="332" y="122" width="304" height="336" rx="12" fill="#fff" stroke="#c9d8e2"/>
-    <text x="370" y="154" fill="#08233f">Core Processing</text>
-    <rect x="364" y="190" width="106" height="42" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="388" y="216" fill="#102033">Validate</text>
-    <rect x="498" y="190" width="106" height="42" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="528" y="216" fill="#102033">Encode</text>
-    <rect x="364" y="270" width="106" height="42" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="386" y="296" fill="#102033">Model</text>
-    <rect x="498" y="270" width="106" height="42" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="520" y="296" fill="#102033">Priority</text>
-    <rect x="431" y="350" width="106" height="42" rx="7" fill="#08233f"/>
-    <text x="456" y="376" fill="#fff">Fusion</text>
-
-    <rect x="694" y="156" width="176" height="244" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
-    <text x="730" y="188" fill="#08233f">Outputs</text>
-    <rect x="722" y="224" width="120" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/>
-    <text x="754" y="248" fill="#102033">Score</text>
-    <rect x="722" y="286" width="120" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/>
-    <text x="744" y="310" fill="#102033">Decision</text>
-    <rect x="722" y="348" width="120" height="38" rx="7" fill="#fff" stroke="#d8e3ea"/>
-    <text x="752" y="372" fill="#102033">Report</text>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="82" y="86" fill="#08233f" font-size="22" font-weight="900">Component interaction map</text>
+    <text x="82" y="112" fill="#50657a" font-size="12" font-weight="700">Notification event, context evidence, prediction logic and delivery decision separated by responsibility.</text>
   </g>
 
-  <g stroke="#0e9bb0" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M248 223h116"/>
-    <path d="M248 285h116"/>
-    <path d="M248 347h76q24 0 24-24v-11"/>
-    <path d="M470 211h28"/>
-    <path d="M417 232v38"/>
-    <path d="M551 232v38"/>
-    <path d="M470 291h28"/>
-    <path d="M417 312v30q0 8 8 8h38"/>
-    <path d="M551 312v30q0 8-8 8h-38"/>
-    <path d="M537 371h185"/>
-    <path d="M604 211h64q18 0 18 18v14q0 18 18 18h18"/>
-    <path d="M604 291h64q18 0 18 18q0 18 18 18h18"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">
+    <rect x="82" y="154" width="170" height="220" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
+    <text x="112" y="184" fill="#08233f" font-size="14" font-weight="900">Data Sources</text>
+    <rect x="108" y="210" width="118" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="139" y="232" fill="#102033">Events</text>
+    <rect x="108" y="266" width="118" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="136" y="288" fill="#102033">Context</text>
+    <rect x="108" y="322" width="118" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="137" y="344" fill="#102033">History</text>
+
+    <rect x="314" y="142" width="350" height="262" rx="12" fill="#ffffff" stroke="#c9d8e2"/>
+    <text x="348" y="172" fill="#08233f" font-size="14" font-weight="900">Core Processing</text>
+    <rect x="344" y="206" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="382" y="234" fill="#102033">Validate</text>
+    <rect x="514" y="206" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="553" y="234" fill="#102033">Encode</text>
+    <rect x="344" y="298" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="386" y="326" fill="#102033">Model</text>
+    <rect x="514" y="298" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="550" y="326" fill="#102033">Priority</text>
+    <rect x="429" y="368" width="120" height="46" rx="7" fill="#08233f"/>
+    <text x="469" y="396" fill="#ffffff">Fusion</text>
+
+    <rect x="724" y="154" width="154" height="220" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
+    <text x="768" y="184" fill="#08233f" font-size="14" font-weight="900">Outputs</text>
+    <rect x="750" y="210" width="102" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="785" y="232" fill="#102033">Score</text>
+    <rect x="750" y="266" width="102" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="776" y="288" fill="#102033">Decision</text>
+    <rect x="750" y="322" width="102" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="784" y="344" fill="#102033">Report</text>
+  </g>
+
+  <g stroke="#0e9bb0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M226 227H338"/>
+    <path d="M226 283H338"/>
+    <path d="M226 339H314Q334 339 334 319V321H338"/>
+    <path d="M464 229H508"/>
+    <path d="M404 252V292"/>
+    <path d="M574 252V292"/>
+    <path d="M464 321H508"/>
+    <path d="M404 344V360Q404 384 428 384"/>
+    <path d="M574 344V360Q574 384 550 384"/>
+    <path d="M634 229H690Q710 229 710 227H744"/>
+    <path d="M634 321H690Q710 321 710 283H744"/>
+    <path d="M549 391H744V339"/>
   </g>
 
   <g fill="#0e9bb0">
-    <circle cx="364" cy="223" r="4"/>
-    <circle cx="364" cy="285" r="4"/>
-    <circle cx="364" cy="312" r="4"/>
-    <circle cx="498" cy="211" r="4"/>
-    <circle cx="417" cy="270" r="4"/>
-    <circle cx="551" cy="270" r="4"/>
-    <circle cx="498" cy="291" r="4"/>
-    <circle cx="463" cy="350" r="4"/>
-    <circle cx="505" cy="350" r="4"/>
-    <circle cx="722" cy="371" r="4"/>
-    <circle cx="722" cy="261" r="4"/>
-    <circle cx="722" cy="327" r="4"/>
+    <path d="M338 227l-10-6v12z"/>
+    <path d="M338 283l-10-6v12z"/>
+    <path d="M338 321l-10-6v12z"/>
+    <path d="M508 229l-10-6v12z"/>
+    <path d="M404 292l-6-10h12z"/>
+    <path d="M574 292l-6-10h12z"/>
+    <path d="M508 321l-10-6v12z"/>
+    <path d="M428 384l-10-6v12z"/>
+    <path d="M550 384l10-6v12z"/>
+    <path d="M744 227l-10-6v12z"/>
+    <path d="M744 283l-10-6v12z"/>
+    <path d="M744 339l-10-6v12z"/>
   </g>
 
-  <g stroke="#f28f45" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M780 387c-72 54-196 80-338 74c-112-5-210-34-279-84"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="800">
+    <rect x="380" y="438" width="218" height="28" rx="14" fill="#fff5ec" stroke="#f5c79d"/>
+    <text x="426" y="456" fill="#6e4b2c">Feedback history update</text>
   </g>
-  <path d="M163 377l22 8l-18 16z" fill="#f28f45"/>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="800" fill="#6e4b2c">
-    <rect x="413" y="447" width="142" height="24" rx="12" fill="#fff5ec" stroke="#f5c79d"/>
-    <text x="431" y="463">Feedback history</text>
+  <g stroke="#f28f45" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M800 356C730 432 620 454 598 454"/>
+    <path d="M380 454C286 452 202 418 168 372"/>
   </g>
+  <path d="M168 372l2 18l15-10z" fill="#f28f45"/>
 </svg>
