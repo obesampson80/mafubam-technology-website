@@ -1,112 +1,88 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Web-ready subsystem summary for notification receptivity prediction</title>
-  <desc id="desc">A simplified public portfolio diagram showing the verified subsystem flow from notification inputs to prediction, scheduling and evaluation.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">Simplified subsystem flow for notification receptivity prediction</title>
+  <desc id="svg-desc">A clean website diagram showing the verified flow from notification evidence to feature preparation, prediction, validation and scheduling output.</desc>
   <defs>
-    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0b2440" flood-opacity="0.10"/>
+    <filter id="soft-shadow" x="-12%" y="-16%" width="124%" height="136%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#08233f" flood-opacity="0.10"/>
     </filter>
-    <marker id="flowArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0 0L10 5L0 10Z" fill="#0c9bb2"/>
+    <marker id="arrow-teal" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#0c9bb2"/>
     </marker>
-    <marker id="feedbackArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M0 0L10 5L0 10Z" fill="#f28a35"/>
+    <marker id="arrow-orange" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#f28a35"/>
     </marker>
     <style>
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 800; fill: #08233f; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; fill: #50657a; }
-      .stage-title { font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: 800; fill: #08233f; }
-      .stage-copy { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 650; fill: #20364d; }
-      .micro-title { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 800; fill: #08233f; }
-      .micro-copy { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 650; fill: #50657a; }
-      .pill { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 800; fill: #ffffff; }
-      .flow { stroke: #0c9bb2; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#flowArrow); }
-      .feedback { stroke: #f28a35; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#feedbackArrow); }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 800; fill: #08233f; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 650; fill: #50657a; }
+      .card-title { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 800; fill: #08233f; }
+      .card-copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 650; fill: #50657a; }
+      .badge { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800; fill: #0b2a46; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 750; fill: #7a4a20; }
+      .flow { stroke: #0c9bb2; stroke-width: 4; fill: none; stroke-linecap: round; marker-end: url(#arrow-teal); }
+      .feedback { stroke: #f28a35; stroke-width: 4; fill: none; stroke-linecap: round; stroke-dasharray: 8 8; marker-end: url(#arrow-orange); }
     </style>
   </defs>
 
-  <rect width="1600" height="1000" fill="#f7fbfd"/>
-  <rect x="26" y="24" width="1548" height="952" rx="28" fill="#ffffff" stroke="#c9dce6" stroke-width="2"/>
+  <rect width="1200" height="520" fill="#f7fbfc"/>
+  <rect x="22" y="20" width="1156" height="480" rx="24" fill="#ffffff" stroke="#d7e4eb" stroke-width="2"/>
 
-  <text id="title" x="76" y="98" class="title">Expanded subsystem view</text>
-  <text x="76" y="134" class="subtitle">A web-ready summary of the verified notification-management architecture, simplified for portfolio viewing.</text>
+  <text x="58" y="72" class="title">Subsystem flow summary</text>
+  <text x="58" y="100" class="subtitle">Web version of the verified project architecture: intake, feature preparation, prediction, validation and scheduling evidence.</text>
 
-  <g filter="url(#cardShadow)">
-    <rect x="86" y="232" width="304" height="300" rx="24" fill="#edf6f8" stroke="#d6e5ec" stroke-width="2"/>
-    <rect x="462" y="232" width="304" height="300" rx="24" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
-    <rect x="838" y="232" width="304" height="300" rx="24" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
-    <rect x="1214" y="232" width="304" height="300" rx="24" fill="#edf6f8" stroke="#d6e5ec" stroke-width="2"/>
+  <g filter="url(#soft-shadow)">
+    <rect x="58" y="162" width="178" height="148" rx="16" fill="#edf6f8" stroke="#d2e2ea" stroke-width="2"/>
+    <rect x="285" y="162" width="178" height="148" rx="16" fill="#ffffff" stroke="#d2e2ea" stroke-width="2"/>
+    <rect x="512" y="162" width="178" height="148" rx="16" fill="#ffffff" stroke="#d2e2ea" stroke-width="2"/>
+    <rect x="739" y="162" width="178" height="148" rx="16" fill="#ffffff" stroke="#d2e2ea" stroke-width="2"/>
+    <rect x="966" y="162" width="178" height="148" rx="16" fill="#edf6f8" stroke="#d2e2ea" stroke-width="2"/>
   </g>
 
   <g>
-    <rect x="118" y="188" width="166" height="42" rx="21" fill="#08233f"/>
-    <text x="201" y="215" text-anchor="middle" class="pill">incoming event</text>
-    <rect x="1282" y="188" width="174" height="42" rx="21" fill="#0c9bb2"/>
-    <text x="1369" y="215" text-anchor="middle" class="pill">delivery outcome</text>
+    <text x="86" y="204" class="card-title">1. Intake</text>
+    <text x="86" y="235" class="card-copy">Notification metadata</text>
+    <text x="86" y="257" class="card-copy">Context signals</text>
+    <text x="86" y="279" class="card-copy">Interaction history</text>
+
+    <text x="313" y="204" class="card-title">2. Features</text>
+    <text x="313" y="235" class="card-copy">Leakage-safe selection</text>
+    <text x="313" y="257" class="card-copy">Encoding and scaling</text>
+    <text x="313" y="279" class="card-copy">Priority predictors</text>
+
+    <text x="540" y="204" class="card-title">3. Predict</text>
+    <text x="540" y="235" class="card-copy">Tree-based models</text>
+    <text x="540" y="257" class="card-copy">Receptivity probability</text>
+    <text x="540" y="279" class="card-copy">Ensemble comparison</text>
+
+    <text x="767" y="204" class="card-title">4. Validate</text>
+    <text x="767" y="235" class="card-copy">Chronological testing</text>
+    <text x="767" y="257" class="card-copy">Personalised checks</text>
+    <text x="767" y="279" class="card-copy">User-holdout results</text>
+
+    <text x="994" y="204" class="card-title">5. Schedule</text>
+    <text x="994" y="235" class="card-copy">Deliver, defer or batch</text>
+    <text x="994" y="257" class="card-copy">Metrics and report tables</text>
+    <text x="994" y="279" class="card-copy">Reusable evidence</text>
   </g>
 
   <g>
-    <text x="128" y="292" class="stage-title">1. Evidence intake</text>
-    <text x="128" y="338" class="stage-copy">Data ingestion captures</text>
-    <text x="128" y="370" class="stage-copy">notification metadata,</text>
-    <text x="128" y="402" class="stage-copy">context signals and</text>
-    <text x="128" y="434" class="stage-copy">interaction history.</text>
-
-    <text x="504" y="292" class="stage-title">2. Feature preparation</text>
-    <text x="504" y="338" class="stage-copy">Feature engineering</text>
-    <text x="504" y="370" class="stage-copy">removes leakage fields,</text>
-    <text x="504" y="402" class="stage-copy">encodes categories and</text>
-    <text x="504" y="434" class="stage-copy">builds model inputs.</text>
-
-    <text x="880" y="292" class="stage-title">3. Prediction logic</text>
-    <text x="880" y="338" class="stage-copy">Tree-based models estimate</text>
-    <text x="880" y="370" class="stage-copy">interruptibility while</text>
-    <text x="880" y="402" class="stage-copy">priority features support</text>
-    <text x="880" y="434" class="stage-copy">delivery judgement.</text>
-
-    <text x="1256" y="292" class="stage-title">4. Decision evidence</text>
-    <text x="1256" y="338" class="stage-copy">Scheduling combines</text>
-    <text x="1256" y="370" class="stage-copy">receptivity and priority,</text>
-    <text x="1256" y="402" class="stage-copy">then evaluation records</text>
-    <text x="1256" y="434" class="stage-copy">metrics and report outputs.</text>
-  </g>
-
-  <g stroke="#0c9bb2" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#flowArrow)">
-    <path d="M390 382H454"/>
-    <path d="M766 382H830"/>
-    <path d="M1142 382H1206"/>
-  </g>
-
-  <g filter="url(#cardShadow)">
-    <rect x="118" y="620" width="250" height="112" rx="18" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
-    <rect x="430" y="620" width="250" height="112" rx="18" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
-    <rect x="742" y="620" width="250" height="112" rx="18" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
-    <rect x="1054" y="620" width="250" height="112" rx="18" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
+    <path d="M236 236H276" class="flow"/>
+    <path d="M463 236H503" class="flow"/>
+    <path d="M690 236H730" class="flow"/>
+    <path d="M917 236H957" class="flow"/>
   </g>
 
   <g>
-    <text x="150" y="660" class="micro-title">Feature groups</text>
-    <text x="150" y="690" class="micro-copy">temporal, spatial, behavioural,</text>
-    <text x="150" y="714" class="micro-copy">content and history signals</text>
+    <rect x="112" y="356" width="186" height="38" rx="19" fill="#edf6f8" stroke="#d2e2ea"/>
+    <text x="205" y="380" text-anchor="middle" class="badge">time, location, behaviour</text>
 
-    <text x="462" y="660" class="micro-title">Model family</text>
-    <text x="462" y="690" class="micro-copy">Random Forest, Extra Trees,</text>
-    <text x="462" y="714" class="micro-copy">XGBoost and LightGBM</text>
+    <rect x="386" y="356" width="186" height="38" rx="19" fill="#edf6f8" stroke="#d2e2ea"/>
+    <text x="479" y="380" text-anchor="middle" class="badge">urgency and priority</text>
 
-    <text x="774" y="660" class="micro-title">Validation checks</text>
-    <text x="774" y="690" class="micro-copy">chronological, personalised</text>
-    <text x="774" y="714" class="micro-copy">and user-holdout testing</text>
-
-    <text x="1086" y="660" class="micro-title">Report evidence</text>
-    <text x="1086" y="690" class="micro-copy">macro F1, AUC-ROC, confusion</text>
-    <text x="1086" y="714" class="micro-copy">matrix and exported figures</text>
+    <rect x="660" y="356" width="186" height="38" rx="19" fill="#edf6f8" stroke="#d2e2ea"/>
+    <text x="753" y="380" text-anchor="middle" class="badge">macro F1 and AUC-ROC</text>
   </g>
 
-  <g>
-    <rect x="456" y="806" width="688" height="66" rx="33" fill="#fff7ef" stroke="#f4c79e" stroke-width="2"/>
-    <text x="800" y="847" text-anchor="middle" class="micro-title" fill="#7a4a20">User feedback updates interaction-history evidence for later records</text>
-  </g>
-
-  <path d="M1304 732C1280 802 1192 840 1152 840" class="feedback"/>
-  <path d="M448 840C330 836 252 792 216 740" class="feedback"/>
+  <path d="M1060 310C996 442 312 442 190 404" class="feedback"/>
+  <text x="522" y="448" class="note">User response updates future interaction-history evidence</text>
 </svg>

@@ -274,4 +274,12 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Verification source: checked against the methodology description of the seven cooperating subsystems.
 - Design correction: reduced the diagram to four readable stages with supporting evidence cards, medium fixed-size arrowheads, and no overcrowded subsystem boxes.
 - QA method: rendered the SVG to PNG only in ignored `docs/ui-screenshots/svg-review/technical-diagrams/`, then rendered `portfolio-technical-diagrams.html` to confirm the page loads the SVG.
+## 16. Subsystem Flow SVG Fit Pass
+
+- Live asset: `assets/images/portfolio/expanded_subsystem_view.svg`
+- Page: `portfolio-technical-diagrams.html`
+- Design correction: replaced the tall dense report-style card with a 1200 x 520 web graphic built for the case-study visual grid.
+- Fit check: at the story column's 900px maximum width, the SVG renders at about 390px high.
+- Connector check: all main flow arrows terminate in the whitespace between stage cards; no arrow crosses card text.
+- QA render: SVG rendered to PNG only in ignored `docs/ui-screenshots/svg-review/technical-diagrams/`; the full HTML page was rendered successfully with Edge.
 
