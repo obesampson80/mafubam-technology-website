@@ -1,35 +1,23 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img">
-  <rect width="1200" height="680" fill="#f7fbfc"/>
-  <rect x="50" y="42" width="1100" height="596" rx="16" fill="#fff" stroke="#d8e3ea" stroke-width="2"/>
-  <text x="86" y="88" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="900">Proposed system architecture</text>
-  <text x="86" y="118" fill="#526173" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700">Context signals, feature pipeline, prediction and scheduling loop</text>
-
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="900">
-    <rect x="90" y="170" width="230" height="360" rx="12" fill="#eef5f7" stroke="#c9d8e2" stroke-width="2"/>
-    <text x="122" y="206" fill="#08233f">Context Inputs</text>
-    <rect x="122" y="238" width="166" height="50" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="154" y="269" fill="#102033">Time</text>
-    <rect x="122" y="306" width="166" height="50" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="148" y="337" fill="#102033">Location</text>
-    <rect x="122" y="374" width="166" height="50" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="143" y="405" fill="#102033">Behaviour</text>
-    <rect x="122" y="442" width="166" height="50" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="148" y="473" fill="#102033">History</text>
-
-    <rect x="390" y="170" width="420" height="360" rx="12" fill="#fff" stroke="#c9d8e2" stroke-width="2"/>
-    <text x="424" y="206" fill="#08233f">Feature and Model Pipeline</text>
-    <rect x="432" y="242" width="152" height="58" rx="8" fill="#eef5f7" stroke="#d8e3ea"/><text x="460" y="277" fill="#102033">Ingest</text>
-    <rect x="618" y="242" width="152" height="58" rx="8" fill="#eef5f7" stroke="#d8e3ea"/><text x="652" y="277" fill="#102033">Validate</text>
-    <rect x="432" y="348" width="152" height="58" rx="8" fill="#eef5f7" stroke="#d8e3ea"/><text x="458" y="383" fill="#102033">Features</text>
-    <rect x="618" y="348" width="152" height="58" rx="8" fill="#eef5f7" stroke="#d8e3ea"/><text x="652" y="383" fill="#102033">Predict</text>
-    <rect x="516" y="456" width="170" height="48" rx="8" fill="#08233f"/><text x="548" y="486" fill="#fff">Evaluate</text>
-
-    <rect x="880" y="196" width="210" height="284" rx="12" fill="#eef5f7" stroke="#c9d8e2" stroke-width="2"/>
-    <text x="920" y="232" fill="#08233f">Decision</text>
-    <rect x="914" y="270" width="142" height="44" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="958" y="298" fill="#102033">Deliver</text>
-    <rect x="914" y="330" width="142" height="44" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="964" y="358" fill="#102033">Defer</text>
-    <rect x="914" y="390" width="142" height="44" rx="8" fill="#fff" stroke="#d8e3ea"/><text x="962" y="418" fill="#102033">Batch</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Context-aware notification architecture</title>
+  <desc id="desc">A clean architecture diagram showing evidence intake, feature preparation, prediction, scheduling and reporting outputs.</desc>
+  <defs>
+    <filter id="shadow" x="-12%" y="-14%" width="124%" height="132%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#08233f" flood-opacity="0.10"/></filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="11" markerHeight="11" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L11 6L1 11Z" fill="#0c9bb2"/></marker>
+    <style>
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:30px;font-weight:800;fill:#08233f}.sub{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:650;fill:#50657a}.head{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:800;fill:#08233f}.copy{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:650;fill:#50657a}.flow{stroke:#0c9bb2;stroke-width:4;fill:none;stroke-linecap:round;marker-end:url(#arrow)}.soft{fill:#edf6f8;stroke:#d2e2ea;stroke-width:2}.card{fill:#fff;stroke:#d2e2ea;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="1200" height="680" fill="#f7fbfc"/><rect x="34" y="34" width="1132" height="612" rx="24" fill="#fff" stroke="#d7e4eb" stroke-width="2"/>
+  <text x="74" y="88" class="title">Architecture overview</text><text x="74" y="116" class="sub">Verified notification-management flow from event evidence to prediction, scheduling and report artefacts.</text>
+  <g filter="url(#shadow)">
+    <rect x="74" y="184" width="210" height="300" rx="18" class="soft"/><rect x="346" y="184" width="210" height="300" rx="18" class="card"/><rect x="618" y="184" width="210" height="300" rx="18" class="card"/><rect x="890" y="184" width="210" height="300" rx="18" class="soft"/>
   </g>
-
-  <g stroke="#0e9bb0" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M320 352h108"/><path d="M584 271h34"/><path d="M508 300v48"/><path d="M584 377h34"/><path d="M770 377h112"/><path d="M985 480c-120 98-652 96-760 12" stroke="#f6a15e"/>
-  </g>
-  <g fill="#0e9bb0"><path d="M420 338l18 14-18 14z"/><path d="M610 257l18 14-18 14z"/><path d="M874 363l18 14-18 14z"/></g>
-  <text x="708" y="556" fill="#526173" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="800">feedback updates later decisions</text>
+  <text x="108" y="232" class="head">Evidence intake</text><text x="108" y="268" class="copy">Notification metadata</text><text x="108" y="292" class="copy">Context state</text><text x="108" y="316" class="copy">Interaction history</text><text x="108" y="340" class="copy">Priority indicators</text>
+  <text x="380" y="232" class="head">Feature preparation</text><text x="380" y="268" class="copy">Leakage-safe selection</text><text x="380" y="292" class="copy">Temporal aggregates</text><text x="380" y="316" class="copy">Encoding and scaling</text><text x="380" y="340" class="copy">Model-ready matrix</text>
+  <text x="652" y="232" class="head">Prediction layer</text><text x="652" y="268" class="copy">Tree-based classifiers</text><text x="652" y="292" class="copy">Receptivity probability</text><text x="652" y="316" class="copy">Threshold selection</text><text x="652" y="340" class="copy">Validation checks</text>
+  <text x="924" y="232" class="head">Scheduling output</text><text x="924" y="268" class="copy">Deliver, defer or batch</text><text x="924" y="292" class="copy">Performance metrics</text><text x="924" y="316" class="copy">Report tables</text><text x="924" y="340" class="copy">Reusable figures</text>
+  <path d="M284 334H338" class="flow"/><path d="M556 334H610" class="flow"/><path d="M828 334H882" class="flow"/>
+  <g><rect x="234" y="546" width="732" height="44" rx="22" fill="#fff7ef" stroke="#f4c79e" stroke-width="2"/><text x="600" y="574" text-anchor="middle" class="copy" style="font-weight:800;fill:#7a4a20">User response updates future interaction-history evidence</text></g>
+  <path d="M992 484C930 552 886 568 966 568" fill="none" stroke="#f28a35" stroke-width="4" stroke-linecap="round"/>
 </svg>

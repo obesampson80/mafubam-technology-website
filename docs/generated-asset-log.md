@@ -282,4 +282,14 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Fit check: at the story column's 900px maximum width, the SVG renders at about 390px high.
 - Connector check: all main flow arrows terminate in the whitespace between stage cards; no arrow crosses card text.
 - QA render: SVG rendered to PNG only in ignored `docs/ui-screenshots/svg-review/technical-diagrams/`; the full HTML page was rendered successfully with Edge.
+## 17. Technical Diagrams Page SVG Set Review
+
+- Page: `portfolio-technical-diagrams.html`
+- Updated assets:
+  - `assets/images/portfolio/notification-architecture-case.svg`
+  - `assets/images/portfolio/notification-sequence-flow.svg`
+  - `assets/images/portfolio/notification-class-model.svg`
+- Reason: Reviewed all SVGs used on the technical diagrams case-study page and corrected the weak figures for a consistent professional visual language.
+- Design correction: replaced inconsistent manual arrowheads and shallow figures with clean architecture, sequence and UML-style responsibility diagrams using fixed-size markers and readable labels.
+- QA method: rendered all four page SVGs to PNG under ignored `docs/ui-screenshots/svg-review/technical-page-set/`, then rendered the full HTML page successfully.
 

@@ -1,14 +1,13 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img">
-  <rect width="960" height="540" fill="#f7fbfc"/>
-  <rect x="48" y="42" width="864" height="456" rx="16" fill="#fff" stroke="#d8e3ea" stroke-width="2"/>
-  <text x="82" y="90" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="900">Sequence diagram</text>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="900" fill="#08233f">
-    <text x="106" y="144">Device</text><text x="268" y="144">Context</text><text x="438" y="144">Features</text><text x="612" y="144">Model</text><text x="780" y="144">Scheduler</text>
-  </g>
-  <g stroke="#c9d8e2" stroke-width="2" stroke-dasharray="7 8"><path d="M130 166v288"/><path d="M300 166v288"/><path d="M478 166v288"/><path d="M646 166v288"/><path d="M818 166v288"/></g>
-  <g stroke="#0e9bb0" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M130 204h168"/><path d="M300 256h174"/><path d="M478 308h164"/><path d="M646 360h168"/><path d="M818 414c-172 46-456 46-688 0" stroke="#f6a15e"/>
-  </g>
-  <g fill="#0e9bb0"><path d="M288 192l18 12-18 12z"/><path d="M464 244l18 12-18 12z"/><path d="M632 296l18 12-18 12z"/><path d="M804 348l18 12-18 12z"/></g>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#526173" font-weight="800"><text x="150" y="196">notification event</text><text x="324" y="248">context snapshot</text><text x="504" y="300">feature vector</text><text x="670" y="352">delivery decision</text><text x="360" y="406">feedback updates history</text></g>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Notification decision sequence</title>
+  <desc id="desc">A simplified sequence diagram showing how a notification moves through orchestration, context extraction, prediction, scheduling and feedback.</desc>
+  <defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L11 6L1 11Z" fill="#0c9bb2"/></marker><style>.t{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:800;fill:#08233f}.h{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:800;fill:#08233f}.m{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;fill:#50657a}.life{stroke:#c9d8e2;stroke-width:2;stroke-dasharray:7 8}.msg{stroke:#0c9bb2;stroke-width:4;fill:none;stroke-linecap:round;marker-end:url(#arrow)}.ret{stroke:#f28a35;stroke-width:4;fill:none;stroke-linecap:round;stroke-dasharray:8 7;marker-end:url(#arrow)}</style></defs>
+  <rect width="960" height="540" fill="#f7fbfc"/><rect x="42" y="38" width="876" height="464" rx="18" fill="#fff" stroke="#d7e4eb" stroke-width="2"/><text x="76" y="88" class="t">Sequence flow</text>
+  <g><text x="86" y="146" class="h">User device</text><text x="248" y="146" class="h">Orchestrator</text><text x="420" y="146" class="h">Feature extractor</text><text x="610" y="146" class="h">Predictor</text><text x="778" y="146" class="h">Scheduler</text></g>
+  <g class="life"><path d="M124 166V448"/><path d="M300 166V448"/><path d="M478 166V448"/><path d="M650 166V448"/><path d="M818 166V448"/></g>
+  <path d="M124 204H292" class="msg"/><text x="154" y="194" class="m">notification arrives</text>
+  <path d="M300 254H470" class="msg"/><text x="326" y="244" class="m">request context features</text>
+  <path d="M478 304H642" class="msg"/><text x="506" y="294" class="m">model-ready vector</text>
+  <path d="M650 354H810" class="msg"/><text x="676" y="344" class="m">receptivity probability</text>
+  <path d="M818 404H132" class="ret"/><text x="360" y="394" class="m">delivery action and feedback update</text>
 </svg>
