@@ -1,84 +1,77 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
   <title id="title">Component interaction map for a context-aware notification system</title>
-  <desc id="desc">A clean left-to-right technical diagram showing data sources, processing stages, decision engine, outputs and feedback history.</desc>
+  <desc id="desc">A left-to-right component map showing inputs, processing modules, outputs and the feedback path for notification decisions.</desc>
   <rect width="960" height="540" fill="#f7fbfc"/>
   <rect x="48" y="42" width="864" height="456" rx="16" fill="#ffffff" stroke="#d8e3ea" stroke-width="2"/>
 
   <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="82" y="86" fill="#08233f" font-size="22" font-weight="900">Component interaction map</text>
-    <text x="82" y="112" fill="#50657a" font-size="12" font-weight="700">Notification event, context evidence, prediction logic and delivery decision separated by responsibility.</text>
+    <text x="82" y="84" fill="#08233f" font-size="22" font-weight="900">Component interaction map</text>
+    <text x="82" y="108" fill="#50657a" font-size="12" font-weight="700">How notification evidence moves from raw signals to score, decision and report output.</text>
   </g>
 
   <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">
-    <rect x="82" y="154" width="170" height="220" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
-    <text x="112" y="184" fill="#08233f" font-size="14" font-weight="900">Data Sources</text>
-    <rect x="108" y="210" width="118" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="139" y="232" fill="#102033">Events</text>
-    <rect x="108" y="266" width="118" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="136" y="288" fill="#102033">Context</text>
-    <rect x="108" y="322" width="118" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="137" y="344" fill="#102033">History</text>
+    <rect x="82" y="150" width="172" height="228" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
+    <text x="113" y="180" fill="#08233f" font-size="14" font-weight="900">Data Sources</text>
+    <rect x="108" y="208" width="120" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="140" y="230" fill="#102033">Events</text>
+    <rect x="108" y="271" width="120" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="137" y="293" fill="#102033">Context</text>
+    <rect x="108" y="334" width="120" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="138" y="356" fill="#102033">History</text>
 
-    <rect x="314" y="142" width="350" height="262" rx="12" fill="#ffffff" stroke="#c9d8e2"/>
-    <text x="348" y="172" fill="#08233f" font-size="14" font-weight="900">Core Processing</text>
-    <rect x="344" y="206" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="382" y="234" fill="#102033">Validate</text>
-    <rect x="514" y="206" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="553" y="234" fill="#102033">Encode</text>
-    <rect x="344" y="298" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="386" y="326" fill="#102033">Model</text>
-    <rect x="514" y="298" width="120" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="550" y="326" fill="#102033">Priority</text>
-    <rect x="429" y="368" width="120" height="46" rx="7" fill="#08233f"/>
-    <text x="469" y="396" fill="#ffffff">Fusion</text>
+    <rect x="332" y="130" width="330" height="300" rx="12" fill="#ffffff" stroke="#c9d8e2"/>
+    <text x="362" y="160" fill="#08233f" font-size="14" font-weight="900">Processing Modules</text>
+    <rect x="360" y="194" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="391" y="222" fill="#102033">Validate</text>
+    <rect x="520" y="194" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="557" y="222" fill="#102033">Encode</text>
+    <rect x="360" y="290" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="403" y="318" fill="#102033">Model</text>
+    <rect x="520" y="290" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
+    <text x="556" y="318" fill="#102033">Priority</text>
+    <rect x="440" y="368" width="126" height="46" rx="7" fill="#08233f"/>
+    <text x="483" y="396" fill="#ffffff">Fusion</text>
 
-    <rect x="724" y="154" width="154" height="220" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
-    <text x="768" y="184" fill="#08233f" font-size="14" font-weight="900">Outputs</text>
-    <rect x="750" y="210" width="102" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="785" y="232" fill="#102033">Score</text>
-    <rect x="750" y="266" width="102" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="776" y="288" fill="#102033">Decision</text>
-    <rect x="750" y="322" width="102" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="784" y="344" fill="#102033">Report</text>
+    <rect x="730" y="150" width="148" height="228" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
+    <text x="771" y="180" fill="#08233f" font-size="14" font-weight="900">Outputs</text>
+    <rect x="755" y="208" width="98" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="788" y="230" fill="#102033">Score</text>
+    <rect x="755" y="271" width="98" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="781" y="293" fill="#102033">Decision</text>
+    <rect x="755" y="334" width="98" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
+    <text x="789" y="356" fill="#102033">Report</text>
   </g>
 
-  <g stroke="#0e9bb0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M226 227H338"/>
-    <path d="M226 283H338"/>
-    <path d="M226 339H314Q334 339 334 319V321H338"/>
-    <path d="M464 229H508"/>
-    <path d="M404 252V292"/>
-    <path d="M574 252V292"/>
-    <path d="M464 321H508"/>
-    <path d="M404 344V360Q404 384 428 384"/>
-    <path d="M574 344V360Q574 384 550 384"/>
-    <path d="M634 229H690Q710 229 710 227H744"/>
-    <path d="M634 321H690Q710 321 710 283H744"/>
-    <path d="M549 391H744V339"/>
-  </g>
+  <defs>
+    <marker id="smallArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#0e9bb0"/>
+    </marker>
+    <marker id="orangeArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10Z" fill="#f28f45"/>
+    </marker>
+  </defs>
 
-  <g fill="#0e9bb0">
-    <path d="M338 227l-10-6v12z"/>
-    <path d="M338 283l-10-6v12z"/>
-    <path d="M338 321l-10-6v12z"/>
-    <path d="M508 229l-10-6v12z"/>
-    <path d="M404 292l-6-10h12z"/>
-    <path d="M574 292l-6-10h12z"/>
-    <path d="M508 321l-10-6v12z"/>
-    <path d="M428 384l-10-6v12z"/>
-    <path d="M550 384l10-6v12z"/>
-    <path d="M744 227l-10-6v12z"/>
-    <path d="M744 283l-10-6v12z"/>
-    <path d="M744 339l-10-6v12z"/>
+  <g stroke="#0e9bb0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#smallArrow)">
+    <path d="M228 225H354"/>
+    <path d="M228 288H328Q344 288 344 248Q344 217 354 217"/>
+    <path d="M228 351H328Q344 351 344 313H354"/>
+    <path d="M486 217H514"/>
+    <path d="M423 240V284"/>
+    <path d="M583 240V284"/>
+    <path d="M486 313H514"/>
+    <path d="M423 336V352Q423 391 434 391"/>
+    <path d="M583 336V352Q583 391 572 391"/>
+    <path d="M646 217H749"/>
+    <path d="M646 313H700Q720 313 720 288H749"/>
+    <path d="M566 391H704Q720 391 720 351H749"/>
   </g>
 
   <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="800">
-    <rect x="380" y="438" width="218" height="28" rx="14" fill="#fff5ec" stroke="#f5c79d"/>
-    <text x="426" y="456" fill="#6e4b2c">Feedback history update</text>
+    <rect x="388" y="450" width="226" height="28" rx="14" fill="#fff5ec" stroke="#f5c79d"/>
+    <text x="431" y="468" fill="#6e4b2c">Feedback history update</text>
   </g>
-  <g stroke="#f28f45" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M800 356C730 432 620 454 598 454"/>
-    <path d="M380 454C286 452 202 418 168 372"/>
+  <g stroke="#f28f45" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#orangeArrow)">
+    <path d="M804 368C746 438 652 462 616 462"/>
+    <path d="M388 462C288 458 205 424 166 377"/>
   </g>
-  <path d="M168 372l2 18l15-10z" fill="#f28f45"/>
 </svg>
