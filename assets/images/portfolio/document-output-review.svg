@@ -1,0 +1,34 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Formatted manuscript output review</title>
+  <desc id="desc">A professional output review graphic showing document sections, figure list, table list, references and final review checks.</desc>
+  <defs><style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+    .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+    .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+    .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+    .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+    .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+    .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.2; }
+    .ready { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.5; }
+    .teal { fill: #0e9caf; } .orange { fill: #f97316; }
+  </style></defs>
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
+  <text x="72" y="82" class="title">Submission-Ready Output</text>
+  <rect x="72" y="126" width="250" height="300" rx="4" class="card"/>
+  <text x="102" y="162" class="head">Document map</text>
+  <text x="102" y="204" class="copy">Abstract</text><rect x="206" y="194" width="60" height="8" rx="4" class="teal"/>
+  <text x="102" y="236" class="copy">Introduction</text><rect x="206" y="226" width="72" height="8" rx="4" class="teal"/>
+  <text x="102" y="268" class="copy">Methodology</text><rect x="206" y="258" width="88" height="8" rx="4" class="teal"/>
+  <text x="102" y="300" class="copy">Results</text><rect x="206" y="290" width="68" height="8" rx="4" class="orange"/>
+  <text x="102" y="332" class="copy">References</text><rect x="206" y="322" width="78" height="8" rx="4" class="teal"/>
+  <rect x="356" y="126" width="250" height="300" rx="4" class="card"/>
+  <text x="386" y="162" class="head">Lists and numbering</text>
+  <rect x="386" y="196" width="170" height="38" rx="4" class="soft"/><text x="406" y="220" class="copy">Figure 1-4 checked</text>
+  <rect x="386" y="256" width="170" height="38" rx="4" class="soft"/><text x="406" y="280" class="copy">Table 1-6 checked</text>
+  <rect x="386" y="316" width="170" height="38" rx="4" class="soft"/><text x="406" y="340" class="copy">Equation fields checked</text>
+  <rect x="640" y="126" width="248" height="300" rx="4" class="ready"/>
+  <text x="670" y="162" class="head">Final checks</text>
+  <text x="670" y="212" class="copy">Styles consistent</text><text x="670" y="244" class="copy">Captions refreshable</text><text x="670" y="276" class="copy">Tables readable</text><text x="670" y="308" class="copy">References cleaned</text><text x="670" y="340" class="copy">PDF export ready</text>
+  <text x="72" y="472" class="small">Public visual recreates the workflow without publishing the original manuscript pages.</text>
+</svg>

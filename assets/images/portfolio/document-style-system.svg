@@ -1,0 +1,33 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Word manuscript style system</title>
+  <desc id="desc">A professional style-system view showing headings, body text, captions, tables and equations formatted for a research article.</desc>
+  <defs><style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+    .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+    .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+    .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+    .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+    .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.2; }
+    .teal { fill: #0e9caf; } .orange { fill: #f97316; }
+    .rule { stroke: #cbd5e1; stroke-width: 1; }
+  </style></defs>
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
+  <text x="72" y="82" class="title">Word Style System</text>
+  <rect x="72" y="126" width="250" height="300" rx="4" class="card"/>
+  <text x="102" y="162" class="head">Text hierarchy</text>
+  <text x="102" y="206" class="copy">Heading 1: 12 pt bold</text><rect x="102" y="220" width="160" height="10" rx="5" fill="#0b1f35"/>
+  <text x="102" y="260" class="copy">Heading 2: section label</text><rect x="102" y="274" width="132" height="8" rx="4" class="teal"/>
+  <text x="102" y="314" class="copy">Body: justified paragraphs</text><rect x="102" y="328" width="180" height="7" rx="4" fill="#cbd5e1"/><rect x="102" y="346" width="156" height="7" rx="4" fill="#cbd5e1"/>
+  <rect x="356" y="126" width="250" height="300" rx="4" class="card"/>
+  <text x="386" y="162" class="head">Captions and figures</text>
+  <rect x="386" y="194" width="172" height="78" rx="4" class="soft"/><g class="teal"><rect x="414" y="238" width="16" height="22"/><rect x="450" y="222" width="16" height="38"/><rect x="486" y="208" width="16" height="52"/></g>
+  <text x="386" y="306" class="copy">Figure 1: architecture view</text><line x1="386" y1="318" x2="558" y2="318" class="rule"/>
+  <text x="386" y="350" class="copy">Table 1: simulation parameters</text><line x1="386" y1="362" x2="558" y2="362" class="rule"/>
+  <rect x="640" y="126" width="248" height="300" rx="4" class="card"/>
+  <text x="670" y="162" class="head">Tables and equations</text>
+  <rect x="670" y="198" width="168" height="74" rx="4" class="soft"/><path d="M690 222H818M690 246H818M734 198V272M778 198V272" class="rule"/>
+  <text x="670" y="316" class="copy">E = P x t</text><text x="812" y="316" class="copy">(1)</text>
+  <text x="670" y="358" class="copy">References formatted as</text><text x="670" y="380" class="copy">a readable final section</text>
+  <text x="72" y="472" class="copy">The visual system reflects the actual formatting work: styles, fields, tables, equations and references.</text>
+</svg>

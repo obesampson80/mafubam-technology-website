@@ -342,4 +342,12 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Source basis: reviewed a real local LoRaWAN certificate-revocation simulator project with React/Vite frontend, Flask API, scenario controls, certificate/device registries, communication attempts, event logs, summary views and CSV exports.
 - Design correction: replaced the generic prototype template with a specific public-safe case study covering brief, challenge, workflow, interface evidence and outcome.
 - QA method: validated all new/revised SVGs as XML, scanned page/assets for private project names and local paths, rendered each SVG to PNG under ignored `docs/ui-screenshots/svg-review/prototype-case-study-pass/`, rendered the prototype case-study page, and rendered the portfolio index page successfully.
+## 25. Document Formatting Case Study Implementation
+
+- Live page: `portfolio-document-formatting.html`
+- Live assets: `document-formatting-case.svg`, `document-formatting-workflow.svg`, `document-style-system.svg`, `document-output-review.svg`
+- Source basis: reviewed local manuscript formatting resources for a LoRaWAN security article, including article structure rules, Markdown manuscript structure, figure/media assets and a DOCX conversion script that handles Word styles, paragraph spacing, tables, equations, captions and references.
+- Design correction: replaced the generic document-support template with a specific public-safe manuscript-formatting case study covering brief, challenge, workflow, document evidence and outcome.
+- Research basis: checked Word support guidance for automatic headings/table of contents, captions, table of figures and cross-references, then mapped those principles to the local formatting workflow.
+- QA method: validated all new/revised SVGs as XML, scanned page/assets for private project names and local paths, rendered each SVG to PNG under ignored `docs/ui-screenshots/svg-review/document-formatting-pass/`, rendered the document case-study page, and rendered the portfolio index page successfully.
 
