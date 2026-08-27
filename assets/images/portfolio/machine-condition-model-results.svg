@@ -1,18 +1,54 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img">
-  <rect width="960" height="540" fill="#f7fbfc"/>
-  <rect x="46" y="42" width="868" height="456" rx="18" fill="#fff" stroke="#d8e3ea"/>
-  <text x="82" y="88" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="900">Model result summary</text>
-  <rect x="82" y="122" width="470" height="324" rx="14" fill="#ffffff" stroke="#d8e3ea"/>
-  <text x="112" y="162" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Macro-F1 comparison</text>
-  <g stroke="#d8e3ea"><path d="M130 396h370M130 340h370M130 284h370M130 228h370"/></g>
-  <g fill="#0e9bb0"><rect x="160" y="230" width="46" height="166" rx="7"/><rect x="250" y="242" width="46" height="154" rx="7"/><rect x="340" y="248" width="46" height="148" rx="7"/><rect x="430" y="322" width="46" height="74" rx="7"/></g>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#526173" font-weight="700"><text x="148" y="424">Binary</text><text x="236" y="424">Fault type</text><text x="328" y="424">Alt. model</text><text x="420" y="424">External</text></g>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#08233f" font-weight="900"><text x="158" y="220">.99</text><text x="248" y="232">.92</text><text x="338" y="238">.90</text><text x="430" y="312">.47</text></g>
-  <rect x="592" y="122" width="286" height="324" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <text x="622" y="162" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Recording-level matrix</text>
-  <g transform="translate(638 200)">
-    <rect width="176" height="176" rx="8" fill="#fff" stroke="#d8e3ea"/>
-    <g><rect x="10" y="10" width="36" height="36" fill="#0d3155"/><rect x="50" y="10" width="36" height="36" fill="#dff6fa"/><rect x="90" y="10" width="36" height="36" fill="#eef5f7"/><rect x="130" y="10" width="36" height="36" fill="#eef5f7"/><rect x="10" y="50" width="36" height="36" fill="#e7f6f9"/><rect x="50" y="50" width="36" height="36" fill="#0e9bb0"/><rect x="90" y="50" width="36" height="36" fill="#f9e6ce"/><rect x="130" y="50" width="36" height="36" fill="#eef5f7"/><rect x="10" y="90" width="36" height="36" fill="#eef5f7"/><rect x="50" y="90" width="36" height="36" fill="#f9e6ce"/><rect x="90" y="90" width="36" height="36" fill="#21b8d0"/><rect x="130" y="90" width="36" height="36" fill="#eef5f7"/><rect x="10" y="130" width="36" height="36" fill="#eef5f7"/><rect x="50" y="130" width="36" height="36" fill="#eef5f7"/><rect x="90" y="130" width="36" height="36" fill="#f9e6ce"/><rect x="130" y="130" width="36" height="36" fill="#08233f"/></g>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Machine condition model validation summary</title>
+  <desc id="desc">A professional model validation view showing macro-F1 comparison, confusion matrix, result interpretation and weaker external-check result kept visible.</desc>
+  <defs>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+      .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.4; }
+      .warn { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.4; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .teal { fill: #0e9caf; }
+      .orange { fill: #f97316; }
+      .navy { fill: #0b1f35; }
+    </style>
+  </defs>
+
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
+  <text x="72" y="82" class="title">Model Validation Summary</text>
+
+  <rect x="72" y="124" width="454" height="272" rx="4" class="card"/>
+  <text x="102" y="162" class="head">Macro-F1 by validation view</text>
+  <g class="grid"><path d="M126 342H480"/><path d="M126 292H480"/><path d="M126 242H480"/><path d="M126 192H480"/></g>
+  <rect x="158" y="202" width="42" height="140" rx="4" class="teal"/>
+  <rect x="242" y="218" width="42" height="124" rx="4" class="teal"/>
+  <rect x="326" y="234" width="42" height="108" rx="4" class="teal"/>
+  <rect x="410" y="284" width="42" height="58" rx="4" class="orange"/>
+  <text x="154" y="368" class="small">Binary</text>
+  <text x="232" y="368" class="small">Fault type</text>
+  <text x="318" y="368" class="small">Alt. model</text>
+  <text x="402" y="368" class="small">External</text>
+  <text x="158" y="192" class="small">0.99</text><text x="242" y="208" class="small">0.92</text><text x="326" y="224" class="small">0.90</text><text x="410" y="274" class="small">0.47</text>
+
+  <rect x="566" y="124" width="322" height="272" rx="4" class="card"/>
+  <text x="596" y="162" class="head">Recording-level confusion matrix</text>
+  <g transform="translate(628 198)">
+    <rect width="188" height="188" rx="4" fill="#ffffff" stroke="#d7e2ea"/>
+    <rect x="10" y="10" width="38" height="38" class="navy"/><rect x="52" y="10" width="38" height="38" fill="#e8f7fb"/><rect x="94" y="10" width="38" height="38" fill="#f8fafc"/><rect x="136" y="10" width="38" height="38" fill="#f8fafc"/>
+    <rect x="10" y="52" width="38" height="38" fill="#e8f7fb"/><rect x="52" y="52" width="38" height="38" class="teal"/><rect x="94" y="52" width="38" height="38" fill="#fed7aa"/><rect x="136" y="52" width="38" height="38" fill="#f8fafc"/>
+    <rect x="10" y="94" width="38" height="38" fill="#f8fafc"/><rect x="52" y="94" width="38" height="38" fill="#fed7aa"/><rect x="94" y="94" width="38" height="38" class="teal"/><rect x="136" y="94" width="38" height="38" fill="#e8f7fb"/>
+    <rect x="10" y="136" width="38" height="38" fill="#f8fafc"/><rect x="52" y="136" width="38" height="38" fill="#f8fafc"/><rect x="94" y="136" width="38" height="38" fill="#fed7aa"/><rect x="136" y="136" width="38" height="38" class="navy"/>
   </g>
-  <text x="622" y="414" fill="#526173" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">Errors kept visible instead of hidden.</text>
+
+  <rect x="72" y="422" width="248" height="52" rx="4" class="soft"/>
+  <text x="98" y="452" class="copy">Primary result is strong on prepared windows.</text>
+  <rect x="356" y="422" width="248" height="52" rx="4" class="soft"/>
+  <text x="382" y="452" class="copy">Class errors remain visible for interpretation.</text>
+  <rect x="640" y="422" width="248" height="52" rx="4" class="warn"/>
+  <text x="666" y="452" class="copy">External check is reported honestly.</text>
 </svg>

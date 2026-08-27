@@ -1,35 +1,72 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img">
-  <rect width="1200" height="680" fill="#f7fbfc"/>
-  <rect x="36" y="34" width="1128" height="612" rx="22" fill="#ffffff" stroke="#d8e3ea"/>
-  <rect x="36" y="34" width="92" height="612" rx="22" fill="#08233f"/>
-  <rect x="66" y="72" width="32" height="32" rx="8" fill="#2ec4d6"/>
-  <g fill="#ffffff" opacity=".88"><circle cx="82" cy="148" r="10"/><circle cx="82" cy="204" r="10"/><circle cx="82" cy="260" r="10"/><circle cx="82" cy="316" r="10"/><circle cx="82" cy="372" r="10"/></g>
-  <rect x="164" y="70" width="278" height="20" rx="10" fill="#08233f"/>
-  <rect x="164" y="104" width="218" height="10" rx="5" fill="#526173" opacity=".48"/>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">
-    <text x="164" y="150" fill="#0e9bb0">Run</text><text x="232" y="150" fill="#526173">Monitor</text><text x="326" y="150" fill="#526173">Predict</text><text x="418" y="150" fill="#526173">Evidence</text><text x="528" y="150" fill="#526173">Results</text><text x="622" y="150" fill="#526173">Figures</text><text x="712" y="150" fill="#526173">Inventory</text><text x="820" y="150" fill="#526173">Objectives</text>
-  </g>
-  <rect x="158" y="168" width="946" height="1" fill="#d8e3ea"/>
-  <g>
-    <rect x="164" y="202" width="214" height="104" rx="12" fill="#eef5f7" stroke="#d8e3ea"/>
-    <rect x="400" y="202" width="214" height="104" rx="12" fill="#eef5f7" stroke="#d8e3ea"/>
-    <rect x="636" y="202" width="214" height="104" rx="12" fill="#eef5f7" stroke="#d8e3ea"/>
-    <rect x="872" y="202" width="214" height="104" rx="12" fill="#eef5f7" stroke="#d8e3ea"/>
-  </g>
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="188" y="236" fill="#526173" font-size="13" font-weight="700">SOURCE WINDOWS</text><text x="188" y="278" fill="#08233f" font-size="34" font-weight="900">3.9k</text>
-    <text x="424" y="236" fill="#526173" font-size="13" font-weight="700">TARGET WINDOWS</text><text x="424" y="278" fill="#08233f" font-size="34" font-weight="900">1.8k</text>
-    <text x="660" y="236" fill="#526173" font-size="13" font-weight="700">PRIMARY SCORE</text><text x="660" y="278" fill="#0e9bb0" font-size="34" font-weight="900">0.92</text>
-    <text x="896" y="236" fill="#526173" font-size="13" font-weight="700">BEST MODEL</text><text x="896" y="278" fill="#08233f" font-size="25" font-weight="900">Tree ensemble</text>
-  </g>
-  <rect x="164" y="346" width="446" height="220" rx="14" fill="#ffffff" stroke="#d8e3ea"/>
-  <text x="190" y="384" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="900">Saved run log</text>
-  <g font-family="Consolas, monospace" font-size="14" fill="#526173">
-    <text x="190" y="424">✓ Load saved feature table</text><text x="190" y="456">✓ Prepare binary detector</text><text x="190" y="488">✓ Evaluate condition folds</text><text x="190" y="520">✓ Export charts and report tables</text>
-  </g>
-  <rect x="650" y="346" width="454" height="220" rx="14" fill="#ffffff" stroke="#d8e3ea"/>
-  <text x="676" y="384" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="900">Model comparison</text>
-  <g stroke="#d8e3ea"><path d="M696 520h350M696 478h350M696 436h350M696 394h350"/></g>
-  <g fill="#0e9bb0"><rect x="724" y="414" width="34" height="106" rx="6"/><rect x="808" y="390" width="34" height="130" rx="6"/><rect x="892" y="402" width="34" height="118" rx="6"/><rect x="976" y="454" width="34" height="66" rx="6"/></g>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#526173" font-weight="700"><text x="710" y="544">Binary</text><text x="786" y="544">Primary</text><text x="872" y="544">Alt.</text><text x="952" y="544">External</text></g>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Machine condition analysis dashboard</title>
+  <desc id="desc">A professional dashboard overview showing vibration data windows, feature extraction, model comparison, condition prediction and reviewer notes.</desc>
+  <defs>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #475569; }
+      .value { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #0b1f35; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .shell { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .nav { fill: #0b1f35; }
+      .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+      .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.4; }
+      .accent { fill: #0e9caf; }
+      .orange { fill: #f97316; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .line { fill: none; stroke: #0e9caf; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .line2 { fill: none; stroke: #f97316; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <rect x="34" y="30" width="1132" height="620" rx="5" class="shell"/>
+  <rect x="34" y="30" width="92" height="620" rx="5" class="nav"/>
+  <rect x="62" y="66" width="36" height="36" rx="4" fill="#e8f7fb"/>
+  <text x="74" y="90" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#0b1f35">M</text>
+  <g fill="#e8f7fb" opacity="0.88"><rect x="68" y="150" width="24" height="6" rx="3"/><rect x="68" y="204" width="24" height="6" rx="3"/><rect x="68" y="258" width="24" height="6" rx="3"/><rect x="68" y="312" width="24" height="6" rx="3"/><rect x="68" y="366" width="24" height="6" rx="3"/></g>
+
+  <text x="164" y="78" class="title">Machine Condition Analysis Dashboard</text>
+  <text x="164" y="106" class="small">Public-safe recreation of the analysis workspace used to inspect vibration windows, features and predictions.</text>
+
+  <rect x="164" y="142" width="212" height="92" rx="4" class="soft"/>
+  <text x="188" y="174" class="label">DATA WINDOWS</text>
+  <text x="188" y="210" class="value">3,920</text>
+  <rect x="400" y="142" width="212" height="92" rx="4" class="soft"/>
+  <text x="424" y="174" class="label">FEATURE COLUMNS</text>
+  <text x="424" y="210" class="value">48</text>
+  <rect x="636" y="142" width="212" height="92" rx="4" class="soft"/>
+  <text x="660" y="174" class="label">VALIDATION MACRO-F1</text>
+  <text x="660" y="210" class="value">0.92</text>
+  <rect x="872" y="142" width="236" height="92" rx="4" class="soft"/>
+  <text x="896" y="174" class="label">CURRENT CONDITION</text>
+  <text x="896" y="210" class="value">Fault risk</text>
+
+  <rect x="164" y="270" width="454" height="244" rx="4" class="card"/>
+  <text x="190" y="308" class="head">Vibration Window Preview</text>
+  <g class="grid"><path d="M198 462H572"/><path d="M198 416H572"/><path d="M198 370H572"/><path d="M198 324H572"/></g>
+  <path d="M198 420C220 350 236 488 260 402C284 316 306 466 330 386C356 302 382 446 406 376C434 302 466 430 492 360C520 296 544 408 572 334" class="line"/>
+  <path d="M198 444C232 432 266 420 300 434C338 448 368 424 400 438C438 454 486 412 524 424C548 430 562 418 572 410" class="line2"/>
+  <text x="198" y="488" class="small">Segmented signal window with baseline overlay</text>
+
+  <rect x="650" y="270" width="214" height="244" rx="4" class="card"/>
+  <text x="676" y="308" class="head">Feature Evidence</text>
+  <text x="676" y="342" class="copy">RMS energy</text><rect x="676" y="354" width="146" height="10" rx="5" fill="#e2e8f0"/><rect x="676" y="354" width="116" height="10" rx="5" class="accent"/>
+  <text x="676" y="388" class="copy">Peak amplitude</text><rect x="676" y="400" width="146" height="10" rx="5" fill="#e2e8f0"/><rect x="676" y="400" width="98" height="10" rx="5" class="orange"/>
+  <text x="676" y="434" class="copy">Spectral spread</text><rect x="676" y="446" width="146" height="10" rx="5" fill="#e2e8f0"/><rect x="676" y="446" width="126" height="10" rx="5" class="accent"/>
+  <text x="676" y="488" class="small">Key drivers prepared for reviewer discussion</text>
+
+  <rect x="894" y="270" width="214" height="244" rx="4" class="card"/>
+  <text x="920" y="308" class="head">Model Comparison</text>
+  <g class="grid"><path d="M940 462H1062"/><path d="M940 424H1062"/><path d="M940 386H1062"/><path d="M940 348H1062"/></g>
+  <rect x="950" y="358" width="24" height="104" rx="4" class="accent"/>
+  <rect x="990" y="382" width="24" height="80" rx="4" class="accent"/>
+  <rect x="1030" y="414" width="24" height="48" rx="4" class="orange"/>
+  <text x="938" y="490" class="small">Tree</text><text x="984" y="490" class="small">SVM</text><text x="1024" y="490" class="small">Base</text>
+
+  <rect x="164" y="544" width="944" height="62" rx="4" fill="#f8fafc" stroke="#d7e2ea"/>
+  <text x="190" y="580" class="head">Reviewer note</text>
+  <text x="320" y="580" class="copy">The dashboard connects raw signal behaviour, feature evidence and model output instead of showing isolated notebook screenshots.</text>
 </svg>

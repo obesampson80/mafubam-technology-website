@@ -1,16 +1,64 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img">
-  <rect width="960" height="540" fill="#f7fbfc"/>
-  <rect x="48" y="48" width="864" height="444" rx="18" fill="#fff" stroke="#d8e3ea"/>
-  <g font-family="Segoe UI, Arial, sans-serif"><text x="82" y="92" fill="#08233f" font-size="22" font-weight="900">Notebook-to-report output flow</text><text x="82" y="120" fill="#526173" font-size="14" font-weight="700">Recreated from the project structure, not copied from private screenshots</text></g>
-  <rect x="82" y="162" width="180" height="238" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <rect x="302" y="162" width="180" height="238" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <rect x="522" y="162" width="180" height="238" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <rect x="742" y="162" width="118" height="238" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="900" fill="#08233f"><text x="112" y="202">Input records</text><text x="332" y="202">Feature table</text><text x="552" y="202">Figures</text><text x="772" y="202">Trace</text></g>
-  <g fill="#526173" opacity=".42"><rect x="112" y="232" width="112" height="9" rx="5"/><rect x="112" y="258" width="88" height="9" rx="5"/><rect x="112" y="284" width="124" height="9" rx="5"/><rect x="332" y="232" width="112" height="9" rx="5"/><rect x="332" y="258" width="96" height="9" rx="5"/><rect x="332" y="284" width="126" height="9" rx="5"/></g>
-  <g fill="#0e9bb0"><rect x="116" y="326" width="28" height="44" rx="5"/><rect x="156" y="298" width="28" height="72" rx="5"/><rect x="196" y="250" width="28" height="120" rx="5"/></g>
-  <g stroke="#d8e3ea"><path d="M552 338h118M552 300h118M552 262h118"/></g>
-  <path d="M552 318c18-44 36 24 56-18 20-42 38 8 62-34" fill="none" stroke="#f6a15e" stroke-width="7" stroke-linecap="round"/>
-  <g transform="translate(770 240)"><rect width="64" height="64" rx="8" fill="#fff" stroke="#d8e3ea"/><rect x="10" y="10" width="16" height="16" fill="#0e9bb0"/><rect x="30" y="10" width="16" height="16" fill="#dff6fa"/><rect x="10" y="30" width="16" height="16" fill="#dff6fa"/><rect x="30" y="30" width="16" height="16" fill="#08233f"/></g>
-  <g stroke="#0e9bb0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M266 282h30"/><path d="M286 266l18 16-18 16"/><path d="M486 282h30"/><path d="M506 266l18 16-18 16"/><path d="M706 282h30"/><path d="M726 266l18 16-18 16"/></g>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Machine condition analysis workflow</title>
+  <desc id="desc">A clean data-analysis workflow showing raw vibration records moving through windowing, feature extraction, model validation and report-ready insight.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 600; fill: #475569; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .stage { fill: #ffffff; stroke: #334155; stroke-width: 1.5; }
+      .input { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.6; }
+      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.6; }
+      .flow { stroke: #0f172a; stroke-width: 2.3; fill: none; stroke-linecap: round; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
+  <text x="72" y="82" class="title">Analysis Workflow</text>
+  <text x="72" y="108" class="subtitle">From vibration records to validated machine-condition evidence.</text>
+
+  <rect x="72" y="168" width="150" height="178" rx="4" class="input"/>
+  <text x="98" y="202" class="head">Raw records</text>
+  <text x="98" y="232" class="copy">vibration files</text>
+  <text x="98" y="254" class="copy">machine labels</text>
+  <text x="98" y="276" class="copy">sampling notes</text>
+  <rect x="104" y="304" width="86" height="12" rx="6" fill="#0e9caf" opacity="0.9"/>
+
+  <rect x="270" y="168" width="150" height="178" rx="4" class="stage"/>
+  <text x="296" y="202" class="head">Windowing</text>
+  <text x="296" y="232" class="copy">segment signals</text>
+  <text x="296" y="254" class="copy">remove weak rows</text>
+  <text x="296" y="276" class="copy">align classes</text>
+  <rect x="302" y="304" width="86" height="12" rx="6" fill="#e2e8f0"/>
+
+  <rect x="468" y="168" width="150" height="178" rx="4" class="stage"/>
+  <text x="494" y="202" class="head">Feature table</text>
+  <text x="494" y="232" class="copy">time statistics</text>
+  <text x="494" y="254" class="copy">frequency features</text>
+  <text x="494" y="276" class="copy">scaled inputs</text>
+  <rect x="500" y="304" width="86" height="12" rx="6" fill="#e2e8f0"/>
+
+  <rect x="666" y="168" width="150" height="178" rx="4" class="stage"/>
+  <text x="692" y="202" class="head">Validation</text>
+  <text x="692" y="232" class="copy">train/test split</text>
+  <text x="692" y="254" class="copy">model comparison</text>
+  <text x="692" y="276" class="copy">error review</text>
+  <rect x="698" y="304" width="86" height="12" rx="6" fill="#e2e8f0"/>
+
+  <rect x="342" y="390" width="276" height="64" rx="4" class="output"/>
+  <text x="374" y="418" class="head">Report-ready insight</text>
+  <text x="374" y="440" class="copy">condition prediction, confidence evidence and interpretation notes</text>
+
+  <path d="M222 257H262" class="flow"/>
+  <path d="M420 257H460" class="flow"/>
+  <path d="M618 257H658" class="flow"/>
+  <path d="M741 346V374Q741 422 626 422" class="flow"/>
+  <text x="72" y="478" class="small">Each stage has one purpose, making the analysis easier to defend than raw notebook output.</text>
 </svg>

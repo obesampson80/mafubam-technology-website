@@ -1,23 +1,60 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img">
-  <rect width="960" height="540" fill="#f7fbfc"/>
-  <rect x="42" y="42" width="876" height="456" rx="18" fill="#fff" stroke="#d8e3ea"/>
-  <rect x="70" y="76" width="820" height="54" rx="12" fill="#08233f"/>
-  <text x="100" y="110" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="900">Prediction evidence</text>
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800"><text x="620" y="110" fill="#2ec4d6">signal</text><text x="684" y="110" fill="#fff" opacity=".72">spectrum</text><text x="762" y="110" fill="#fff" opacity=".72">votes</text><text x="826" y="110" fill="#fff" opacity=".72">features</text></g>
-  <rect x="70" y="164" width="390" height="144" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <text x="96" y="198" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Signal preview</text>
-  <g stroke="#cfdce4"><path d="M100 270h320M100 235h320"/></g>
-  <path d="M100 262c12-48 24 44 36-2s24 50 38-4 28 42 42-10 30 46 46-4 34 32 50-16 34 24 58-18" fill="none" stroke="#0e9bb0" stroke-width="6" stroke-linecap="round"/>
-  <rect x="500" y="164" width="390" height="144" rx="14" fill="#eef5f7" stroke="#d8e3ea"/>
-  <text x="526" y="198" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Spectrum-style summary</text>
-  <g fill="#f6a15e"><rect x="538" y="266" width="12" height="22" rx="4"/><rect x="562" y="244" width="12" height="44" rx="4"/><rect x="586" y="224" width="12" height="64" rx="4"/><rect x="610" y="252" width="12" height="36" rx="4"/><rect x="634" y="214" width="12" height="74" rx="4"/><rect x="658" y="238" width="12" height="50" rx="4"/><rect x="682" y="258" width="12" height="30" rx="4"/></g>
-  <rect x="70" y="342" width="250" height="112" rx="14" fill="#fff" stroke="#d8e3ea"/>
-  <text x="96" y="374" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Window votes</text>
-  <rect x="98" y="404" width="158" height="14" rx="7" fill="#0e9bb0"/><rect x="98" y="430" width="92" height="14" rx="7" fill="#f6a15e"/>
-  <rect x="356" y="342" width="250" height="112" rx="14" fill="#fff" stroke="#d8e3ea"/>
-  <text x="382" y="374" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Feature summary</text>
-  <g fill="#d8e3ea"><rect x="382" y="402" width="168" height="8" rx="4"/><rect x="382" y="424" width="138" height="8" rx="4"/><rect x="382" y="446" width="184" height="8" rx="4"/></g>
-  <rect x="642" y="342" width="248" height="112" rx="14" fill="#fff" stroke="#d8e3ea"/>
-  <text x="668" y="374" fill="#08233f" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="900">Prediction</text>
-  <rect x="668" y="404" width="112" height="34" rx="9" fill="#0e9bb0"/><text x="694" y="426" fill="#fff" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="900">Fault likely</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Machine condition prediction evidence view</title>
+  <desc id="desc">A professional evidence view showing signal preview, spectrum features, key feature contributions and the final machine-condition prediction.</desc>
+  <defs>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .light { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #e8f7fb; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+      .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.4; }
+      .risk { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.5; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .signal { fill: none; stroke: #0e9caf; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .orange { fill: #f97316; }
+      .teal { fill: #0e9caf; }
+    </style>
+  </defs>
+
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
+  <text x="72" y="82" class="title">Prediction Evidence View</text>
+  <rect x="72" y="112" width="816" height="44" rx="4" fill="#0b1f35"/>
+  <text x="100" y="140" class="light">Window ID: public-demo-014</text>
+  <text x="344" y="140" class="light">Condition: review required</text>
+  <text x="636" y="140" class="light">Confidence: 0.86</text>
+
+  <rect x="72" y="190" width="386" height="144" rx="4" class="soft"/>
+  <text x="98" y="224" class="head">Signal pattern</text>
+  <g class="grid"><path d="M102 300H424"/><path d="M102 264H424"/></g>
+  <path d="M102 294C120 240 138 318 158 278C180 232 202 326 226 268C250 214 274 320 300 256C324 216 348 306 374 248C398 210 414 282 424 254" class="signal"/>
+
+  <rect x="502" y="190" width="386" height="144" rx="4" class="soft"/>
+  <text x="528" y="224" class="head">Spectrum summary</text>
+  <g class="grid"><path d="M532 302H846"/><path d="M532 266H846"/></g>
+  <rect x="550" y="276" width="14" height="26" rx="3" class="orange"/>
+  <rect x="582" y="244" width="14" height="58" rx="3" class="orange"/>
+  <rect x="614" y="220" width="14" height="82" rx="3" class="orange"/>
+  <rect x="646" y="256" width="14" height="46" rx="3" class="orange"/>
+  <rect x="678" y="236" width="14" height="66" rx="3" class="orange"/>
+  <rect x="710" y="270" width="14" height="32" rx="3" class="orange"/>
+
+  <rect x="72" y="370" width="250" height="92" rx="4" class="card"/>
+  <text x="98" y="402" class="head">Feature drivers</text>
+  <text x="98" y="430" class="copy">Peak amplitude</text><rect x="202" y="420" width="78" height="10" rx="5" class="teal"/>
+  <text x="98" y="452" class="copy">Spectral spread</text><rect x="202" y="442" width="62" height="10" rx="5" class="orange"/>
+
+  <rect x="356" y="370" width="250" height="92" rx="4" class="card"/>
+  <text x="382" y="402" class="head">Reviewer check</text>
+  <text x="382" y="430" class="copy">Signal and spectrum agree</text>
+  <text x="382" y="452" class="copy">No single metric shown alone</text>
+
+  <rect x="640" y="370" width="248" height="92" rx="4" class="risk"/>
+  <text x="666" y="402" class="head">Prediction</text>
+  <text x="666" y="434" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#9a3412">Fault risk likely</text>
+  <text x="666" y="456" class="copy">Use as decision-support evidence</text>
 </svg>
+

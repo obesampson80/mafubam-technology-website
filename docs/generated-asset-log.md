@@ -321,4 +321,11 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Reason: Strengthened the class diagram by adding proper UML-style attribute and operation compartments.
 - Design correction: replaced responsibility-only boxes with `NotificationRequest`, `ContextSnapshot`, `FeatureVector`, `DecisionEngine`, `DeliveryController` and `DeliveryDecision` classes showing public-safe attributes, operations and associations.
 - QA method: validated the SVG as XML, scanned for unwanted evaluation/report/private wording, and rendered the class diagram to PNG under ignored `docs/ui-screenshots/svg-review/class-diagram-attributes-pass/`.
+## 22. Data Analysis Case Study SVG Alignment
+
+- Live assets: `machine-condition-dashboard.svg`, `machine-condition-report-flow.svg`, `machine-condition-evidence.svg`, `machine-condition-model-results.svg`
+- Page: `portfolio-data-analysis.html`
+- Reason: Reviewed the data-analysis case-study visuals against the improved technical-diagram standard and replaced generic placeholder-style figures with clearer professional visuals.
+- Design correction: rebuilt the dashboard, workflow, prediction evidence and model-validation visuals with consistent typography, structured panels, meaningful analytical labels and clearer result interpretation.
+- QA method: validated all SVGs as XML, scanned the SVG/page text for private or generic placeholder wording, rendered each SVG to PNG under ignored `docs/ui-screenshots/svg-review/data-analysis-final-pass/`, and rendered the full HTML page successfully.
 
