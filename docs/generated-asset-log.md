@@ -267,4 +267,11 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Verification source: checked against the methodology description of seven cooperating subsystems: data ingestion, feature engineering, interruptibility prediction, priority-related feature modelling, temporal validation, decision fusion/scheduling and evaluation.
 - QA method: rendered the SVG to PNG only inside ignored `docs/ui-screenshots/svg-review/technical-diagrams/` for visual inspection.
 - Fixes: corrected oversized arrowheads by using fixed-size SVG markers and corrected `Interpretibility prediction` to `Interruptibility prediction`.
+## 15. Web-Ready Subsystem SVG Simplification
+
+- Live asset: `assets/images/portfolio/expanded_subsystem_view.svg`
+- Reason: Reworked the previous dense report-style diagram into a simpler web portfolio visual.
+- Verification source: checked against the methodology description of the seven cooperating subsystems.
+- Design correction: reduced the diagram to four readable stages with supporting evidence cards, medium fixed-size arrowheads, and no overcrowded subsystem boxes.
+- QA method: rendered the SVG to PNG only in ignored `docs/ui-screenshots/svg-review/technical-diagrams/`, then rendered `portfolio-technical-diagrams.html` to confirm the page loads the SVG.
 
