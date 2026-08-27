@@ -260,3 +260,11 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Review renders: generated under ignored `docs/ui-screenshots/svg-review/` paths only.
 - Reason: PNG renders are used only to inspect SVG quality during QA. The live website uses the SVG asset.
 - Verification source: checked against the project methodology sections describing the seven cooperating subsystems.
+## 14. Expanded Subsystem SVG Replacement
+
+- Live asset: `assets/images/portfolio/expanded_subsystem_view.svg`
+- Replaces: `assets/images/portfolio/notification-component-map.svg` on the technical diagrams case-study page.
+- Verification source: checked against the methodology description of seven cooperating subsystems: data ingestion, feature engineering, interruptibility prediction, priority-related feature modelling, temporal validation, decision fusion/scheduling and evaluation.
+- QA method: rendered the SVG to PNG only inside ignored `docs/ui-screenshots/svg-review/technical-diagrams/` for visual inspection.
+- Fixes: corrected oversized arrowheads by using fixed-size SVG markers and corrected `Interpretibility prediction` to `Interruptibility prediction`.
+

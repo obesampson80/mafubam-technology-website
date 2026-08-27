@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0b2440" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowTeal" markerWidth="7" markerHeight="7" refX="7" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7,3.5 L0,7 Z" fill="#0c9bb2"/></marker>
+    <marker id="arrowOrange" markerWidth="7" markerHeight="7" refX="7" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L7,3.5 L0,7 Z" fill="#f28a35"/></marker>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 38px; font-weight: 700; fill: #0b2a46; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 600; fill: #40546a; }
+      .box-title { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #0b2a46; }
+      .box-text { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 600; fill: #0e1720; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #40546a; }
+      .pill-text { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #ffffff; }
+      .feedback-text { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #7a4a20; }
+      .flow { stroke: #0c9bb2; stroke-width: 4; fill: none; marker-end: url(#arrowTeal); }
+      .feedback { stroke: #f28a35; stroke-width: 4; fill: none; marker-end: url(#arrowOrange); }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="1000" fill="#f7fbfd"/>
+  <rect x="20" y="20" width="1560" height="960" rx="28" ry="28"
+        fill="#ffffff" stroke="#c9dce6" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="70" y="92" class="title">Expanded subsystem view</text>
+  <text x="70" y="130" class="subtitle">
+    Verified from the project methodology: seven cooperating subsystems from notification arrival to delivery decision and evaluation.
+  </text>
+
+  <!-- Pills -->
+  <rect x="110" y="165" width="190" height="42" rx="21" fill="#0b2a46"/>
+  <text x="205" y="192" text-anchor="middle" class="pill-text">incoming event</text>
+
+  <rect x="1260" y="165" width="220" height="42" rx="21" fill="#0c9bb2"/>
+  <text x="1370" y="192" text-anchor="middle" class="pill-text">delivery outcome</text>
+
+  <!-- Main boxes -->
+  <!-- top row -->
+  <g filter="url(#shadow)">
+    <rect x="75" y="230" width="280" height="200" rx="22" fill="#edf6f8" stroke="#d6e5ec" stroke-width="2"/>
+    <rect x="435" y="230" width="280" height="200" rx="22" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
+    <rect x="795" y="230" width="280" height="200" rx="22" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
+    <rect x="1155" y="230" width="320" height="200" rx="22" fill="#edf6f8" stroke="#d6e5ec" stroke-width="2"/>
+  </g>
+
+  <!-- bottom row -->
+  <g filter="url(#shadow)">
+    <rect x="75" y="540" width="280" height="200" rx="22" fill="#edf6f8" stroke="#d6e5ec" stroke-width="2"/>
+    <rect x="435" y="540" width="280" height="200" rx="22" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
+    <rect x="795" y="540" width="280" height="200" rx="22" fill="#ffffff" stroke="#d6e5ec" stroke-width="2"/>
+    <rect x="1155" y="540" width="320" height="200" rx="22" fill="#edf6f8" stroke="#d6e5ec" stroke-width="2"/>
+  </g>
+
+  <!-- Top row text -->
+  <text x="115" y="275" class="box-title">Data ingestion</text>
+  <text x="115" y="320" class="box-text">Notification metadata</text>
+  <text x="115" y="355" class="box-text">app source, category</text>
+  <text x="115" y="390" class="box-text">timestamp, urgency</text>
+
+  <text x="475" y="275" class="box-title">Feature engineering</text>
+  <text x="475" y="320" class="box-text">leakage-safe selection</text>
+  <text x="475" y="355" class="box-text">temporal aggregates</text>
+  <text x="475" y="390" class="box-text">encoding and scaling</text>
+
+  <text x="835" y="275" class="box-title">Interruptibility prediction</text>
+  <text x="835" y="320" class="box-text">Random Forest, Extra Trees</text>
+  <text x="835" y="355" class="box-text">XGBoost and LightGBM</text>
+  <text x="835" y="390" class="box-text">probability-average ensemble</text>
+
+  <text x="1195" y="275" class="box-title">Decision fusion and scheduling</text>
+  <text x="1195" y="320" class="box-text">Receptivity probability</text>
+  <text x="1195" y="355" class="box-text">priority evidence and receptivity</text>
+  <text x="1195" y="390" class="box-text">deliver, defer, or batch</text>
+
+  <!-- Bottom row text -->
+  <text x="115" y="585" class="box-title">Context signal store</text>
+  <text x="115" y="630" class="box-text">Temporal and spatial state</text>
+  <text x="115" y="665" class="box-text">screen, activity, movement</text>
+  <text x="115" y="700" class="box-text">frequency counts, click history</text>
+
+  <text x="475" y="585" class="box-title">Priority modelling</text>
+  <text x="475" y="630" class="box-text">Urgency and developer priority</text>
+  <text x="475" y="665" class="box-text">app/content category</text>
+  <text x="475" y="700" class="box-text">historical click-rate evidence</text>
+
+  <text x="835" y="585" class="box-title">Temporal validation</text>
+  <text x="835" y="630" class="box-text">chronological validation</text>
+  <text x="835" y="665" class="box-text">population / personalised tests</text>
+  <text x="835" y="700" class="box-text">user-holdout assessment</text>
+
+  <text x="1195" y="585" class="box-title">Evaluation and reporting</text>
+  <text x="1195" y="630" class="box-text">Accuracy, macro F1, AUC-ROC</text>
+  <text x="1195" y="665" class="box-text">confusion matrix diagnostics</text>
+  <text x="1195" y="700" class="box-text">tables, figures, model files</text>
+
+  <!-- horizontal flow arrows -->
+  <line x1="355" y1="330" x2="420" y2="330" class="flow"/>
+  <text x="388" y="303" text-anchor="middle" class="label">event data</text>
+
+  <line x1="715" y1="330" x2="780" y2="330" class="flow"/>
+  <text x="748" y="303" text-anchor="middle" class="label">features</text>
+
+  <line x1="1075" y1="330" x2="1140" y2="330" class="flow"/>
+  <text x="1108" y="303" text-anchor="middle" class="label">probability</text>
+
+  <line x1="355" y1="640" x2="420" y2="640" class="flow"/>
+  <text x="388" y="613" text-anchor="middle" class="label">context data</text>
+
+  <line x1="715" y1="640" x2="780" y2="640" class="flow"/>
+  <text x="748" y="602" text-anchor="middle" class="label">priority</text>
+  <text x="748" y="619" text-anchor="middle" class="label">evidence</text>
+
+  <line x1="1075" y1="640" x2="1140" y2="640" class="flow"/>
+  <text x="1108" y="613" text-anchor="middle" class="label">metrics</text>
+
+  <!-- vertical arrows -->
+  <line x1="575" y1="430" x2="575" y2="520" class="flow"/>
+  <line x1="935" y1="430" x2="935" y2="520" class="flow"/>
+  <line x1="1315" y1="430" x2="1315" y2="520" class="flow"/>
+
+  <!-- feedback label -->
+  <rect x="610" y="820" width="420" height="56" rx="28" fill="#fff8f2" stroke="#f6c79f" stroke-width="2"/>
+  <text x="820" y="855" text-anchor="middle" class="feedback-text">
+    User response updates interaction-history features
+  </text>
+
+  <!-- feedback loop from evaluation to callout -->
+  <path d="M1315 740 L1315 810 Q1315 848 1277 848 L1050 848" class="feedback"/>
+
+  <!-- feedback loop from callout to context store -->
+  <path d="M590 848 L370 848 Q300 848 245 820 Q190 790 170 760 L150 735" class="feedback"/>
+
+</svg>
+
+
+
