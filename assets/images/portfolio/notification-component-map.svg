@@ -1,77 +1,116 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
-  <title id="title">Component interaction map for a context-aware notification system</title>
-  <desc id="desc">A left-to-right component map showing inputs, processing modules, outputs and the feedback path for notification decisions.</desc>
-  <rect width="960" height="540" fill="#f7fbfc"/>
-  <rect x="48" y="42" width="864" height="456" rx="16" fill="#ffffff" stroke="#d8e3ea" stroke-width="2"/>
-
-  <g font-family="Segoe UI, Arial, sans-serif">
-    <text x="82" y="84" fill="#08233f" font-size="22" font-weight="900">Component interaction map</text>
-    <text x="82" y="108" fill="#50657a" font-size="12" font-weight="700">How notification evidence moves from raw signals to score, decision and report output.</text>
-  </g>
-
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">
-    <rect x="82" y="150" width="172" height="228" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
-    <text x="113" y="180" fill="#08233f" font-size="14" font-weight="900">Data Sources</text>
-    <rect x="108" y="208" width="120" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="140" y="230" fill="#102033">Events</text>
-    <rect x="108" y="271" width="120" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="137" y="293" fill="#102033">Context</text>
-    <rect x="108" y="334" width="120" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="138" y="356" fill="#102033">History</text>
-
-    <rect x="332" y="130" width="330" height="300" rx="12" fill="#ffffff" stroke="#c9d8e2"/>
-    <text x="362" y="160" fill="#08233f" font-size="14" font-weight="900">Processing Modules</text>
-    <rect x="360" y="194" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="391" y="222" fill="#102033">Validate</text>
-    <rect x="520" y="194" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="557" y="222" fill="#102033">Encode</text>
-    <rect x="360" y="290" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="403" y="318" fill="#102033">Model</text>
-    <rect x="520" y="290" width="126" height="46" rx="7" fill="#eef5f7" stroke="#d8e3ea"/>
-    <text x="556" y="318" fill="#102033">Priority</text>
-    <rect x="440" y="368" width="126" height="46" rx="7" fill="#08233f"/>
-    <text x="483" y="396" fill="#ffffff">Fusion</text>
-
-    <rect x="730" y="150" width="148" height="228" rx="12" fill="#eef5f7" stroke="#c9d8e2"/>
-    <text x="771" y="180" fill="#08233f" font-size="14" font-weight="900">Outputs</text>
-    <rect x="755" y="208" width="98" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="788" y="230" fill="#102033">Score</text>
-    <rect x="755" y="271" width="98" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="781" y="293" fill="#102033">Decision</text>
-    <rect x="755" y="334" width="98" height="34" rx="7" fill="#ffffff" stroke="#d8e3ea"/>
-    <text x="789" y="356" fill="#102033">Report</text>
-  </g>
-
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+  <title id="title">Expanded subsystem view for notification receptivity prediction</title>
+  <desc id="desc">Seven cooperating subsystems for data ingestion, feature engineering, prediction, priority modelling, validation, scheduling and evaluation.</desc>
   <defs>
-    <marker id="smallArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <filter id="softShadow" x="-8%" y="-10%" width="116%" height="128%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#08233f" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M0 0L10 5L0 10Z" fill="#0e9bb0"/>
     </marker>
-    <marker id="orangeArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto">
       <path d="M0 0L10 5L0 10Z" fill="#f28f45"/>
     </marker>
   </defs>
 
-  <g stroke="#0e9bb0" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#smallArrow)">
-    <path d="M228 225H354"/>
-    <path d="M228 288H328Q344 288 344 248Q344 217 354 217"/>
-    <path d="M228 351H328Q344 351 344 313H354"/>
-    <path d="M486 217H514"/>
-    <path d="M423 240V284"/>
-    <path d="M583 240V284"/>
-    <path d="M486 313H514"/>
-    <path d="M423 336V352Q423 391 434 391"/>
-    <path d="M583 336V352Q583 391 572 391"/>
-    <path d="M646 217H749"/>
-    <path d="M646 313H700Q720 313 720 288H749"/>
-    <path d="M566 391H704Q720 391 720 351H749"/>
+  <rect width="1400" height="860" fill="#f7fbfc"/>
+  <rect x="42" y="36" width="1316" height="788" rx="24" fill="#ffffff" stroke="#d8e3ea" stroke-width="2"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="82" y="88" fill="#08233f" font-size="30" font-weight="900">Expanded subsystem view</text>
+    <text x="82" y="118" fill="#50657a" font-size="15" font-weight="700">Verified from the project methodology: seven cooperating subsystems from notification arrival to delivery decision and evaluation.</text>
   </g>
 
-  <g font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="800">
-    <rect x="388" y="450" width="226" height="28" rx="14" fill="#fff5ec" stroke="#f5c79d"/>
-    <text x="431" y="468" fill="#6e4b2c">Feedback history update</text>
+  <g font-family="Segoe UI, Arial, sans-serif" filter="url(#softShadow)">
+    <rect x="88" y="188" width="226" height="164" rx="16" fill="#eef5f7" stroke="#c9d8e2"/>
+    <rect x="88" y="440" width="226" height="164" rx="16" fill="#eef5f7" stroke="#c9d8e2"/>
+    <rect x="386" y="188" width="226" height="164" rx="16" fill="#ffffff" stroke="#c9d8e2"/>
+    <rect x="386" y="440" width="226" height="164" rx="16" fill="#ffffff" stroke="#c9d8e2"/>
+    <rect x="684" y="188" width="226" height="164" rx="16" fill="#ffffff" stroke="#c9d8e2"/>
+    <rect x="684" y="440" width="226" height="164" rx="16" fill="#ffffff" stroke="#c9d8e2"/>
+    <rect x="982" y="188" width="250" height="164" rx="16" fill="#eef5f7" stroke="#c9d8e2"/>
+    <rect x="982" y="440" width="250" height="164" rx="16" fill="#eef5f7" stroke="#c9d8e2"/>
   </g>
-  <g stroke="#f28f45" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#orangeArrow)">
-    <path d="M804 368C746 438 652 462 616 462"/>
-    <path d="M388 462C288 458 205 424 166 377"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g font-size="15" font-weight="900" fill="#08233f">
+      <text x="120" y="226">Data ingestion</text>
+      <text x="120" y="478">Context signal store</text>
+      <text x="418" y="226">Feature engineering</text>
+      <text x="418" y="478">Priority modelling</text>
+      <text x="716" y="226">Interruptibility prediction</text>
+      <text x="716" y="478">Temporal validation</text>
+      <text x="1014" y="226">Decision fusion and scheduling</text>
+      <text x="1014" y="478">Evaluation and reporting</text>
+    </g>
+
+    <g font-size="12" font-weight="800" fill="#102033">
+      <text x="120" y="262">Notification metadata</text>
+      <text x="120" y="286">app source, category</text>
+      <text x="120" y="310">timestamp, urgency</text>
+
+      <text x="120" y="514">Temporal and spatial state</text>
+      <text x="120" y="538">screen, activity, movement</text>
+      <text x="120" y="562">recent counts, click history</text>
+
+      <text x="418" y="262">Leakage-safe selection</text>
+      <text x="418" y="286">temporal aggregates</text>
+      <text x="418" y="310">encoding and scaling</text>
+
+      <text x="418" y="514">Urgency and developer priority</text>
+      <text x="418" y="538">app/content category</text>
+      <text x="418" y="562">historical click-rate evidence</text>
+
+      <text x="716" y="262">Random Forest, Extra Trees</text>
+      <text x="716" y="286">XGBoost and LightGBM</text>
+      <text x="716" y="310">probability-average ensemble</text>
+
+      <text x="716" y="514">Random and chronological splits</text>
+      <text x="716" y="538">population and personalised tests</text>
+      <text x="716" y="562">user-holdout assessment</text>
+
+      <text x="1014" y="262">Receptivity probability</text>
+      <text x="1014" y="286">priority-aware delivery policy</text>
+      <text x="1014" y="310">deliver, defer or batch</text>
+
+      <text x="1014" y="514">Accuracy, macro F1, AUC-ROC</text>
+      <text x="1014" y="538">confusion matrix diagnostics</text>
+      <text x="1014" y="562">tables, figures and model files</text>
+    </g>
+
+    <g font-size="11" font-weight="900">
+      <rect x="120" y="150" width="156" height="24" rx="12" fill="#08233f"/>
+      <text x="140" y="166" fill="#ffffff">incoming event</text>
+      <rect x="1014" y="150" width="168" height="24" rx="12" fill="#0e9bb0"/>
+      <text x="1034" y="166" fill="#ffffff">delivery outcome</text>
+      <rect x="512" y="654" width="376" height="42" rx="21" fill="#fff7ef" stroke="#f4c79e"/>
+      <text x="556" y="681" fill="#6e4b2c">User response updates interaction-history features</text>
+    </g>
+  </g>
+
+  <g stroke="#0e9bb0" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowTeal)">
+    <path d="M314 270H378"/>
+    <path d="M314 522H378"/>
+    <path d="M612 270H676"/>
+    <path d="M612 522H676"/>
+    <path d="M910 270H974"/>
+    <path d="M910 522H974"/>
+    <path d="M499 352V396Q499 428 499 432"/>
+    <path d="M797 352V396Q797 428 797 432"/>
+    <path d="M1107 352V432"/>
+  </g>
+
+  <g stroke="#f28f45" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowOrange)">
+    <path d="M982 674H896"/>
+    <path d="M504 674H386Q290 674 232 612"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="800" fill="#50657a">
+    <text x="340" y="254">event data</text>
+    <text x="338" y="506">context data</text>
+    <text x="638" y="254">features</text>
+    <text x="633" y="506">priority evidence</text>
+    <text x="934" y="254">probability</text>
+    <text x="932" y="506">metrics</text>
   </g>
 </svg>

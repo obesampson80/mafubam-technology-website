@@ -254,10 +254,9 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Reason: Corrected the subsystem diagram after visual review showed unclear connector endpoints.
 - Changes: Added arrow markers, routed each connector to a visible target, aligned the fusion-to-report line, and labelled the feedback history loop.
 - QA: SVG XML validation passed and `portfolio-technical-diagrams.html` was rendered through the local Edge screenshot workflow.
-## 13. Component Map PNG Export
+## 13. Component Map Redraw Verification
 
 - Source: `assets/images/portfolio/notification-component-map.svg`
-- Export: `assets/images/portfolio/notification-component-map.png`
-- Reason: Use a high-resolution raster version on the live case-study page for more consistent browser display while retaining SVG as the editable master.
-- Render size: 1920 x 1080.
-
+- Review renders: generated under ignored `docs/ui-screenshots/svg-review/` paths only.
+- Reason: PNG renders are used only to inspect SVG quality during QA. The live website uses the SVG asset.
+- Verification source: checked against the project methodology sections describing the seven cooperating subsystems.
