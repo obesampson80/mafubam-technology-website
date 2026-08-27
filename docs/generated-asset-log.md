@@ -335,4 +335,11 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Reason: Fixed long SVG text labels that could overflow their cards when rendered in page thumbnails.
 - Design correction: split long single-line labels into explicit multi-line SVG text blocks and adjusted the workflow output panel size and connector endpoint.
 - QA method: validated affected SVGs as XML, rendered each affected SVG to PNG under ignored `docs/ui-screenshots/svg-review/data-analysis-overflow-fix/`, and rendered the full HTML page successfully.
+## 24. Research Prototype Case Study Implementation
+
+- Live page: `portfolio-research-prototype.html`
+- Live assets: `prototype-case.svg`, `prototype-workflow.svg`, `prototype-communication-evidence.svg`, `prototype-report-exports.svg`
+- Source basis: reviewed a real local LoRaWAN certificate-revocation simulator project with React/Vite frontend, Flask API, scenario controls, certificate/device registries, communication attempts, event logs, summary views and CSV exports.
+- Design correction: replaced the generic prototype template with a specific public-safe case study covering brief, challenge, workflow, interface evidence and outcome.
+- QA method: validated all new/revised SVGs as XML, scanned page/assets for private project names and local paths, rendered each SVG to PNG under ignored `docs/ui-screenshots/svg-review/prototype-case-study-pass/`, rendered the prototype case-study page, and rendered the portfolio index page successfully.
 

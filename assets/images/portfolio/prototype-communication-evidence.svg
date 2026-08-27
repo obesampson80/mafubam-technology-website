@@ -1,0 +1,30 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">LoRaWAN communication evidence screen</title>
+  <desc id="desc">A professional communication evidence view showing source device, destination, certificate status, revocation result and protocol console.</desc>
+  <defs><style>
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+    .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+    .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+    .mono { font-family: Consolas, monospace; font-size: 12px; font-weight: 700; fill: #e8f7fb; }
+    .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+    .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+    .allowed { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.5; }
+    .blocked { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.5; }
+    .teal { fill: #0e9caf; } .orange { fill: #f97316; }
+  </style></defs>
+  <rect width="960" height="540" fill="#ffffff"/>
+  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
+  <text x="72" y="82" class="title">Communication Evidence</text>
+  <rect x="72" y="124" width="250" height="300" rx="4" class="card"/>
+  <text x="102" y="162" class="head">Live attempt</text>
+  <text x="102" y="206" class="copy">Source: SENSOR-004</text><text x="102" y="230" class="copy">Destination: GATEWAY-001</text><text x="102" y="254" class="copy">Payload: 18 bytes</text><text x="102" y="278" class="copy">Radio: SF10</text>
+  <rect x="102" y="326" width="150" height="34" rx="4" class="teal"/><text x="128" y="348" class="copy" fill="#ffffff">Run attempt</text>
+  <rect x="360" y="124" width="250" height="300" rx="4" fill="#0b1f35"/>
+  <text x="390" y="162" class="mono">Protocol console</text>
+  <text x="390" y="208" class="mono">[source] 10.0.0.14</text><text x="390" y="238" class="mono">[cert] CERT-0017</text><text x="390" y="268" class="mono">[request] 10 bytes</text><text x="390" y="298" class="mono">[status] REVOKED</text><text x="390" y="328" class="mono">[constraint] CERT</text><text x="390" y="358" class="mono">[result] BLOCKED</text>
+  <rect x="648" y="124" width="240" height="300" rx="4" class="blocked"/>
+  <text x="678" y="162" class="head">Latest evidence</text>
+  <text x="678" y="214" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#9a3412">BLOCKED</text>
+  <text x="678" y="258" class="copy">Certificate: revoked</text><text x="678" y="282" class="copy">Handshake: denied</text><text x="678" y="306" class="copy">Cache: hit</text><text x="678" y="330" class="copy">Total bytes: 47</text><text x="678" y="354" class="copy">Energy: tracked</text>
+  <text x="72" y="472" class="copy">The screen links the simulator action to a traceable protocol decision.</text>
+</svg>

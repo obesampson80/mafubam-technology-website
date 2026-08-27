@@ -1,2 +1,70 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"><rect width="960" height="540" fill="#f7fbfc"/><rect x="32" y="32" width="896" height="476" rx="18" fill="#ffffff" stroke="#d8e3ea"/><rect x="64" y="72" width="180" height="396" rx="12" fill="#08233f"/><circle cx="100" cy="112" r="12" fill="#2ec4d6"/><circle cx="100" cy="154" r="12" fill="#f6a15e"/><circle cx="100" cy="196" r="12" fill="#ffffff" opacity=".85"/><rect x="286" y="78" width="590" height="64" rx="12" fill="#eef5f7"/><rect x="314" y="102" width="180" height="12" rx="6" fill="#08233f"/><rect x="314" y="124" width="116" height="8" rx="4" fill="#526173" opacity=".5"/><rect x="300" y="176" width="240" height="266" rx="24" fill="#08233f"/><rect x="324" y="210" width="192" height="184" rx="12" fill="#ffffff"/><rect x="348" y="234" width="86" height="12" rx="6" fill="#0e9bb0"/><rect x="348" y="266" width="144" height="10" rx="5" fill="#d8e3ea"/><rect x="348" y="292" width="114" height="10" rx="5" fill="#d8e3ea"/><rect x="348" y="334" width="78" height="34" rx="8" fill="#21b8d0"/><rect x="572" y="184" width="278" height="250" rx="16" fill="#eef5f7"/><rect x="604" y="222" width="214" height="22" rx="11" fill="#08233f"/><rect x="604" y="276" width="72" height="72" rx="12" fill="#fff"/><rect x="698" y="276" width="120" height="18" rx="9" fill="#0e9bb0"/><rect x="698" y="310" width="92" height="12" rx="6" fill="#526173" opacity=".4"/><rect x="604" y="378" width="214" height="18" rx="9" fill="#f6a15e" opacity=".75"/></svg>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">LoRaWAN certificate revocation simulator dashboard</title>
+  <desc id="desc">A professional dashboard recreation showing scenario inputs, revocation rules, certificate and device counts, communication result, protocol console and latest evidence.</desc>
+  <defs>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .light { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #e8f7fb; }
+      .shell { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .nav { fill: #0b1f35; }
+      .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
+      .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.4; }
+      .allowed { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.5; }
+      .blocked { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.5; }
+      .teal { fill: #0e9caf; }
+      .orange { fill: #f97316; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+    </style>
+  </defs>
 
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <rect x="34" y="30" width="1132" height="620" rx="5" class="shell"/>
+  <rect x="34" y="30" width="92" height="620" rx="5" class="nav"/>
+  <rect x="62" y="66" width="36" height="36" rx="4" fill="#e8f7fb"/>
+  <text x="74" y="90" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#0b1f35">M</text>
+  <g fill="#e8f7fb" opacity="0.88"><rect x="68" y="150" width="24" height="6" rx="3"/><rect x="68" y="204" width="24" height="6" rx="3"/><rect x="68" y="258" width="24" height="6" rx="3"/><rect x="68" y="312" width="24" height="6" rx="3"/><rect x="68" y="366" width="24" height="6" rx="3"/></g>
+
+  <text x="164" y="78" class="title">LoRaWAN Certificate Revocation Control</text>
+  <text x="164" y="106" class="small">Public-safe recreation of the research simulator interface and evidence workflow.</text>
+
+  <rect x="164" y="142" width="214" height="92" rx="4" class="soft"/>
+  <text x="188" y="174" class="copy">CERTIFICATES</text><text x="188" y="210" class="title">20</text>
+  <rect x="402" y="142" width="214" height="92" rx="4" class="soft"/>
+  <text x="426" y="174" class="copy">DEVICES</text><text x="426" y="210" class="title">12</text>
+  <rect x="640" y="142" width="214" height="92" rx="4" class="soft"/>
+  <text x="664" y="174" class="copy">EVENTS</text><text x="664" y="210" class="title">20</text>
+  <rect x="878" y="142" width="230" height="92" rx="4" class="blocked"/>
+  <text x="902" y="174" class="copy">LATEST RESULT</text><text x="902" y="210" class="title">BLOCKED</text>
+
+  <rect x="164" y="270" width="296" height="244" rx="4" class="card"/>
+  <text x="190" y="308" class="head">Scenario Inputs</text>
+  <text x="190" y="344" class="copy">Payload bytes</text><rect x="306" y="334" width="104" height="10" rx="5" class="teal"/>
+  <text x="190" y="384" class="copy">Cache TTL</text><rect x="306" y="374" width="154" height="10" rx="5" class="teal"/>
+  <text x="190" y="424" class="copy">Expired certificates</text><rect x="306" y="414" width="70" height="10" rx="5" class="orange"/>
+  <text x="190" y="464" class="copy">Compromised keys</text><rect x="306" y="454" width="84" height="10" rx="5" class="orange"/>
+
+  <rect x="492" y="270" width="296" height="244" rx="4" class="card"/>
+  <text x="518" y="308" class="head">Protocol Console</text>
+  <rect x="518" y="334" width="238" height="138" rx="4" fill="#0b1f35"/>
+  <text x="540" y="362" class="light">[source] SENSOR-004</text>
+  <text x="540" y="390" class="light">[certificate] CERT-0017</text>
+  <text x="540" y="418" class="light">[responder-status] REVOKED</text>
+  <text x="540" y="446" class="light">[result] BLOCKED</text>
+
+  <rect x="820" y="270" width="288" height="244" rx="4" class="card"/>
+  <text x="846" y="308" class="head">Latest Evidence</text>
+  <rect x="846" y="334" width="118" height="34" rx="4" class="blocked"/>
+  <text x="872" y="356" class="copy">BLOCKED</text>
+  <text x="846" y="402" class="copy">Reason: revoked certificate</text>
+  <text x="846" y="430" class="copy">Path: revocation check</text>
+  <text x="846" y="458" class="copy">Bytes: 47 total</text>
+  <text x="846" y="486" class="copy">Radio: SF10 / cache hit</text>
+
+  <rect x="164" y="544" width="944" height="62" rx="4" fill="#f8fafc" stroke="#d7e2ea"/>
+  <text x="190" y="580" class="head">Research purpose</text>
+  <text x="340" y="568" class="copy">The simulator turns a certificate-revocation method into visible communication evidence,</text>
+  <text x="340" y="590" class="copy">making allowed and blocked LoRaWAN events easy to inspect during review.</text>
+</svg>
