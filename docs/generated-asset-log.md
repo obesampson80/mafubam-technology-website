@@ -235,3 +235,16 @@ Removed asset:
 Reason:
 
 The generic architecture thumbnail was replaced by the specific notification-system architecture case-study visual set.
+
+## 11. Technical Diagram SVG Readability Pass
+
+Updated assets:
+
+- `mafubam-website/assets/images/portfolio/notification-architecture-case.svg`
+- `mafubam-website/assets/images/portfolio/notification-component-map.svg`
+- `mafubam-website/assets/images/portfolio/notification-sequence-flow.svg`
+- `mafubam-website/assets/images/portfolio/notification-class-model.svg`
+
+Improvement:
+
+Rendered the SVGs to PNG for review, then revised them to be more formal and diagram-like: clearer node hierarchy, fewer decorative elements, larger labels, stronger subsystem boundaries and cleaner arrows for thumbnail and case-study viewing.

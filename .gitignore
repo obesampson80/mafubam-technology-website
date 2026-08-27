@@ -24,3 +24,7 @@ build/
 !assets/images/**/*.jpeg
 !assets/images/**/*.webp
 !assets/images/**/*.avif
+
+# Local rendered SVG review artefacts
+docs/ui-screenshots/svg-review/
+
