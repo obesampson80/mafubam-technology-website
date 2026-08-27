@@ -307,5 +307,11 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Reason: Simplified the architecture view to a professional input-system-output diagram and removed research/report outputs from the main architecture output.
 - Design correction: retained inputs, system boundary, input gateway, decision engine, delivery controller and the operational `Delivery decision` output only.
 - QA method: rendered SVG to PNG under ignored `docs/ui-screenshots/svg-review/architecture-iso-pass/`, scanned for removed evaluation/report terms, and rendered the full HTML page successfully.
+## 20. Technical Diagram Set Final Alignment
 
+- Live assets: `expanded_subsystem_view.svg`, `notification-sequence-flow.svg`, `notification-class-model.svg`
+- Page: `portfolio-technical-diagrams.html`
+- Reason: Brought the remaining case-study diagrams up to the same standard as the corrected architecture diagram.
+- Design correction: removed evaluation/report outputs from the operational diagrams, simplified the flows, aligned labels to input, context preparation, decision scoring, delivery control and delivery decision.
+- QA method: validated all SVGs as XML, scanned the SVG/page text for unwanted evaluation/report/private wording, rendered each SVG to PNG under ignored `docs/ui-screenshots/svg-review/technical-page-final-pass/`, and rendered the full HTML page successfully.
 

@@ -1,88 +1,75 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="svg-title svg-desc">
-  <title id="svg-title">Simplified subsystem flow for notification receptivity prediction</title>
-  <desc id="svg-desc">A clean website diagram showing the verified flow from notification evidence to feature preparation, prediction, validation and scheduling output.</desc>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Subsystem process view for context-aware notification delivery</title>
+  <desc id="desc">A clean process diagram showing how notification evidence becomes a delivery decision through intake, context preparation, decision scoring and delivery control.</desc>
   <defs>
-    <filter id="soft-shadow" x="-12%" y="-16%" width="124%" height="136%">
-      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#08233f" flood-opacity="0.10"/>
-    </filter>
-    <marker id="arrow-teal" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#0c9bb2"/>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
     </marker>
-    <marker id="arrow-orange" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#f28a35"/>
+    <marker id="feedback-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#b45309"/>
     </marker>
     <style>
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 800; fill: #08233f; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 650; fill: #50657a; }
-      .card-title { font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: 800; fill: #08233f; }
-      .card-copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 650; fill: #50657a; }
-      .badge { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800; fill: #0b2a46; }
-      .note { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 750; fill: #7a4a20; }
-      .flow { stroke: #0c9bb2; stroke-width: 4; fill: none; stroke-linecap: round; marker-end: url(#arrow-teal); }
-      .feedback { stroke: #f28a35; stroke-width: 4; fill: none; stroke-linecap: round; stroke-dasharray: 8 8; marker-end: url(#arrow-orange); }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; fill: #475569; }
+      .stage-title { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .stage-copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .stage { fill: #ffffff; stroke: #334155; stroke-width: 1.7; }
+      .input { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.7; }
+      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.8; }
+      .flow { stroke: #0f172a; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .feedback { stroke: #b45309; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 8 7; marker-end: url(#feedback-arrow); }
     </style>
   </defs>
 
-  <rect width="1200" height="520" fill="#f7fbfc"/>
-  <rect x="22" y="20" width="1156" height="480" rx="24" fill="#ffffff" stroke="#d7e4eb" stroke-width="2"/>
+  <rect width="1200" height="520" fill="#ffffff"/>
+  <rect x="34" y="30" width="1132" height="456" rx="5" class="panel"/>
+  <text x="64" y="76" class="title">Subsystem Process View</text>
+  <text x="64" y="104" class="subtitle">How notification evidence is transformed into an operational delivery decision.</text>
 
-  <text x="58" y="72" class="title">Subsystem flow summary</text>
-  <text x="58" y="100" class="subtitle">Web version of the verified project architecture: intake, feature preparation, prediction, validation and scheduling evidence.</text>
+  <rect x="72" y="176" width="176" height="120" rx="4" class="input"/>
+  <text x="102" y="212" class="stage-title">Evidence intake</text>
+  <text x="102" y="240" class="stage-copy">notification request</text>
+  <text x="102" y="262" class="stage-copy">context signals</text>
+  <text x="102" y="284" class="stage-copy">interaction history</text>
 
-  <g filter="url(#soft-shadow)">
-    <rect x="58" y="162" width="178" height="148" rx="16" fill="#edf6f8" stroke="#d2e2ea" stroke-width="2"/>
-    <rect x="285" y="162" width="178" height="148" rx="16" fill="#ffffff" stroke="#d2e2ea" stroke-width="2"/>
-    <rect x="512" y="162" width="178" height="148" rx="16" fill="#ffffff" stroke="#d2e2ea" stroke-width="2"/>
-    <rect x="739" y="162" width="178" height="148" rx="16" fill="#ffffff" stroke="#d2e2ea" stroke-width="2"/>
-    <rect x="966" y="162" width="178" height="148" rx="16" fill="#edf6f8" stroke="#d2e2ea" stroke-width="2"/>
-  </g>
+  <rect x="306" y="176" width="176" height="120" rx="4" class="stage"/>
+  <text x="336" y="212" class="stage-title">Context preparation</text>
+  <text x="336" y="240" class="stage-copy">validate records</text>
+  <text x="336" y="262" class="stage-copy">normalise values</text>
+  <text x="336" y="284" class="stage-copy">build feature set</text>
 
-  <g>
-    <text x="86" y="204" class="card-title">1. Intake</text>
-    <text x="86" y="235" class="card-copy">Notification metadata</text>
-    <text x="86" y="257" class="card-copy">Context signals</text>
-    <text x="86" y="279" class="card-copy">Interaction history</text>
+  <rect x="540" y="176" width="176" height="120" rx="4" class="stage"/>
+  <text x="570" y="212" class="stage-title">Decision scoring</text>
+  <text x="570" y="240" class="stage-copy">estimate receptivity</text>
+  <text x="570" y="262" class="stage-copy">apply priority rules</text>
+  <text x="570" y="284" class="stage-copy">rank delivery options</text>
 
-    <text x="313" y="204" class="card-title">2. Features</text>
-    <text x="313" y="235" class="card-copy">Leakage-safe selection</text>
-    <text x="313" y="257" class="card-copy">Encoding and scaling</text>
-    <text x="313" y="279" class="card-copy">Priority predictors</text>
+  <rect x="774" y="176" width="176" height="120" rx="4" class="stage"/>
+  <text x="804" y="212" class="stage-title">Delivery control</text>
+  <text x="804" y="240" class="stage-copy">select action</text>
+  <text x="804" y="262" class="stage-copy">set timing window</text>
+  <text x="804" y="284" class="stage-copy">record response state</text>
 
-    <text x="540" y="204" class="card-title">3. Predict</text>
-    <text x="540" y="235" class="card-copy">Tree-based models</text>
-    <text x="540" y="257" class="card-copy">Receptivity probability</text>
-    <text x="540" y="279" class="card-copy">Ensemble comparison</text>
+  <rect x="1010" y="176" width="134" height="120" rx="4" class="output"/>
+  <text x="1038" y="212" class="stage-title">Output</text>
+  <text x="1038" y="240" class="stage-copy">deliver now</text>
+  <text x="1038" y="262" class="stage-copy">defer</text>
+  <text x="1038" y="284" class="stage-copy">batch</text>
 
-    <text x="767" y="204" class="card-title">4. Validate</text>
-    <text x="767" y="235" class="card-copy">Chronological testing</text>
-    <text x="767" y="257" class="card-copy">Personalised checks</text>
-    <text x="767" y="279" class="card-copy">User-holdout results</text>
+  <path d="M248 236H298" class="flow"/>
+  <path d="M482 236H532" class="flow"/>
+  <path d="M716 236H766" class="flow"/>
+  <path d="M950 236H1002" class="flow"/>
 
-    <text x="994" y="204" class="card-title">5. Schedule</text>
-    <text x="994" y="235" class="card-copy">Deliver, defer or batch</text>
-    <text x="994" y="257" class="card-copy">Metrics and report tables</text>
-    <text x="994" y="279" class="card-copy">Reusable evidence</text>
-  </g>
+  <rect x="322" y="354" width="172" height="36" rx="3" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="350" y="377" class="label">validated context features</text>
+  <rect x="590" y="354" width="150" height="36" rx="3" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="618" y="377" class="label">receptivity score</text>
+  <rect x="832" y="354" width="178" height="36" rx="3" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="860" y="377" class="label">selected delivery policy</text>
 
-  <g>
-    <path d="M236 236H276" class="flow"/>
-    <path d="M463 236H503" class="flow"/>
-    <path d="M690 236H730" class="flow"/>
-    <path d="M917 236H957" class="flow"/>
-  </g>
-
-  <g>
-    <rect x="112" y="356" width="186" height="38" rx="19" fill="#edf6f8" stroke="#d2e2ea"/>
-    <text x="205" y="380" text-anchor="middle" class="badge">time, location, behaviour</text>
-
-    <rect x="386" y="356" width="186" height="38" rx="19" fill="#edf6f8" stroke="#d2e2ea"/>
-    <text x="479" y="380" text-anchor="middle" class="badge">urgency and priority</text>
-
-    <rect x="660" y="356" width="186" height="38" rx="19" fill="#edf6f8" stroke="#d2e2ea"/>
-    <text x="753" y="380" text-anchor="middle" class="badge">macro F1 and AUC-ROC</text>
-  </g>
-
-  <path d="M1060 310C996 442 312 442 190 404" class="feedback"/>
-  <text x="522" y="448" class="note">User response updates future interaction-history evidence</text>
+  <path d="M1078 296V438H160V304" class="feedback"/>
+  <text x="418" y="464" class="label">Feedback from the user's response updates later interaction-history evidence.</text>
 </svg>
