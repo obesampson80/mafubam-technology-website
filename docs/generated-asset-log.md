@@ -292,4 +292,12 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Reason: Reviewed all SVGs used on the technical diagrams case-study page and corrected the weak figures for a consistent professional visual language.
 - Design correction: replaced inconsistent manual arrowheads and shallow figures with clean architecture, sequence and UML-style responsibility diagrams using fixed-size markers and readable labels.
 - QA method: rendered all four page SVGs to PNG under ignored `docs/ui-screenshots/svg-review/technical-page-set/`, then rendered the full HTML page successfully.
+## 18. Formal Architecture Diagram Correction
+
+- Live asset: `assets/images/portfolio/notification-architecture-case.svg`
+- Page: `portfolio-technical-diagrams.html`
+- Reason: Replaced the previous web-style architecture illustration with a more formal component-and-data-flow architecture view.
+- Source verification: checked against the project methodology sections for notification event, context signal, data ingestion/validation, feature engineering, priority-related features, interruptibility prediction, temporal validation, decision scheduling, feedback and evaluation.
+- Design correction: added explicit system boundary, external evidence sources, internal modules, system outputs, labelled responsibilities and dashed feedback path; removed decorative card styling.
+- QA method: rendered the SVG to PNG under ignored `docs/ui-screenshots/svg-review/architecture-formal-check/`, scanned for private placeholders, and rendered the full HTML page successfully.
 
