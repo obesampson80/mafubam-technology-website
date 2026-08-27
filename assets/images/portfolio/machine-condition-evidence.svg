@@ -49,12 +49,14 @@
 
   <rect x="356" y="370" width="250" height="92" rx="4" class="card"/>
   <text x="382" y="402" class="head">Reviewer check</text>
-  <text x="382" y="430" class="copy">Signal and spectrum agree</text>
-  <text x="382" y="452" class="copy">No single metric shown alone</text>
+  <text x="382" y="428" class="copy">Signal and spectrum agree</text>
+  <text x="382" y="450" class="copy">No single metric shown alone</text>
 
   <rect x="640" y="370" width="248" height="92" rx="4" class="risk"/>
   <text x="666" y="402" class="head">Prediction</text>
   <text x="666" y="434" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#9a3412">Fault risk likely</text>
-  <text x="666" y="456" class="copy">Use as decision-support evidence</text>
+  <text x="666" y="454" class="copy">Use as decision-support</text>
+  <text x="666" y="474" class="copy">evidence</text>
 </svg>
+
 

@@ -68,5 +68,7 @@
 
   <rect x="164" y="544" width="944" height="62" rx="4" fill="#f8fafc" stroke="#d7e2ea"/>
   <text x="190" y="580" class="head">Reviewer note</text>
-  <text x="320" y="580" class="copy">The dashboard connects raw signal behaviour, feature evidence and model output instead of showing isolated notebook screenshots.</text>
+  <text x="320" y="568" class="copy">The dashboard connects raw signal behaviour, feature evidence and model output.</text>
+  <text x="320" y="590" class="copy">It avoids relying on isolated notebook screenshots.</text>
 </svg>
+

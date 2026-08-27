@@ -328,4 +328,11 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Reason: Reviewed the data-analysis case-study visuals against the improved technical-diagram standard and replaced generic placeholder-style figures with clearer professional visuals.
 - Design correction: rebuilt the dashboard, workflow, prediction evidence and model-validation visuals with consistent typography, structured panels, meaningful analytical labels and clearer result interpretation.
 - QA method: validated all SVGs as XML, scanned the SVG/page text for private or generic placeholder wording, rendered each SVG to PNG under ignored `docs/ui-screenshots/svg-review/data-analysis-final-pass/`, and rendered the full HTML page successfully.
+## 23. Data Analysis SVG Text Wrap Pass
+
+- Live assets: `machine-condition-dashboard.svg`, `machine-condition-report-flow.svg`, `machine-condition-evidence.svg`
+- Page: `portfolio-data-analysis.html`
+- Reason: Fixed long SVG text labels that could overflow their cards when rendered in page thumbnails.
+- Design correction: split long single-line labels into explicit multi-line SVG text blocks and adjusted the workflow output panel size and connector endpoint.
+- QA method: validated affected SVGs as XML, rendered each affected SVG to PNG under ignored `docs/ui-screenshots/svg-review/data-analysis-overflow-fix/`, and rendered the full HTML page successfully.
 
