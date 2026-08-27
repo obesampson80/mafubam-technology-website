@@ -1,103 +1,84 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
-  <title id="title">Formal system architecture for context-aware notification management</title>
-  <desc id="desc">A formal architecture diagram with external evidence sources, a system boundary, internal processing components, scheduling output, evaluation output and feedback update.</desc>
+  <title id="title">Input-system-output architecture for context-aware notification management</title>
+  <desc id="desc">A professional architecture diagram showing notification inputs entering a context-aware management system and producing an operational notification delivery decision.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#1f2933"/>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
     </marker>
-    <marker id="feedback-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#8a4b18"/>
+    <marker id="feedback-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#b45309"/>
     </marker>
     <style>
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #111827; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; fill: #4b5563; }
-      .section { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #111827; }
-      .box-title { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #111827; }
-      .box-copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #4b5563; }
-      .legend { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; fill: #374151; }
-      .external { fill: #f9fafb; stroke: #6b7280; stroke-width: 1.8; }
-      .module { fill: #ffffff; stroke: #1f2933; stroke-width: 1.8; }
-      .support { fill: #f3f7f9; stroke: #374151; stroke-width: 1.7; }
-      .boundary { fill: none; stroke: #111827; stroke-width: 2.2; }
-      .flow { stroke: #1f2933; stroke-width: 2.4; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
-      .feedback { stroke: #8a4b18; stroke-width: 2.4; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 9 7; marker-end: url(#feedback-arrow); }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; fill: #475569; }
+      .section { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #0b1f35; }
+      .box-title { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
+      .box-copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
+      .panel { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.8; }
+      .system { fill: #ffffff; stroke: #0f172a; stroke-width: 2.2; }
+      .module { fill: #ffffff; stroke: #334155; stroke-width: 1.7; }
+      .accent { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.7; }
+      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.8; }
+      .flow { stroke: #0f172a; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .feedback { stroke: #b45309; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 8 7; marker-end: url(#feedback-arrow); }
     </style>
   </defs>
 
   <rect width="1200" height="680" fill="#ffffff"/>
-  <text x="58" y="54" class="title">Context-Aware Notification Management System Architecture</text>
-  <text x="58" y="82" class="subtitle">Formal component-and-data-flow view showing how notification evidence is processed into delivery and evaluation outputs.</text>
+  <text x="56" y="56" class="title">Context-Aware Notification Management System Architecture</text>
+  <text x="56" y="84" class="subtitle">Professional input-system-output view focused on operational notification delivery.</text>
 
-  <text x="74" y="128" class="section">External evidence sources</text>
-  <rect x="58" y="150" width="190" height="76" rx="3" class="external"/>
-  <text x="84" y="182" class="box-title">Notification event</text>
-  <text x="84" y="206" class="box-copy">source, category, time</text>
+  <rect x="56" y="132" width="244" height="392" rx="4" class="panel"/>
+  <text x="80" y="166" class="section">Inputs</text>
 
-  <rect x="58" y="276" width="190" height="86" rx="3" class="external"/>
-  <text x="84" y="308" class="box-title">Context signals</text>
-  <text x="84" y="332" class="box-copy">time, location, screen</text>
-  <text x="84" y="352" class="box-copy">activity, movement</text>
+  <rect x="84" y="202" width="188" height="64" rx="3" class="module"/>
+  <text x="112" y="230" class="box-title">Notification request</text>
+  <text x="112" y="250" class="box-copy">message, source, timestamp</text>
 
-  <rect x="58" y="414" width="190" height="86" rx="3" class="external"/>
-  <text x="84" y="446" class="box-title">Interaction history</text>
-  <text x="84" y="470" class="box-copy">recent notification counts</text>
-  <text x="84" y="490" class="box-copy">historical click rate</text>
+  <rect x="84" y="314" width="188" height="74" rx="3" class="module"/>
+  <text x="112" y="342" class="box-title">User context</text>
+  <text x="112" y="362" class="box-copy">time, location, activity</text>
 
-  <rect x="306" y="126" width="626" height="418" rx="4" class="boundary"/>
-  <text x="328" y="154" class="section">System boundary</text>
+  <rect x="84" y="436" width="188" height="64" rx="3" class="module"/>
+  <text x="112" y="464" class="box-title">Interaction history</text>
+  <text x="112" y="484" class="box-copy">recent response behaviour</text>
 
-  <rect x="348" y="192" width="190" height="92" rx="3" class="module"/>
-  <text x="374" y="226" class="box-title">Data ingestion</text>
-  <text x="374" y="250" class="box-copy">validate required fields</text>
-  <text x="374" y="270" class="box-copy">remove outcome leakage</text>
+  <rect x="372" y="120" width="490" height="416" rx="5" class="system"/>
+  <text x="400" y="156" class="section">Notification management system</text>
+  <text x="400" y="178" class="small">System boundary</text>
 
-  <rect x="590" y="192" width="190" height="92" rx="3" class="module"/>
-  <text x="616" y="226" class="box-title">Feature engineering</text>
-  <text x="616" y="250" class="box-copy">encode categorical signals</text>
-  <text x="616" y="270" class="box-copy">standardise numeric inputs</text>
+  <rect x="424" y="218" width="176" height="82" rx="4" class="accent"/>
+  <text x="456" y="248" class="box-title">Input gateway</text>
+  <text x="456" y="270" class="box-copy">validates records</text>
+  <text x="456" y="288" class="box-copy">normalises context</text>
 
-  <rect x="590" y="352" width="190" height="92" rx="3" class="module"/>
-  <text x="616" y="386" class="box-title">Priority features</text>
-  <text x="616" y="410" class="box-copy">urgency and app category</text>
-  <text x="616" y="430" class="box-copy">developer priority</text>
+  <rect x="640" y="218" width="176" height="82" rx="4" class="module"/>
+  <text x="672" y="248" class="box-title">Decision engine</text>
+  <text x="672" y="270" class="box-copy">scores receptivity</text>
+  <text x="672" y="288" class="box-copy">applies priority rules</text>
 
-  <rect x="348" y="352" width="190" height="92" rx="3" class="support"/>
-  <text x="374" y="386" class="box-title">Temporal validation</text>
-  <text x="374" y="410" class="box-copy">chronological split</text>
-  <text x="374" y="430" class="box-copy">user-holdout testing</text>
+  <rect x="640" y="384" width="176" height="82" rx="4" class="module"/>
+  <text x="668" y="414" class="box-title">Delivery controller</text>
+  <text x="668" y="436" class="box-copy">selects delivery action</text>
+  <text x="668" y="454" class="box-copy">updates scheduling state</text>
 
-  <rect x="832" y="192" width="190" height="92" rx="3" class="module"/>
-  <text x="858" y="226" class="box-title">Prediction model</text>
-  <text x="858" y="250" class="box-copy">tree-based classifiers</text>
-  <text x="858" y="270" class="box-copy">receptivity probability</text>
+  <rect x="930" y="210" width="214" height="180" rx="4" class="output"/>
+  <text x="966" y="246" class="section">Main System Output</text>
+  <text x="966" y="286" class="box-title">Delivery decision</text>
+  <text x="966" y="318" class="box-copy">deliver now</text>
+  <text x="966" y="342" class="box-copy">defer to suitable time</text>
+  <text x="966" y="366" class="box-copy">batch lower-priority alerts</text>
 
-  <rect x="832" y="352" width="190" height="92" rx="3" class="module"/>
-  <text x="858" y="386" class="box-title">Decision scheduler</text>
-  <text x="858" y="410" class="box-copy">combine probability</text>
-  <text x="858" y="430" class="box-copy">deliver, defer, batch</text>
+  <path d="M272 234H416" class="flow"/>
+  <path d="M272 351H332Q372 351 372 262H416" class="flow"/>
+  <path d="M272 468H332Q372 468 372 284H416" class="flow"/>
+  <path d="M600 259H632" class="flow"/>
+  <path d="M728 300V376" class="flow"/>
+  <path d="M816 425H884Q906 425 906 300H922" class="flow"/>
 
-  <text x="1012" y="128" class="section">System outputs</text>
-  <rect x="1000" y="196" width="150" height="78" rx="3" class="external"/>
-  <text x="1022" y="228" class="box-title">Delivery action</text>
-  <text x="1022" y="252" class="box-copy">notification policy</text>
-
-  <rect x="1000" y="370" width="150" height="88" rx="3" class="external"/>
-  <text x="1022" y="402" class="box-title">Evaluation output</text>
-  <text x="1022" y="426" class="box-copy">metrics, tables</text>
-  <text x="1022" y="446" class="box-copy">report figures</text>
-
-  <path d="M248 188H340" class="flow"/>
-  <path d="M248 319H292Q322 319 322 238H340" class="flow"/>
-  <path d="M248 457H292Q322 457 322 266H340" class="flow"/>
-  <path d="M538 238H582" class="flow"/>
-  <path d="M780 238H824" class="flow"/>
-  <path d="M780 398H824" class="flow"/>
-  <path d="M927 284V344" class="flow"/>
-  <path d="M1022 238H992" class="flow"/>
-  <path d="M1022 414H992" class="flow"/>
-  <path d="M538 398H582" class="flow"/>
-  <path d="M927 444V500H443V452" class="flow"/>
-
-  <path d="M1076 458V598H153V508" class="feedback"/>
-  <text x="370" y="626" class="legend">Dashed feedback path updates later interaction-history records.</text>
+  <path d="M1037 390V588H178V508" class="feedback"/>
+  <text x="382" y="624" class="small">Feedback from actual user response updates the interaction-history input for later decisions.</text>
 </svg>
+
+

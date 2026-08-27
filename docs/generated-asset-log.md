@@ -300,4 +300,12 @@ Rendered the SVGs to PNG for review, then revised them to be more formal and dia
 - Source verification: checked against the project methodology sections for notification event, context signal, data ingestion/validation, feature engineering, priority-related features, interruptibility prediction, temporal validation, decision scheduling, feedback and evaluation.
 - Design correction: added explicit system boundary, external evidence sources, internal modules, system outputs, labelled responsibilities and dashed feedback path; removed decorative card styling.
 - QA method: rendered the SVG to PNG under ignored `docs/ui-screenshots/svg-review/architecture-formal-check/`, scanned for private placeholders, and rendered the full HTML page successfully.
+## 19. Architecture Diagram Output Simplification
+
+- Live asset: `assets/images/portfolio/notification-architecture-case.svg`
+- Page: `portfolio-technical-diagrams.html`
+- Reason: Simplified the architecture view to a professional input-system-output diagram and removed research/report outputs from the main architecture output.
+- Design correction: retained inputs, system boundary, input gateway, decision engine, delivery controller and the operational `Delivery decision` output only.
+- QA method: rendered SVG to PNG under ignored `docs/ui-screenshots/svg-review/architecture-iso-pass/`, scanned for removed evaluation/report terms, and rendered the full HTML page successfully.
+
 
