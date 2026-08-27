@@ -1,72 +1,94 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
-  <title id="title">Notification management class responsibility model</title>
-  <desc id="desc">A clean UML-style responsibility diagram showing the classes involved in turning notification evidence into a delivery decision.</desc>
+  <title id="title">Notification management UML class model</title>
+  <desc id="desc">A UML-style class diagram with attributes and operations for the notification request, context snapshot, feature vector, decision engine, delivery controller and delivery decision.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
       <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
     </marker>
     <style>
       .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
-      .class { fill: #ffffff; stroke: #334155; stroke-width: 1.6; }
-      .entity { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.7; }
-      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.7; }
-      .head { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; fill: #0b1f35; }
-      .member { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
+      .class { fill: #ffffff; stroke: #334155; stroke-width: 1.5; }
+      .entity { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.6; }
+      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.6; }
+      .head { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #0b1f35; }
+      .member { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 600; fill: #475569; }
       .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
+      .rule { stroke: #cbd5e1; stroke-width: 1; }
+      .output-rule { stroke: #fed7aa; stroke-width: 1; }
       .rel { stroke: #0f172a; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
+      .assoc { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 700; fill: #64748b; }
     </style>
   </defs>
 
   <rect width="960" height="540" fill="#ffffff"/>
   <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
-  <text x="72" y="82" class="title">Class Responsibility Model</text>
+  <text x="72" y="82" class="title">UML Class Model</text>
 
-  <rect x="78" y="134" width="184" height="126" rx="4" class="entity"/>
-  <text x="106" y="166" class="head">NotificationRequest</text>
-  <line x1="78" y1="180" x2="262" y2="180" stroke="#cbd5e1"/>
-  <text x="106" y="206" class="member">source</text>
-  <text x="106" y="228" class="member">message type</text>
-  <text x="106" y="250" class="member">timestamp</text>
+  <rect x="72" y="126" width="216" height="150" rx="4" class="entity"/>
+  <text x="100" y="154" class="head">NotificationRequest</text>
+  <line x1="72" y1="166" x2="288" y2="166" class="rule"/>
+  <text x="100" y="190" class="member">+ requestId: String</text>
+  <text x="100" y="210" class="member">+ source: String</text>
+  <text x="100" y="230" class="member">+ priority: PriorityLevel</text>
+  <line x1="72" y1="242" x2="288" y2="242" class="rule"/>
+  <text x="100" y="264" class="member">+ isActionable(): Boolean</text>
 
-  <rect x="322" y="134" width="184" height="126" rx="4" class="entity"/>
-  <text x="350" y="166" class="head">ContextSnapshot</text>
-  <line x1="322" y1="180" x2="506" y2="180" stroke="#cbd5e1"/>
-  <text x="350" y="206" class="member">time window</text>
-  <text x="350" y="228" class="member">activity state</text>
-  <text x="350" y="250" class="member">recent history</text>
+  <rect x="372" y="126" width="216" height="150" rx="4" class="entity"/>
+  <text x="400" y="154" class="head">ContextSnapshot</text>
+  <line x1="372" y1="166" x2="588" y2="166" class="rule"/>
+  <text x="400" y="190" class="member">+ timeWindow: String</text>
+  <text x="400" y="210" class="member">+ activityState: String</text>
+  <text x="400" y="230" class="member">+ recentLoad: Integer</text>
+  <line x1="372" y1="242" x2="588" y2="242" class="rule"/>
+  <text x="400" y="264" class="member">+ summarise(): ContextData</text>
 
-  <rect x="566" y="134" width="184" height="126" rx="4" class="class"/>
-  <text x="594" y="166" class="head">FeatureBuilder</text>
-  <line x1="566" y1="180" x2="750" y2="180" stroke="#cbd5e1"/>
-  <text x="594" y="206" class="member">validate()</text>
-  <text x="594" y="228" class="member">normalise()</text>
-  <text x="594" y="250" class="member">buildVector()</text>
+  <rect x="672" y="126" width="216" height="150" rx="4" class="class"/>
+  <text x="700" y="154" class="head">FeatureVector</text>
+  <line x1="672" y1="166" x2="888" y2="166" class="rule"/>
+  <text x="700" y="190" class="member">+ contextScore: Decimal</text>
+  <text x="700" y="210" class="member">+ priorityScore: Decimal</text>
+  <text x="700" y="230" class="member">+ historyScore: Decimal</text>
+  <line x1="672" y1="242" x2="888" y2="242" class="rule"/>
+  <text x="700" y="264" class="member">+ fromInputs(): FeatureVector</text>
 
-  <rect x="200" y="340" width="184" height="126" rx="4" class="class"/>
-  <text x="228" y="372" class="head">DecisionEngine</text>
-  <line x1="200" y1="386" x2="384" y2="386" stroke="#cbd5e1"/>
-  <text x="228" y="412" class="member">scoreReceptivity()</text>
-  <text x="228" y="434" class="member">applyPriority()</text>
-  <text x="228" y="456" class="member">recommendAction()</text>
+  <rect x="72" y="336" width="216" height="150" rx="4" class="class"/>
+  <text x="100" y="364" class="head">DecisionEngine</text>
+  <line x1="72" y1="376" x2="288" y2="376" class="rule"/>
+  <text x="100" y="400" class="member">+ modelVersion: String</text>
+  <text x="100" y="420" class="member">+ decisionThreshold: Decimal</text>
+  <text x="100" y="440" class="member">+ rulePolicy: PolicySet</text>
+  <line x1="72" y1="452" x2="288" y2="452" class="rule"/>
+  <text x="100" y="474" class="member">+ recommendAction(): ActionType</text>
 
-  <rect x="444" y="340" width="184" height="126" rx="4" class="class"/>
-  <text x="472" y="372" class="head">DeliveryController</text>
-  <line x1="444" y1="386" x2="628" y2="386" stroke="#cbd5e1"/>
-  <text x="472" y="412" class="member">selectWindow()</text>
-  <text x="472" y="434" class="member">dispatchOrDefer()</text>
-  <text x="472" y="456" class="member">recordOutcome()</text>
+  <rect x="372" y="336" width="216" height="150" rx="4" class="class"/>
+  <text x="400" y="364" class="head">DeliveryController</text>
+  <line x1="372" y1="376" x2="588" y2="376" class="rule"/>
+  <text x="400" y="400" class="member">+ queueState: QueueState</text>
+  <text x="400" y="420" class="member">+ deliveryWindow: TimeRange</text>
+  <text x="400" y="440" class="member">+ retryPolicy: PolicySet</text>
+  <line x1="372" y1="452" x2="588" y2="452" class="rule"/>
+  <text x="400" y="474" class="member">+ dispatchOrDefer(): Decision</text>
 
-  <rect x="688" y="340" width="184" height="126" rx="4" class="output"/>
-  <text x="716" y="372" class="head">DeliveryDecision</text>
-  <line x1="688" y1="386" x2="872" y2="386" stroke="#fed7aa"/>
-  <text x="716" y="412" class="member">action</text>
-  <text x="716" y="434" class="member">scheduled time</text>
-  <text x="716" y="456" class="member">reason code</text>
+  <rect x="672" y="336" width="216" height="150" rx="4" class="output"/>
+  <text x="700" y="364" class="head">DeliveryDecision</text>
+  <line x1="672" y1="376" x2="888" y2="376" class="output-rule"/>
+  <text x="700" y="400" class="member">+ action: ActionType</text>
+  <text x="700" y="420" class="member">+ scheduledAt: DateTime</text>
+  <text x="700" y="440" class="member">+ reasonCode: String</text>
+  <line x1="672" y1="452" x2="888" y2="452" class="output-rule"/>
+  <text x="700" y="474" class="member">+ apply(): DeliveryResult</text>
 
-  <path d="M262 198H314" class="rel"/>
-  <path d="M506 198H558" class="rel"/>
-  <path d="M658 260V302H292V332" class="rel"/>
-  <path d="M384 403H436" class="rel"/>
-  <path d="M628 403H680" class="rel"/>
+  <path d="M288 201H364" class="rel"/>
+  <text x="306" y="192" class="assoc">adds context</text>
+  <path d="M588 201H664" class="rel"/>
+  <text x="606" y="192" class="assoc">builds</text>
+  <path d="M780 276V306H180V336" class="rel"/>
+  <text x="424" y="316" class="assoc">scores</text>
+  <path d="M288 411H364" class="rel"/>
+  <text x="306" y="402" class="assoc">recommends</text>
+  <path d="M588 411H664" class="rel"/>
+  <text x="606" y="402" class="assoc">creates</text>
 </svg>
+
+
 
