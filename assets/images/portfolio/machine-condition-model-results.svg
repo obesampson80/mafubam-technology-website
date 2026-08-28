@@ -19,15 +19,16 @@
 
   <rect class="card" x="566" y="122" width="326" height="274" rx="18"/>
   <text class="ink label" x="596" y="160">Recording-level matrix</text>
-  <g transform="translate(636 198)">
-    <rect width="188" height="188" rx="8" fill="#fff" stroke="#d8e7ee"/>
-    <rect x="10" y="10" width="38" height="38" class="navy"/><rect x="52" y="10" width="38" height="38" class="pale"/><rect x="94" y="10" width="38" height="38" fill="#f8fafc"/><rect x="136" y="10" width="38" height="38" fill="#f8fafc"/>
-    <rect x="10" y="52" width="38" height="38" class="pale"/><rect x="52" y="52" width="38" height="38" class="teal"/><rect x="94" y="52" width="38" height="38" fill="#fed7aa"/><rect x="136" y="52" width="38" height="38" fill="#f8fafc"/>
-    <rect x="10" y="94" width="38" height="38" fill="#f8fafc"/><rect x="52" y="94" width="38" height="38" fill="#fed7aa"/><rect x="94" y="94" width="38" height="38" class="teal"/><rect x="136" y="94" width="38" height="38" class="pale"/>
-    <rect x="10" y="136" width="38" height="38" fill="#f8fafc"/><rect x="52" y="136" width="38" height="38" fill="#f8fafc"/><rect x="94" y="136" width="38" height="38" fill="#fed7aa"/><rect x="136" y="136" width="38" height="38" class="navy"/>
+  <text class="muted tiny" x="596" y="184">Actual rows compared with predicted columns</text>
+  <g transform="translate(596 204)">
+    <rect width="252" height="154" rx="10" fill="#fff" stroke="#d8e7ee"/>
+    <rect x="12" y="12" width="50" height="30" rx="5" class="navy"/><rect x="68" y="12" width="50" height="30" rx="5" class="pale"/><rect x="124" y="12" width="50" height="30" rx="5" fill="#f8fafc"/><rect x="180" y="12" width="50" height="30" rx="5" fill="#f8fafc"/>
+    <rect x="12" y="48" width="50" height="30" rx="5" class="pale"/><rect x="68" y="48" width="50" height="30" rx="5" class="teal"/><rect x="124" y="48" width="50" height="30" rx="5" fill="#fed7aa"/><rect x="180" y="48" width="50" height="30" rx="5" fill="#f8fafc"/>
+    <rect x="12" y="84" width="50" height="30" rx="5" fill="#f8fafc"/><rect x="68" y="84" width="50" height="30" rx="5" fill="#fed7aa"/><rect x="124" y="84" width="50" height="30" rx="5" class="teal"/><rect x="180" y="84" width="50" height="30" rx="5" class="pale"/>
+    <rect x="12" y="120" width="50" height="30" rx="5" fill="#f8fafc"/><rect x="68" y="120" width="50" height="30" rx="5" fill="#f8fafc"/><rect x="124" y="120" width="50" height="30" rx="5" fill="#fed7aa"/><rect x="180" y="120" width="50" height="30" rx="5" class="navy"/>
   </g>
-
   <rect class="soft" x="68" y="422" width="248" height="56" rx="16"/><text class="muted small" x="96" y="452">Strong result on prepared</text><text class="muted small" x="96" y="472">signal windows.</text>
   <rect class="soft" x="356" y="422" width="248" height="56" rx="16"/><text class="muted small" x="384" y="452">Class errors remain visible</text><text class="muted small" x="384" y="472">for interpretation.</text>
   <rect class="warn" x="644" y="422" width="248" height="56" rx="16"/><text class="muted small" x="672" y="452">External check reported</text><text class="muted small" x="672" y="472">without hiding weakness.</text>
 </svg>
+
