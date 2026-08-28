@@ -1,22 +1,65 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
   <title id="title">LoRaWAN simulator workflow</title>
-  <desc id="desc">A modern workflow showing simulator configuration, registry creation, revocation rules, communication attempt and communication decision output.</desc>
-  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#0e9aac"/></marker><style>.bg{fill:#eef7fa}.panel{fill:#fff;stroke:#cfe0e8;stroke-width:2}.card{fill:#fff;stroke:#d8e7ee;stroke-width:1.5}.input{fill:#e8f7fb;stroke:#0e9aac;stroke-width:2}.output{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.title{font-size:30px}.label{font-size:18px}.small{font-size:15px}.tiny{font-size:13px}.line{fill:none;stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.soft{fill:#eaf3f6}.dark{fill:#082744}</style></defs>
-  <rect class="bg" width="1100" height="600"/><rect class="panel" x="30" y="28" width="1040" height="544" rx="26"/>
-  <text class="ink title" x="70" y="84">Prototype workflow</text><text class="muted small" x="72" y="114">How scenario rules produce an allow or block communication result.</text>
-  <rect class="input" x="70" y="178" width="164" height="156" rx="16"/><text class="ink label" x="104" y="220">Scenario</text><text class="muted small" x="104" y="252">Certificates</text><text class="muted small" x="104" y="276">Devices</text><text class="muted small" x="104" y="300">Payload and SF</text>
-  <path class="line" d="M244 256 H294"/>
-  <rect class="card" x="304" y="178" width="164" height="156" rx="16"/><text class="ink label" x="338" y="220">Registry</text><text class="muted small" x="338" y="252">Certificate IDs</text><text class="muted small" x="338" y="276">Device owners</text><text class="muted small" x="338" y="300">Serial preview</text>
-  <path class="line" d="M478 256 H528"/>
-  <rect class="card" x="538" y="178" width="164" height="156" rx="16"/><text class="ink label" x="572" y="220">Revocation</text><text class="muted small" x="572" y="252">Expired</text><text class="muted small" x="572" y="276">Compromised</text><text class="muted small" x="572" y="300">Policy failed</text>
-  <path class="line" d="M712 256 H762"/>
-  <rect class="card" x="772" y="178" width="164" height="156" rx="16"/><text class="ink label" x="806" y="220">Attempt</text><text class="muted small" x="806" y="252">Sensor source</text><text class="muted small" x="806" y="276">Gateway/server</text><text class="muted small" x="806" y="300">MTU and cache</text>
-  <path class="line" d="M854 344 V392"/>
-  <rect class="output" x="646" y="404" width="358" height="104" rx="18"/>
-  <text class="ink label" x="680" y="440">Communication decision</text>
-  <rect class="dark" x="680" y="456" width="92" height="30" rx="10"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" x="704" y="476">ALLOW</text>
-  <rect class="soft" x="790" y="456" width="162" height="30" rx="10"/><text class="muted tiny" x="812" y="476">or BLOCK result</text>
-  <text class="muted small" x="680" y="506"><tspan x="680" dy="0">Reason, certificate status</tspan><tspan x="680" dy="20">and event record displayed.</tspan></text>
+  <desc id="desc">A professional workflow diagram showing scenario setup, certificate registry, revocation rules, communication attempt and final allow or block decision.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
+    </marker>
+    <style>
+      .bg{fill:#eef7fa}.panel{fill:#fff;stroke:#cfe0e8;stroke-width:2}.card{fill:#fff;stroke:#d8e7ee;stroke-width:1.6}.input{fill:#e8f7fb;stroke:#0e9aac;stroke-width:1.8}.result{fill:#f8fafc;stroke:#0f172a;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.title{font-size:30px}.label{font-size:17px}.small{font-size:14px}.tiny{font-size:12px}.line{fill:none;stroke:#0f172a;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.pill{fill:#eaf3f6}.dark{fill:#082744}.teal{fill:#0e9aac}.rule{stroke:#d8e7ee;stroke-width:1.3}
+    </style>
+  </defs>
+  <rect class="bg" width="1100" height="600"/>
+  <rect class="panel" x="30" y="28" width="1040" height="544" rx="24"/>
+
+  <text class="ink title" x="70" y="84">Prototype workflow</text>
+  <text class="muted small" x="72" y="114">How scenario inputs produce a visible allow or block communication result.</text>
+
+  <rect class="input" x="70" y="186" width="156" height="196" rx="14"/>
+  <text class="ink label" x="98" y="226">Scenario</text>
+  <text class="muted small" x="98" y="260">Certificates</text>
+  <text class="muted small" x="98" y="286">Devices</text>
+  <text class="muted small" x="98" y="312">Payload size</text>
+  <text class="muted small" x="98" y="338">Spreading factor</text>
+
+  <path class="line" d="M226 284H270"/>
+
+  <rect class="card" x="282" y="186" width="156" height="196" rx="14"/>
+  <text class="ink label" x="310" y="226">Registry</text>
+  <text class="muted small" x="310" y="260">Certificate IDs</text>
+  <text class="muted small" x="310" y="286">Device owners</text>
+  <text class="muted small" x="310" y="312">Serial status</text>
+  <text class="muted small" x="310" y="338">Radio settings</text>
+
+  <path class="line" d="M438 284H482"/>
+
+  <rect class="card" x="494" y="186" width="156" height="196" rx="14"/>
+  <text class="ink label" x="522" y="226">Revocation</text>
+  <text class="muted small" x="522" y="260">Expired</text>
+  <text class="muted small" x="522" y="286">Compromised</text>
+  <text class="muted small" x="522" y="312">Policy failed</text>
+  <text class="muted small" x="522" y="338">Cache rule</text>
+
+  <path class="line" d="M650 284H694"/>
+
+  <rect class="card" x="706" y="186" width="156" height="196" rx="14"/>
+  <text class="ink label" x="734" y="226">Attempt</text>
+  <text class="muted small" x="734" y="260">Sensor source</text>
+  <text class="muted small" x="734" y="286">Gateway/server</text>
+  <text class="muted small" x="734" y="312">Handshake check</text>
+  <text class="muted small" x="734" y="338">MTU check</text>
+
+  <path class="line" d="M862 284H906"/>
+
+  <rect class="result" x="918" y="174" width="130" height="220" rx="14"/>
+  <text class="ink label" x="946" y="214">Decision</text>
+  <rect class="dark" x="940" y="238" width="86" height="30" rx="9"/>
+  <text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" x="964" y="258">ALLOW</text>
+  <rect class="pill" x="940" y="282" width="86" height="30" rx="9"/>
+  <text class="muted tiny" x="961" y="302">BLOCK</text>
+  <path class="rule" d="M940 332H1026"/>
+  <text class="muted tiny" x="940" y="356">Reason</text>
+  <text class="muted tiny" x="940" y="376">Event ID</text>
 </svg>
 
 
