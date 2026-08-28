@@ -1,48 +1,57 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
   <title id="title">Machine condition analysis dashboard</title>
-  <desc id="desc">A polished public-safe dashboard view for machine condition analysis showing signal windows, feature evidence, model comparison and condition status.</desc>
+  <desc id="desc">A polished public-safe dashboard view for machine condition analysis showing vibration windows, feature drivers, model comparison and current condition status.</desc>
   <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#082744" flood-opacity="0.10"/></filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#082744" flood-opacity="0.14"/></filter>
+    <linearGradient id="screen" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f4fbfd"/></linearGradient>
     <style>
-      .bg{fill:#eef7fa}.shell{fill:#fff;stroke:#cfe0e8;stroke-width:2}.side{fill:#082744}.card{fill:#fff;stroke:#d8e7ee;stroke-width:1.5}.soft{fill:#f8fafc;stroke:#d8e7ee;stroke-width:1.3}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.white{fill:#fff;font-family:Arial,Helvetica,sans-serif}.title{font-size:30px}.label{font-size:17px}.small{font-size:14px}.tiny{font-size:12px}.value{font-size:28px}.teal{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.grid{stroke:#e2edf2;stroke-width:1}.signal{fill:none;stroke:#0e9aac;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.baseline{fill:none;stroke:#f68a3c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bar{fill:#d8e7ee}.risk{fill:#fff7ef;stroke:#f7bd8d;stroke-width:1.5}.success{fill:#25a96a}
+      .bg{fill:#eef7fa}.shell{fill:url(#screen);stroke:#cfe0e8;stroke-width:2}.side{fill:#082744}.card{fill:#fff;stroke:#d8e7ee;stroke-width:1.5}.soft{fill:#eaf3f6}.status{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.white{fill:#fff;font-family:Arial,Helvetica,sans-serif}.title{font-size:31px}.label{font-size:18px}.small{font-size:15px}.tiny{font-size:12px}.metric{font-size:28px}.teal{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.danger{fill:#b54720}.grid{stroke:#d8e7ee;stroke-width:1}.signal{fill:none;stroke:#0e9aac;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.baseline{fill:none;stroke:#f68a3c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.bar{fill:#d8e7ee}.rule{fill:#d8e7ee}
     </style>
   </defs>
   <rect class="bg" width="1200" height="680"/>
-  <rect class="shell" x="34" y="30" width="1132" height="620" rx="24" filter="url(#shadow)"/>
-  <rect class="side" x="34" y="30" width="92" height="620" rx="24"/>
-  <rect class="dark" x="98" y="30" width="28" height="620"/>
-  <rect x="62" y="66" width="36" height="36" rx="9" fill="#e8f7fb"/>
-  <text class="ink" x="74" y="90" font-size="17">M</text>
-  <circle class="teal" cx="80" cy="156" r="6"/><rect x="68" y="214" width="24" height="6" rx="3" fill="#9fdfe8"/><rect x="68" y="270" width="24" height="6" rx="3" fill="#9fdfe8"/><rect x="68" y="326" width="24" height="6" rx="3" fill="#9fdfe8"/><circle class="orange" cx="80" cy="388" r="6"/>
+  <rect class="shell" x="42" y="38" width="1116" height="604" rx="28" filter="url(#shadow)"/>
+  <rect class="side" x="42" y="38" width="94" height="604" rx="28"/>
+  <rect class="side" x="100" y="38" width="36" height="604"/>
+  <rect class="teal" x="70" y="72" width="38" height="38" rx="11"/>
+  <text class="white" font-size="18" font-weight="700" x="82" y="97">M</text>
+  <g opacity="0.92"><rect x="75" y="168" width="28" height="28" rx="8" fill="#143a5a"/><rect x="75" y="222" width="28" height="28" rx="8" fill="#143a5a"/><rect x="75" y="276" width="28" height="28" rx="8" fill="#143a5a"/><rect x="75" y="330" width="28" height="28" rx="8" fill="#143a5a"/><rect x="75" y="384" width="28" height="28" rx="8" fill="#143a5a"/></g>
+  <circle class="teal" cx="89" cy="182" r="5"/><path d="M82 236H96" stroke="#9fdfe8" stroke-width="3" stroke-linecap="round"/><rect fill="#9fdfe8" x="82" y="282" width="14" height="14" rx="3"/><path d="M82 344H96M82 350H92" stroke="#9fdfe8" stroke-width="2" stroke-linecap="round"/><circle class="orange" cx="89" cy="398" r="6"/>
 
-  <text class="ink title" x="164" y="82">Machine Condition Analysis Dashboard</text>
-  <text class="muted small" x="166" y="112">Public-safe analysis workspace for vibration windows, feature evidence and prediction review.</text>
+  <text class="ink title" x="176" y="88">Machine condition analysis dashboard</text>
+  <text class="muted small" x="178" y="116">Public-safe recreation of the analysis workspace for vibration windows, features and predictions.</text>
+  <rect class="status" x="918" y="72" width="156" height="40" rx="13"/>
+  <text class="danger" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" x="954" y="97">FAULT RISK</text>
 
-  <rect class="soft" x="164" y="146" width="206" height="88" rx="14"/><text class="muted tiny" x="188" y="178">DATA WINDOWS</text><text class="ink value" x="188" y="212">3,920</text>
-  <rect class="soft" x="394" y="146" width="206" height="88" rx="14"/><text class="muted tiny" x="418" y="178">FEATURES</text><text class="ink value" x="418" y="212">48</text>
-  <rect class="soft" x="624" y="146" width="206" height="88" rx="14"/><text class="muted tiny" x="648" y="178">MACRO-F1</text><text class="ink value" x="648" y="212">0.92</text>
-  <rect class="risk" x="854" y="146" width="254" height="88" rx="14"/><text class="muted tiny" x="878" y="178">CONDITION STATUS</text><text class="ink value" x="878" y="212">Fault risk</text>
+  <g transform="translate(176 148)">
+    <rect class="card" width="196" height="88" rx="18"/><text class="muted tiny" x="24" y="30">DATA WINDOWS</text><text class="ink metric" x="24" y="64">3,920</text>
+    <rect class="card" x="220" width="196" height="88" rx="18"/><text class="muted tiny" x="244" y="30">FEATURES</text><text class="ink metric" x="244" y="64">48</text>
+    <rect class="card" x="440" width="196" height="88" rx="18"/><text class="muted tiny" x="464" y="30">MACRO-F1</text><text class="ink metric" x="464" y="64">0.92</text>
+    <rect class="status" x="660" width="224" height="88" rx="18"/><text class="muted tiny" x="684" y="30">CURRENT CONDITION</text><text class="danger" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" x="684" y="64">Fault risk</text>
+  </g>
 
-  <rect class="card" x="164" y="270" width="454" height="252" rx="18"/>
-  <text class="ink label" x="190" y="308">Vibration window</text>
-  <g class="grid"><path d="M198 462H572"/><path d="M198 420H572"/><path d="M198 378H572"/><path d="M198 336H572"/></g>
-  <path class="signal" d="M198 420C220 350 236 488 260 402C284 316 306 466 330 386C356 302 382 446 406 376C434 302 466 430 492 360C520 296 544 408 572 334"/>
-  <path class="baseline" d="M198 446C232 434 266 421 300 434C338 448 368 424 400 438C438 454 486 412 524 424C548 430 562 418 572 410"/>
-  <text class="muted tiny" x="198" y="492">Segmented signal with baseline overlay</text>
+  <rect class="card" x="176" y="272" width="430" height="282" rx="22"/>
+  <text class="ink label" x="206" y="312">Vibration window</text>
+  <g class="grid"><path d="M206 474H562"/><path d="M206 430H562"/><path d="M206 386H562"/><path d="M206 342H562"/></g>
+  <path class="signal" d="M206 428C228 356 246 490 270 406C294 320 316 468 340 388C366 306 392 448 416 378C444 304 474 430 502 360C530 296 548 408 562 334"/>
+  <path class="baseline" d="M206 454C240 438 274 424 308 436C344 450 374 426 408 440C446 456 490 414 526 426C548 432 558 420 562 412"/>
+  <rect class="soft" x="206" y="506" width="156" height="24" rx="9"/><circle class="teal" cx="224" cy="518" r="5"/><text class="muted tiny" x="238" y="522">Signal pattern</text>
+  <rect class="soft" x="382" y="506" width="164" height="24" rx="9"/><circle class="orange" cx="400" cy="518" r="5"/><text class="muted tiny" x="414" y="522">Baseline overlay</text>
 
-  <rect class="card" x="650" y="270" width="214" height="252" rx="18"/>
-  <text class="ink label" x="676" y="308">Feature drivers</text>
-  <text class="muted small" x="676" y="346">RMS energy</text><rect class="bar" x="676" y="360" width="146" height="10" rx="5"/><rect class="teal" x="676" y="360" width="118" height="10" rx="5"/>
-  <text class="muted small" x="676" y="398">Peak amplitude</text><rect class="bar" x="676" y="412" width="146" height="10" rx="5"/><rect class="orange" x="676" y="412" width="96" height="10" rx="5"/>
-  <text class="muted small" x="676" y="450">Spectral spread</text><rect class="bar" x="676" y="464" width="146" height="10" rx="5"/><rect class="teal" x="676" y="464" width="128" height="10" rx="5"/>
-  <text class="muted tiny" x="676" y="500">Evidence used for interpretation</text>
+  <rect class="card" x="636" y="272" width="214" height="282" rx="22"/>
+  <text class="ink label" x="666" y="312">Feature drivers</text>
+  <text class="muted small" x="666" y="356">RMS energy</text><rect class="bar" x="666" y="370" width="146" height="11" rx="6"/><rect class="teal" x="666" y="370" width="118" height="11" rx="6"/>
+  <text class="muted small" x="666" y="410">Peak amplitude</text><rect class="bar" x="666" y="424" width="146" height="11" rx="6"/><rect class="orange" x="666" y="424" width="96" height="11" rx="6"/>
+  <text class="muted small" x="666" y="464">Spectral spread</text><rect class="bar" x="666" y="478" width="146" height="11" rx="6"/><rect class="teal" x="666" y="478" width="128" height="11" rx="6"/>
+  <text class="muted tiny" x="666" y="522">Drivers prepared for review.</text>
 
-  <rect class="card" x="894" y="270" width="214" height="252" rx="18"/>
-  <text class="ink label" x="920" y="308">Model comparison</text>
-  <g class="grid"><path d="M940 462H1062"/><path d="M940 424H1062"/><path d="M940 386H1062"/><path d="M940 348H1062"/></g>
-  <rect class="teal" x="950" y="356" width="24" height="106" rx="5"/><rect class="teal" x="990" y="382" width="24" height="80" rx="5"/><rect class="orange" x="1030" y="414" width="24" height="48" rx="5"/>
-  <text class="muted tiny" x="938" y="492">Tree</text><text class="muted tiny" x="984" y="492">SVM</text><text class="muted tiny" x="1024" y="492">Base</text>
+  <rect class="card" x="880" y="272" width="194" height="282" rx="22"/>
+  <text class="ink label" x="910" y="312">Model results</text>
+  <g class="grid"><path d="M922 468H1036"/><path d="M922 428H1036"/><path d="M922 388H1036"/><path d="M922 348H1036"/></g>
+  <rect class="teal" x="932" y="356" width="22" height="112" rx="5"/><rect class="teal" x="974" y="382" width="22" height="86" rx="5"/><rect class="orange" x="1016" y="418" width="22" height="50" rx="5"/>
+  <text class="muted tiny" x="928" y="498">Tree</text><text class="muted tiny" x="968" y="498">SVM</text><text class="muted tiny" x="1008" y="498">Base</text>
+  <rect class="soft" x="910" y="520" width="132" height="20" rx="8"/><text class="muted tiny" x="930" y="534">Validation view</text>
 
-  <rect class="soft" x="164" y="552" width="944" height="54" rx="16"/>
-  <circle class="success" cx="194" cy="579" r="7"/><text class="ink small" x="214" y="584">Analysis connects signal behaviour, feature drivers, validation results and final condition status.</text>
+  <rect class="soft" x="176" y="584" width="898" height="40" rx="16"/>
+  <text class="ink tiny" x="204" y="609">Dashboard output:</text>
+  <text class="muted tiny" x="326" y="609">condition status with signal, feature and validation evidence visible in one screen.</text>
 </svg>
