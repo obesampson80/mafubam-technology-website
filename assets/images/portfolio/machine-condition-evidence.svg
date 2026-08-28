@@ -21,9 +21,8 @@
 
   <rect class="soft" x="506" y="190" width="386" height="144" rx="16"/>
   <text class="ink label" x="534" y="226">Spectrum summary</text>
-  <g class="grid"><path d="M536 302H846"/><path d="M536 266H846"/></g>
-  <rect class="orange" x="554" y="276" width="14" height="26" rx="3"/><rect class="orange" x="586" y="244" width="14" height="58" rx="3"/><rect class="orange" x="618" y="220" width="14" height="82" rx="3"/><rect class="orange" x="650" y="256" width="14" height="46" rx="3"/><rect class="orange" x="682" y="236" width="14" height="66" rx="3"/><rect class="orange" x="714" y="270" width="14" height="32" rx="3"/>
-
+  <g class="grid"><path d="M536 306H846"/><path d="M536 278H846"/><path d="M536 250H846"/></g>
+  <rect class="orange" x="554" y="288" width="14" height="18" rx="3"/><rect class="orange" x="586" y="262" width="14" height="44" rx="3"/><rect class="orange" x="618" y="244" width="14" height="62" rx="3"/><rect class="orange" x="650" y="274" width="14" height="32" rx="3"/><rect class="orange" x="682" y="258" width="14" height="48" rx="3"/><rect class="orange" x="714" y="284" width="14" height="22" rx="3"/><rect class="orange" x="746" y="268" width="14" height="38" rx="3"/><rect class="orange" x="778" y="252" width="14" height="54" rx="3"/><rect class="orange" x="810" y="278" width="14" height="28" rx="3"/>
   <rect class="card" x="68" y="370" width="250" height="98" rx="16"/>
   <text class="ink label" x="96" y="404">Feature drivers</text>
   <text class="muted small" x="96" y="432">Peak amplitude</text><rect class="bar" x="206" y="422" width="78" height="10" rx="5"/><rect class="teal" x="206" y="422" width="60" height="10" rx="5"/>
@@ -39,3 +38,4 @@
   <text class="danger" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" x="670" y="436">Fault risk likely</text>
   <text class="muted small" x="670" y="460">Decision-support evidence</text>
 </svg>
+
