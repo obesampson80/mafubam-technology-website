@@ -1,7 +1,7 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
   <title id="title">Speaker preparation workflow</title>
   <desc id="desc">A recreated speaker preparation workflow connecting slide sections, plain-language scripts, likely questions and timing checks.</desc>
-  <defs><style>.bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:19px}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.note{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.dark{fill:#082744}.soft{fill:#eaf3f6}</style></defs>
+  <defs><marker id="arrow-orange" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f68a3c"/></marker><style>.bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:19px}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round}.accent{fill:#0e9aac}.review-loop{fill:none;stroke:#f68a3c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-orange)}.note{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.dark{fill:#082744}.soft{fill:#eaf3f6}</style></defs>
   <rect class="bg" width="1100" height="600"/>
   <rect class="card" x="30" y="28" width="1040" height="544" rx="26"/>
   <text class="ink title" x="70" y="84">Speaker preparation workflow</text>
@@ -21,6 +21,6 @@
   <circle class="accent" cx="844" cy="264" r="8"/><text class="muted small" x="864" y="270">Timing</text>
   <circle class="accent" cx="844" cy="306" r="8"/><text class="muted small" x="864" y="312">Likely questions</text>
   <circle class="accent" cx="844" cy="348" r="8"/><text class="muted small" x="864" y="354">Evidence claims</text>
-  <path d="M908 430 C774 504 350 504 196 430" fill="none" stroke="#f68a3c" stroke-width="5" stroke-linecap="round"/>
-  <path class="orange" d="M191 412 L158 436 L198 450 Z"/>
+  <path class="review-loop" d="M908 430 C760 500 356 500 204 430"/>
 </svg>
+
