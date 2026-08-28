@@ -17,6 +17,12 @@
   --shadow-soft: 0 12px 34px rgba(8, 35, 63, 0.08);
   --radius: 8px;
   --max: 1160px;
+  --motion-fast: 140ms;
+  --motion-base: 220ms;
+  --motion-slow: 520ms;
+  --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --motion-lift: -4px;
+  --motion-reveal-distance: 18px;
 }
 
 :root[data-theme="dark"] {
@@ -90,6 +96,59 @@ a:hover {
   outline: 3px solid var(--accent-2);
   outline-offset: 3px;
 }
+/* Motion system */
+html.motion-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(var(--motion-reveal-distance));
+  transition:
+    opacity var(--motion-slow) var(--motion-ease),
+    transform var(--motion-slow) var(--motion-ease),
+    border-color var(--motion-base) var(--motion-ease),
+    box-shadow var(--motion-base) var(--motion-ease);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+html.motion-ready [data-reveal="image"] {
+  transform: translateY(14px) scale(0.985);
+}
+
+html.motion-ready [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+html.motion-ready [data-reveal].is-visible,
+html.motion-ready [data-reveal].reveal-done {
+  will-change: auto;
+}
+
+@media (max-width: 680px) {
+  :root {
+    --motion-reveal-distance: 10px;
+    --motion-lift: -2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html.motion-ready [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 .site-header {
   position: sticky;
@@ -161,7 +220,7 @@ a:hover {
   min-height: 38px;
   padding: 8px 10px;
   border-radius: 999px;
-  transition: color 160ms ease, background-color 160ms ease;
+  transition: color var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease);
 }
 
 .nav a:hover {
@@ -174,7 +233,7 @@ a:hover {
   background: color-mix(in srgb, var(--accent), transparent 87%);
 }
 
-.nav a[aria-current="page"]::after {
+.nav a::after {
   content: "";
   position: absolute;
   left: 14px;
@@ -214,7 +273,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex: 0 0 42px;
-  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+  transition: border-color var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease), transform var(--motion-fast) var(--motion-ease);
 }
 
 .theme-toggle:hover,
@@ -281,12 +340,17 @@ a:hover {
   border: 1px solid transparent;
   font-weight: 800;
   line-height: 1.2;
-  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  transition: transform var(--motion-fast) var(--motion-ease), box-shadow var(--motion-fast) var(--motion-ease), border-color var(--motion-fast) var(--motion-ease), background-color var(--motion-fast) var(--motion-ease), color var(--motion-fast) var(--motion-ease);
 }
 
 .btn:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-soft);
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: none;
 }
 
 .btn-primary {
@@ -2367,5 +2431,91 @@ h3 {
   .wide-proof {
     max-width: 100%;
   }
+}
+
+
+/* Professional micro-interactions */
+.brand,
+.nav a,
+.theme-toggle,
+.nav-toggle,
+.trust-line span,
+.case-facts span,
+.case-tools span,
+.card,
+.proof-card,
+.package-card,
+.panel,
+.quote-box,
+.contact-item,
+.challenge-grid article,
+.timeline-list div,
+.outcome-grid article,
+.case-visual-grid figure,
+.case-cta-panel,
+.project-final-cta,
+.wide-proof,
+.project-cover-image {
+  transition:
+    transform var(--motion-base) var(--motion-ease),
+    border-color var(--motion-base) var(--motion-ease),
+    box-shadow var(--motion-base) var(--motion-ease),
+    background-color var(--motion-base) var(--motion-ease),
+    color var(--motion-base) var(--motion-ease);
+}
+
+.card:hover,
+.proof-card:hover,
+.package-card:hover,
+.panel:hover,
+.quote-box:hover,
+.contact-item:hover,
+.challenge-grid article:hover,
+.timeline-list div:hover,
+.outcome-grid article:hover,
+.case-visual-grid figure:hover,
+.case-cta-panel:hover,
+.project-final-cta:hover,
+.wide-proof:hover,
+.project-cover-image:hover {
+  transform: translateY(var(--motion-lift));
+  box-shadow: var(--shadow-soft);
+}
+
+.nav a::after {
+  transition:
+    transform var(--motion-base) var(--motion-ease),
+    opacity var(--motion-base) var(--motion-ease),
+    background-color var(--motion-base) var(--motion-ease);
+}
+
+.nav a:not([aria-current="page"])::after {
+  opacity: 0;
+  transform: scaleX(0.35);
+}
+
+.nav a[aria-current="page"]::after,
+.nav a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.theme-toggle:active,
+.nav-toggle:active,
+.sticky-whatsapp:active {
+  transform: translateY(0) scale(0.96);
+}
+
+.sticky-whatsapp {
+  transition:
+    transform var(--motion-base) var(--motion-ease),
+    box-shadow var(--motion-base) var(--motion-ease),
+    background-color var(--motion-base) var(--motion-ease);
+}
+
+.sticky-whatsapp:hover,
+.sticky-whatsapp:focus-visible {
+  transform: translateY(var(--motion-lift));
+  box-shadow: var(--shadow);
 }
 
