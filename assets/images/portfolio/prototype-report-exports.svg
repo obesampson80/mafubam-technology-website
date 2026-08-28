@@ -16,7 +16,7 @@
   <path d="M458 430H626M458 370H626M458 310H626" class="rule"/>
   <rect class="teal" x="480" y="278" width="42" height="152" rx="7"/><rect class="orange" x="564" y="338" width="42" height="92" rx="7"/>
   <text class="muted tiny" x="472" y="466">Allowed</text><text class="muted tiny" x="558" y="466">Blocked</text>
-  <text class="muted small" x="440" y="512">Counts separate successful and denied events.</text>
+  <text class="muted small" x="440" y="512">Allowed vs blocked event totals.</text>
   <rect class="card" x="736" y="154" width="292" height="386" rx="22"/>
   <text class="ink label" x="768" y="198">Baseline comparison</text>
   <text class="muted small" x="768" y="250">Proposed protocol</text><rect class="teal" x="768" y="266" width="74" height="11" rx="6"/>
@@ -25,3 +25,4 @@
   <text class="muted small" x="768" y="418">CRL</text><rect class="dark" x="768" y="434" width="218" height="11" rx="6"/>
   <text class="muted small" x="768" y="496"><tspan x="768" dy="0">Baselines make the lightweight</tspan><tspan x="768" dy="22">protocol claim easier to inspect.</tspan></text>
 </svg>
+
