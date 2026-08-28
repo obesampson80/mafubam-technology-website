@@ -5,11 +5,8 @@
     <marker id="arrow-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#0e9aac"/>
     </marker>
-    <marker id="arrow-orange" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f68a3c"/>
-    </marker>
     <style>
-      .bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:18px}.line{fill:none;stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-teal)}.feedback{fill:none;stroke:#f68a3c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-orange)}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.soft{fill:#eaf3f6}
+      .bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:18px}.line{fill:none;stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-teal)}.accent{fill:#0e9aac}.dark{fill:#082744}.soft{fill:#eaf3f6}
     </style>
   </defs>
   <rect class="bg" width="1100" height="600"/>
@@ -54,8 +51,5 @@
   <rect class="card" x="962" y="378" width="96" height="116" rx="16"/>
   <text class="ink label" x="984" y="426">Reports</text>
   <text class="muted small" x="984" y="454">Export</text>
-
-  <path class="feedback" d="M1010 506 C790 548 368 548 150 506 V316"/>
-  <rect x="330" y="516" width="440" height="38" rx="19" fill="#fff7ef" stroke="#f7bd8d" stroke-width="2"/>
-  <text class="ink small" x="384" y="541">Exported reports support review, follow-up and later screening</text>
 </svg>
+
