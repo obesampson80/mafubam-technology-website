@@ -39,7 +39,7 @@
 
   <rect class="panel" x="792" y="336" width="232" height="154" rx="16"/>
   <text class="ink label" x="818" y="378">Results slide</text>
-  <rect class="bar2" x="826" y="438" width="30" height="34" rx="5"/><rect class="bar3" x="868" y="418" width="30" height="54" rx="5"/><rect class="bar4" x="910" y="396" width="30" height="76" rx="5"/>
+  <rect class="bar2" x="826" y="448" width="30" height="28" rx="5"/><rect class="bar3" x="868" y="432" width="30" height="44" rx="5"/><rect class="bar4" x="910" y="416" width="30" height="60" rx="5"/>
   <text class="muted tiny" x="818" y="408">Bytes, energy and cache effect</text>
 
   <rect class="note" x="72" y="424" width="392" height="178" rx="18"/>
@@ -48,3 +48,4 @@
   <rect fill="#fff" x="102" y="526" width="298" height="12" rx="6"/><rect fill="#fff" x="102" y="552" width="248" height="12" rx="6"/><rect fill="#fff" x="102" y="578" width="322" height="12" rx="6"/>
   <text class="ink tiny" x="74" y="642">Prepared for presentation review, timing and question handling</text>
 </svg>
+
