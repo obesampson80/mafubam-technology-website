@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Speaker preparation workflow</title>
+  <desc id="desc">A recreated speaker preparation workflow connecting slide sections, plain-language scripts, likely questions and timing checks.</desc>
+  <defs><style>.bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:19px}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.note{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.dark{fill:#082744}.soft{fill:#eaf3f6}</style></defs>
+  <rect class="bg" width="1100" height="600"/>
+  <rect class="card" x="30" y="28" width="1040" height="544" rx="26"/>
+  <text class="ink title" x="70" y="84">Speaker preparation workflow</text>
+  <text class="muted small" x="72" y="114">Slide deck, notes and question preparation aligned into one defence path.</text>
+  <rect class="card" x="86" y="176" width="218" height="236" rx="18"/>
+  <text class="ink label" x="116" y="220">Slide sections</text>
+  <rect class="soft" x="116" y="250" width="142" height="22" rx="8"/><rect class="soft" x="116" y="286" width="104" height="22" rx="8"/><rect class="soft" x="116" y="322" width="166" height="22" rx="8"/><rect class="soft" x="116" y="358" width="126" height="22" rx="8"/>
+  <path class="line" d="M316 294 H388"/><path class="accent" d="M388 280 L420 294 L388 308 Z"/>
+  <rect class="note" x="430" y="152" width="248" height="284" rx="18"/>
+  <text class="ink label" x="464" y="198">Speaker script</text>
+  <text class="muted small" x="464" y="230">Plain-language explanation</text>
+  <text class="muted small" x="464" y="256">for technical slides.</text>
+  <rect fill="#fff" x="464" y="302" width="150" height="12" rx="6"/><rect fill="#fff" x="464" y="330" width="178" height="12" rx="6"/><rect fill="#fff" x="464" y="358" width="126" height="12" rx="6"/>
+  <path class="line" d="M690 294 H762"/><path class="accent" d="M762 280 L794 294 L762 308 Z"/>
+  <rect class="card" x="804" y="176" width="210" height="236" rx="18"/>
+  <text class="ink label" x="832" y="220">Defence checks</text>
+  <circle class="accent" cx="844" cy="264" r="8"/><text class="muted small" x="864" y="270">Timing</text>
+  <circle class="accent" cx="844" cy="306" r="8"/><text class="muted small" x="864" y="312">Likely questions</text>
+  <circle class="accent" cx="844" cy="348" r="8"/><text class="muted small" x="864" y="354">Evidence claims</text>
+  <path d="M908 430 C774 504 350 504 196 430" fill="none" stroke="#f68a3c" stroke-width="5" stroke-linecap="round"/>
+  <path class="orange" d="M191 412 L158 436 L198 450 Z"/>
+</svg>

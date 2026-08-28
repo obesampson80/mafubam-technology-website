@@ -1,0 +1,29 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+  <title id="title">Student support reporting dashboard</title>
+  <desc id="desc">A recreated reporting screen showing support metrics, risk distribution, export files and diagnostics.</desc>
+  <defs><style>.bg{fill:#f4f9fb}.screen{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:15px}.tiny{font-size:12px}.title{font-size:28px}.label{font-size:18px}.soft{fill:#eaf3f6}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.red{fill:#d95757}.green{fill:#25a96a}.dark{fill:#082744}.bar{fill:#dcecf2}</style></defs>
+  <rect class="bg" width="1100" height="660"/>
+  <rect class="screen" x="32" y="30" width="1036" height="600" rx="26"/>
+  <text class="ink title" x="70" y="84">Reporting and export screen</text>
+  <text class="muted small" x="72" y="112">Summary views help connect the prototype to assessment and operational review.</text>
+  <g transform="translate(70 154)">
+    <rect class="screen" width="210" height="102" rx="16"/><text class="muted tiny" x="28" y="34">Open cases</text><text class="ink label" x="28" y="68">47</text>
+    <rect class="screen" x="232" width="210" height="102" rx="16"/><text class="muted tiny" x="260" y="34">Interventions</text><text class="ink label" x="260" y="68">31</text>
+    <rect class="screen" x="464" width="210" height="102" rx="16"/><text class="muted tiny" x="492" y="34">Follow-ups</text><text class="ink label" x="492" y="68">18</text>
+    <rect class="screen" x="696" width="260" height="102" rx="16"/><text class="muted tiny" x="724" y="34">Export status</text><text class="ink label" x="724" y="68">Ready</text>
+  </g>
+  <rect class="screen" x="70" y="304" width="430" height="242" rx="18"/>
+  <text class="ink label" x="102" y="350">Risk distribution</text>
+  <rect class="red" x="112" y="466" width="48" height="42" rx="6"/><rect class="orange" x="186" y="424" width="48" height="84" rx="6"/><rect class="accent" x="260" y="396" width="48" height="112" rx="6"/><rect class="green" x="334" y="372" width="48" height="136" rx="6"/>
+  <text class="muted tiny" x="100" y="530">Critical</text><text class="muted tiny" x="184" y="530">High</text><text class="muted tiny" x="248" y="530">Moderate</text><text class="muted tiny" x="340" y="530">Low</text>
+  <rect class="screen" x="532" y="304" width="234" height="242" rx="18"/>
+  <text class="ink label" x="564" y="350">CSV exports</text>
+  <rect class="soft" x="564" y="386" width="154" height="28" rx="9"/><text class="muted tiny" x="586" y="405">case_summary.csv</text>
+  <rect class="soft" x="564" y="430" width="170" height="28" rx="9"/><text class="muted tiny" x="586" y="449">interventions.csv</text>
+  <rect class="soft" x="564" y="474" width="138" height="28" rx="9"/><text class="muted tiny" x="586" y="493">diagnostics.csv</text>
+  <rect class="screen" x="798" y="304" width="230" height="242" rx="18"/>
+  <text class="ink label" x="830" y="350">Diagnostics</text>
+  <text class="muted tiny" x="830" y="386">Threshold</text><rect class="bar" x="830" y="400" width="144" height="12" rx="6"/><rect class="accent" x="830" y="400" width="78" height="12" rx="6"/>
+  <text class="muted tiny" x="830" y="446">Feature schema</text><rect class="bar" x="830" y="460" width="144" height="12" rx="6"/><rect class="orange" x="830" y="460" width="118" height="12" rx="6"/>
+  <text class="muted tiny" x="830" y="506">Model bundle</text>
+</svg>

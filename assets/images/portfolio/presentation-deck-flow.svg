@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Defence presentation narrative flow</title>
+  <desc id="desc">A recreated flow showing how the presentation moves from problem framing to baseline comparison, proposed protocol, evaluation evidence and defence close.</desc>
+  <defs><style>.bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:19px}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.soft{fill:#eaf3f6}</style></defs>
+  <rect class="bg" width="1100" height="600"/>
+  <rect class="card" x="30" y="28" width="1040" height="544" rx="26"/>
+  <text class="ink title" x="70" y="84">Defence narrative flow</text>
+  <text class="muted small" x="72" y="114">Each section answers one review question before the deck moves forward.</text>
+  <g transform="translate(70 178)">
+    <rect class="card" width="160" height="132" rx="16"/><text class="ink label" x="24" y="44">Problem</text><text class="muted small" x="24" y="76">Why normal</text><text class="muted small" x="24" y="98">revocation fails</text>
+    <path class="line" d="M170 66 H246"/><path class="accent" d="M246 52 L278 66 L246 80 Z"/>
+    <rect class="card" x="288" width="160" height="132" rx="16"/><text class="ink label" x="312" y="44">Gap</text><text class="muted small" x="312" y="76">TinyOCSP still</text><text class="muted small" x="312" y="98">misses SF12</text>
+    <path class="line" d="M458 66 H534"/><path class="accent" d="M534 52 L566 66 L534 80 Z"/>
+    <rect class="dark" x="576" width="170" height="132" rx="16"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="19" x="604" y="44">Proposed</text><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="16" x="604" y="76">CBOR, cache,</text><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="16" x="604" y="98">batch, MTU check</text>
+    <path class="line" d="M756 66 H832"/><path class="accent" d="M832 52 L864 66 L832 80 Z"/>
+    <rect class="card" x="874" width="160" height="132" rx="16"/><text class="ink label" x="900" y="44">Evidence</text><text class="muted small" x="900" y="76">Size, energy,</text><text class="muted small" x="900" y="98">cache metrics</text>
+  </g>
+  <path d="M208 390 C340 468 688 470 902 392" fill="none" stroke="#f68a3c" stroke-width="5" stroke-linecap="round"/>
+  <path class="orange" d="M896 374 L936 378 L910 408 Z"/>
+  <rect class="card" x="394" y="420" width="312" height="58" rx="18" fill="#fff7ef" stroke="#f7bd8d"/>
+  <text class="ink small" x="430" y="456">Final defence position and likely questions</text>
+</svg>

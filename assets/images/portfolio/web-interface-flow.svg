@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Student support dashboard user flow</title>
+  <desc id="desc">A recreated user flow showing data intake, risk screening, work queue, case review, intervention tracking and reports.</desc>
+  <defs><style>.bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:18px}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.soft{fill:#eaf3f6}</style></defs>
+  <rect class="bg" width="1100" height="600"/>
+  <rect class="card" x="30" y="28" width="1040" height="544" rx="26"/>
+  <text class="ink title" x="70" y="84">Interface workflow</text>
+  <text class="muted small" x="72" y="114">The screen order follows the real decision path of a staff reviewer.</text>
+  <g transform="translate(70 176)">
+    <rect class="card" width="142" height="112" rx="16"/><text class="ink label" x="30" y="44">Data</text><text class="ink label" x="30" y="68">intake</text><text class="muted small" x="30" y="94">CSV/schema</text>
+    <path class="line" d="M152 56 H205"/><path class="accent" d="M205 42 L237 56 L205 70 Z"/>
+    <rect class="card" x="248" width="142" height="112" rx="16"/><text class="ink label" x="278" y="44">Risk</text><text class="ink label" x="278" y="68">screen</text><text class="muted small" x="278" y="94">Model score</text>
+    <path class="line" d="M400 56 H453"/><path class="accent" d="M453 42 L485 56 L453 70 Z"/>
+    <rect class="dark" x="496" width="142" height="112" rx="16"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="18" x="526" y="44">Work</text><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="18" x="526" y="68">queue</text><text fill="#a9dfe7" font-family="Arial,Helvetica,sans-serif" font-size="16" x="526" y="94">Prioritise</text>
+    <path class="line" d="M648 56 H701"/><path class="accent" d="M701 42 L733 56 L701 70 Z"/>
+    <rect class="card" x="744" width="142" height="112" rx="16"/><text class="ink label" x="774" y="44">Case</text><text class="ink label" x="774" y="68">review</text><text class="muted small" x="774" y="94">Explain</text>
+  </g>
+  <path class="line" d="M884 288 C936 330 936 398 884 436 H688"/><path class="accent" d="M688 422 L656 436 L688 450 Z"/>
+  <rect class="card" x="438" y="380" width="218" height="112" rx="16"/><text class="ink label" x="474" y="424">Interventions</text><text class="muted small" x="474" y="452">Assign and track</text>
+  <path class="line" d="M428 436 H282"/><path class="accent" d="M282 422 L250 436 L282 450 Z"/>
+  <rect class="card" x="70" y="380" width="180" height="112" rx="16"/><text class="ink label" x="108" y="424">Reports</text><text class="muted small" x="108" y="452">Export evidence</text>
+  <path d="M158 360 C160 332 176 308 208 288" fill="none" stroke="#f68a3c" stroke-width="5" stroke-linecap="round"/>
+  <path class="orange" d="M196 276 L238 272 L216 308 Z"/>
+</svg>

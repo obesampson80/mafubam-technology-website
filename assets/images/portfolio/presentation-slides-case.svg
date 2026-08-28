@@ -1,2 +1,50 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img"><rect width="960" height="540" fill="#f7fbfc"/><rect x="32" y="32" width="896" height="476" rx="18" fill="#ffffff" stroke="#d8e3ea"/><rect x="64" y="72" width="180" height="396" rx="12" fill="#08233f"/><circle cx="100" cy="112" r="12" fill="#2ec4d6"/><circle cx="100" cy="154" r="12" fill="#f6a15e"/><circle cx="100" cy="196" r="12" fill="#ffffff" opacity=".85"/><rect x="286" y="78" width="590" height="64" rx="12" fill="#eef5f7"/><rect x="314" y="102" width="180" height="12" rx="6" fill="#08233f"/><rect x="314" y="124" width="116" height="8" rx="4" fill="#526173" opacity=".5"/><rect x="292" y="174" width="406" height="252" rx="16" fill="#ffffff" stroke="#d8e3ea"/><rect x="326" y="212" width="128" height="16" rx="8" fill="#08233f"/><rect x="326" y="252" width="170" height="10" rx="5" fill="#d8e3ea"/><rect x="326" y="280" width="132" height="10" rx="5" fill="#d8e3ea"/><circle cx="596" cy="300" r="68" fill="#e8f6f8"/><path d="M596 300 L596 232 A68 68 0 0 1 660 323 Z" fill="#f6a15e"/><path d="M596 300 L660 323 A68 68 0 0 1 560 358 Z" fill="#0e9bb0"/><rect x="726" y="174" width="104" height="252" rx="12" fill="#eef5f7" stroke="#d8e3ea"/><rect x="746" y="204" width="64" height="44" rx="7" fill="#fff"/><rect x="746" y="268" width="64" height="44" rx="7" fill="#fff"/><rect x="746" y="332" width="64" height="44" rx="7" fill="#fff"/></svg>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" role="img" aria-labelledby="title desc">
+  <title id="title">LoRaWAN defence presentation deck overview</title>
+  <desc id="desc">A recreated slide deck preview showing presentation sections, selected slides and speaker notes for a LoRaWAN certificate revocation defence.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f4f9fb}.panel{fill:#fff;stroke:#cfe0e8;stroke-width:2}.dark{fill:#082744}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:17px}.label{font-size:20px}.title{font-size:32px}.tiny{font-size:13px}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round}.grid{stroke:#e2edf2;stroke-width:1}.soft{fill:#eaf3f6}.note{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.bar{fill:#dcecf2}.bar2{fill:#0e9aac}.bar3{fill:#f68a3c}.bar4{fill:#082744}
+    </style>
+  </defs>
+  <rect class="bg" width="1100" height="720"/>
+  <rect class="panel" x="34" y="34" width="1032" height="652" rx="28"/>
+  <text class="ink title" x="74" y="92">Defence deck: LoRaWAN certificate revocation</text>
+  <text class="muted small" x="76" y="124">Public-safe recreation of slide structure, evidence hierarchy and speaker preparation.</text>
 
+  <rect class="dark" x="72" y="162" width="392" height="222" rx="18"/>
+  <text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="27" x="102" y="212">Lightweight Certificate</text>
+  <text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="27" x="102" y="248">Revocation Protocol</text>
+  <text fill="#9fdfe8" font-family="Arial,Helvetica,sans-serif" font-size="17" x="104" y="292">Resource-constrained LoRaWAN devices</text>
+  <rect x="104" y="322" width="86" height="10" rx="5" fill="#4fd4e7"/>
+  <rect x="202" y="322" width="58" height="10" rx="5" fill="#f68a3c"/>
+  <rect x="272" y="322" width="112" height="10" rx="5" fill="#ffffff" opacity=".55"/>
+
+  <rect class="panel" x="506" y="162" width="252" height="134" rx="16"/>
+  <text class="ink label" x="532" y="204">Problem slide</text>
+  <text class="muted tiny" x="532" y="232">51-byte SF12 packet limit</text>
+  <rect class="bar" x="532" y="258" width="180" height="12" rx="6"/>
+  <rect class="bar3" x="532" y="258" width="78" height="12" rx="6"/>
+
+  <rect class="panel" x="792" y="162" width="232" height="134" rx="16"/>
+  <text class="ink label" x="818" y="204">Method slide</text>
+  <text class="muted tiny" x="818" y="232">Design science workflow</text>
+  <circle class="accent" cx="838" cy="262" r="10"/><circle class="accent" cx="898" cy="262" r="10"/><circle class="accent" cx="958" cy="262" r="10"/>
+  <path class="line" d="M848 262 H888 M908 262 H948"/>
+
+  <rect class="panel" x="506" y="336" width="252" height="154" rx="16"/>
+  <text class="ink label" x="532" y="378">Architecture slide</text>
+  <rect class="soft" x="532" y="406" width="52" height="34" rx="8"/><rect class="soft" x="622" y="406" width="72" height="34" rx="8"/><rect class="soft" x="532" y="452" width="162" height="22" rx="7"/>
+  <path class="line" d="M584 423 H612 M694 423 H724"/>
+  <path d="M724 411 L750 423 L724 435 Z" fill="#0e9aac"/>
+
+  <rect class="panel" x="792" y="336" width="232" height="154" rx="16"/>
+  <text class="ink label" x="818" y="378">Results slide</text>
+  <rect class="bar2" x="826" y="438" width="30" height="34" rx="5"/><rect class="bar3" x="868" y="418" width="30" height="54" rx="5"/><rect class="bar4" x="910" y="396" width="30" height="76" rx="5"/>
+  <text class="muted tiny" x="818" y="408">Bytes, energy and cache effect</text>
+
+  <rect class="note" x="72" y="424" width="392" height="178" rx="18"/>
+  <text class="ink label" x="102" y="468">Speaker notes</text>
+  <text class="muted tiny" x="102" y="498">Translate technical points into a defence script.</text>
+  <rect fill="#fff" x="102" y="526" width="298" height="12" rx="6"/><rect fill="#fff" x="102" y="552" width="248" height="12" rx="6"/><rect fill="#fff" x="102" y="578" width="322" height="12" rx="6"/>
+  <text class="ink tiny" x="74" y="642">Prepared for presentation review, timing and question handling</text>
+</svg>

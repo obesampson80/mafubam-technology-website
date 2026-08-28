@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+  <title id="title">Defence slide evidence board</title>
+  <desc id="desc">A recreated board of four slide types used in a LoRaWAN defence presentation: constraint, architecture, evaluation and conclusion.</desc>
+  <defs><style>.bg{fill:#f4f9fb}.sheet{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:15px}.title{font-size:28px}.label{font-size:18px}.soft{fill:#eaf3f6}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.bar{fill:#dcecf2}.line{stroke:#0e9aac;stroke-width:4;stroke-linecap:round}</style></defs>
+  <rect class="bg" width="1100" height="660"/>
+  <rect class="sheet" x="32" y="30" width="1036" height="600" rx="26"/>
+  <text class="ink title" x="70" y="84">Slide evidence board</text>
+  <text class="muted small" x="72" y="112">Recreated layouts showing how dense research content was made presentation-ready.</text>
+  <g transform="translate(70 154)">
+    <rect class="sheet" width="448" height="178" rx="16"/>
+    <text class="ink label" x="26" y="44">Constraint slide</text>
+    <text class="muted small" x="26" y="72">Packet budget explained visually.</text>
+    <rect class="bar" x="26" y="108" width="230" height="18" rx="9"/><rect class="orange" x="26" y="108" width="78" height="18" rx="9"/><text class="muted small" x="270" y="123">51 bytes SF12</text>
+    <rect class="sheet" x="514" width="448" height="178" rx="16"/>
+    <text class="ink label" x="540" y="44">Architecture slide</text>
+    <text class="muted small" x="540" y="72">System blocks kept separate.</text>
+    <rect class="soft" x="540" y="108" width="82" height="38" rx="8"/><rect class="soft" x="670" y="108" width="82" height="38" rx="8"/><rect class="dark" x="800" y="108" width="82" height="38" rx="8"/>
+    <path class="line" d="M622 127 H660 M752 127 H790"/>
+  </g>
+  <g transform="translate(70 374)">
+    <rect class="sheet" width="448" height="178" rx="16"/>
+    <text class="ink label" x="26" y="44">Evaluation slide</text>
+    <text class="muted small" x="26" y="72">Metrics grouped by claim.</text>
+    <rect class="accent" x="36" y="124" width="34" height="30" rx="5"/><rect class="orange" x="88" y="102" width="34" height="52" rx="5"/><rect class="dark" x="140" y="86" width="34" height="68" rx="5"/><rect class="bar" x="210" y="96" width="176" height="12" rx="6"/><rect class="bar" x="210" y="124" width="132" height="12" rx="6"/>
+    <rect class="sheet" x="514" width="448" height="178" rx="16"/>
+    <text class="ink label" x="540" y="44">Conclusion slide</text>
+    <text class="muted small" x="540" y="72">Contribution stated without clutter.</text>
+    <circle class="accent" cx="560" cy="118" r="8"/><rect class="bar" x="580" y="111" width="246" height="12" rx="6"/>
+    <circle class="accent" cx="560" cy="150" r="8"/><rect class="bar" x="580" y="143" width="198" height="12" rx="6"/>
+  </g>
+</svg>

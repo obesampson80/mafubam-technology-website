@@ -1,0 +1,24 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
+  <title id="title">Student risk case review screen</title>
+  <desc id="desc">A recreated case review screen showing risk status, learner profile summary, reason, feature contributions and intervention status.</desc>
+  <defs><style>.bg{fill:#f4f9fb}.screen{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:15px}.tiny{font-size:12px}.title{font-size:28px}.label{font-size:18px}.soft{fill:#eaf3f6}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.red{fill:#d95757}.green{fill:#25a96a}.dark{fill:#082744}.bar{fill:#dcecf2}</style></defs>
+  <rect class="bg" width="1100" height="660"/>
+  <rect class="screen" x="32" y="30" width="1036" height="600" rx="26"/>
+  <text class="ink title" x="70" y="84">Case review and explainability</text>
+  <text class="muted small" x="72" y="112">A reviewer can inspect why a case was flagged before assigning support.</text>
+  <rect class="screen" x="70" y="154" width="284" height="392" rx="18"/>
+  <text class="ink label" x="102" y="202">Selected case</text>
+  <rect class="red" x="102" y="232" width="96" height="30" rx="15"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" x="124" y="252">Critical</text>
+  <text class="muted small" x="102" y="300">Main reason</text><rect class="soft" x="102" y="318" width="194" height="14" rx="7"/><rect class="soft" x="102" y="344" width="146" height="14" rx="7"/>
+  <text class="muted small" x="102" y="394">Status</text><rect class="orange" x="102" y="414" width="142" height="32" rx="10"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" x="122" y="435">Under review</text>
+  <rect class="accent" x="102" y="480" width="172" height="38" rx="11"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" x="126" y="504">Assign action</text>
+  <rect class="screen" x="396" y="154" width="300" height="392" rx="18"/>
+  <text class="ink label" x="428" y="202">Feature evidence</text>
+  <g transform="translate(428 242)"><text class="muted tiny" x="0" y="0">Assessment completion</text><rect class="bar" x="0" y="14" width="214" height="12" rx="6"/><rect class="red" x="0" y="14" width="168" height="12" rx="6"/><text class="muted tiny" x="0" y="62">Activity trend</text><rect class="bar" x="0" y="76" width="214" height="12" rx="6"/><rect class="orange" x="0" y="76" width="138" height="12" rx="6"/><text class="muted tiny" x="0" y="124">Days since activity</text><rect class="bar" x="0" y="138" width="214" height="12" rx="6"/><rect class="accent" x="0" y="138" width="116" height="12" rx="6"/></g>
+  <rect class="screen" x="738" y="154" width="290" height="392" rx="18"/>
+  <text class="ink label" x="770" y="202">Recommended support</text>
+  <circle class="green" cx="786" cy="246" r="8"/><text class="muted small" x="806" y="252">Contact student</text>
+  <circle class="green" cx="786" cy="292" r="8"/><text class="muted small" x="806" y="298">Review assessments</text>
+  <circle class="green" cx="786" cy="338" r="8"/><text class="muted small" x="806" y="344">Schedule follow-up</text>
+  <rect class="soft" x="770" y="398" width="204" height="82" rx="14"/><text class="ink small" x="794" y="430">Next review</text><text class="muted tiny" x="794" y="456">Status and notes exported</text>
+</svg>
