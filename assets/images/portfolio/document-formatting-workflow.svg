@@ -46,11 +46,12 @@
 
   <path class="line" d="M874 350 V396"/>
 
-  <rect class="output" x="724" y="408" width="300" height="86" rx="18"/>
-  <text class="ink label" x="762" y="442">Review package</text>
-  <text class="muted small" x="762" y="470">Formatted DOCX and PDF-ready layout</text>
+  <rect class="output" x="724" y="408" width="300" height="98" rx="18"/>
+  <text class="ink label" x="762" y="438">Review package</text>
+  <text class="muted small" x="762" y="466"><tspan x="762" dy="0">Formatted DOCX and</tspan><tspan x="762" dy="22">PDF-ready layout</tspan></text>
 
-  <rect class="soft" x="70" y="408" width="516" height="86" rx="18"/>
-  <text class="ink label" x="104" y="442">Formatting principle</text>
-  <text class="muted small" x="104" y="470">Keep the author's technical content intact while improving review readability.</text>
+  <rect class="soft" x="70" y="408" width="516" height="98" rx="18"/>
+  <text class="ink label" x="104" y="438">Formatting principle</text>
+  <text class="muted small" x="104" y="466"><tspan x="104" dy="0">Keep the author's technical content intact</tspan><tspan x="104" dy="22">while improving review readability.</tspan></text>
 </svg>
+
