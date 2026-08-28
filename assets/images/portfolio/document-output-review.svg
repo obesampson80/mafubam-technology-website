@@ -20,7 +20,7 @@
   <rect class="teal" x="230" y="316" width="102" height="10" rx="5"/>
   <rect class="orange" x="230" y="356" width="76" height="10" rx="5"/>
   <rect class="teal" x="230" y="396" width="92" height="10" rx="5"/>
-  <text class="muted small" x="104" y="490">The structure can be checked quickly before sharing.</text>
+  <text class="muted small" x="104" y="480"><tspan x="104" dy="0">Structure can be checked</tspan><tspan x="104" dy="22">quickly before sharing.</tspan></text>
 
   <rect class="card" x="392" y="154" width="292" height="386" rx="22"/>
   <text class="ink label" x="424" y="198">Lists and numbering</text>
@@ -30,7 +30,7 @@
   <circle class="success" cx="450" cy="334" r="7"/><text class="ink tiny" x="470" y="339">Tables 1-6 checked</text>
   <rect class="soft" x="424" y="384" width="214" height="48" rx="14"/>
   <circle class="warn" cx="450" cy="408" r="7"/><text class="ink tiny" x="470" y="413">Equation fields checked</text>
-  <text class="muted small" x="424" y="490">Numbering stays readable after Word/PDF export.</text>
+  <text class="muted small" x="424" y="480"><tspan x="424" dy="0">Numbering stays readable</tspan><tspan x="424" dy="22">after Word/PDF export.</tspan></text>
 
   <rect class="ready" x="720" y="154" width="308" height="386" rx="22"/>
   <text class="ink label" x="752" y="198">Final readiness</text>
@@ -42,3 +42,4 @@
   <rect class="teal" x="752" y="476" width="154" height="36" rx="12"/>
   <text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" x="778" y="499">Ready for review</text>
 </svg>
+

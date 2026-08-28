@@ -20,7 +20,7 @@
   <text class="muted tiny" x="132" y="374">Body paragraph</text>
   <rect class="rule" x="132" y="390" width="154" height="7" rx="4"/>
   <rect class="rule" x="132" y="412" width="134" height="7" rx="4"/>
-  <text class="muted small" x="104" y="502">Headings and body text follow one visible system.</text>
+  <text class="muted small" x="104" y="492"><tspan x="104" dy="0">Headings and body text</tspan><tspan x="104" dy="22">follow one visible system.</tspan></text>
 
   <rect class="card" x="404" y="154" width="294" height="386" rx="22"/>
   <text class="ink label" x="436" y="198">Captions and figures</text>
@@ -32,7 +32,7 @@
   <rect class="rule" x="436" y="398" width="196" height="7" rx="4"/>
   <text class="ink tiny" x="436" y="434">Table 1: simulation parameters</text>
   <rect class="rule" x="436" y="450" width="178" height="7" rx="4"/>
-  <text class="muted small" x="436" y="502">Caption order and list entries stay traceable.</text>
+  <text class="muted small" x="436" y="492"><tspan x="436" dy="0">Caption order and list entries</tspan><tspan x="436" dy="22">stay traceable.</tspan></text>
 
   <rect class="card" x="736" y="154" width="292" height="386" rx="22"/>
   <text class="ink label" x="768" y="198">Tables and equations</text>
@@ -41,5 +41,6 @@
   <rect class="paper" x="768" y="366" width="218" height="72" rx="14"/>
   <text class="ink label" x="798" y="410">E = P x t</text>
   <text class="muted small" x="944" y="410">(1)</text>
-  <text class="muted small" x="768" y="480">Tables, equations and references align cleanly.</text>
+  <text class="muted small" x="768" y="480"><tspan x="768" dy="0">Tables, equations and</tspan><tspan x="768" dy="22">references align cleanly.</tspan></text>
 </svg>
+
