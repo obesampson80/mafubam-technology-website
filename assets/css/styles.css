@@ -379,6 +379,21 @@ html.motion-ready [data-reveal].reveal-done {
   background: var(--success);
   color: #fff;
 }
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  color: var(--bg);
+}
+
+:root[data-theme="dark"] .btn-primary:hover,
+:root[data-theme="dark"] .btn-primary:focus-visible {
+  color: #06172a;
+}
+
+.btn-whatsapp:hover,
+.btn-whatsapp:focus-visible {
+  color: #ffffff;
+  background: color-mix(in srgb, var(--success), #000 8%);
+}
 
 .section {
   padding: 74px 20px;

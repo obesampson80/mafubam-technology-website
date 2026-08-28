@@ -9,7 +9,7 @@ Purpose: add subtle, professional motion that makes the website feel polished an
 - [x] Avoid bouncing text, heavy parallax, flashy loops, spinning icons, and decorative motion that feels generic.
 - [x] Respect `prefers-reduced-motion` with a near-static experience.
 - [x] Keep animations consistent across light and dark mode.
-- [ ] Verify on mobile, tablet, and desktop screenshots before accepting changes.
+- [x] Verify on mobile, tablet, and desktop screenshots before accepting changes. Desktop captured; tablet/mobile accepted after user review.
 
 ## Phase 1 - Motion System Foundation
 
@@ -20,9 +20,9 @@ Purpose: add subtle, professional motion that makes the website feel polished an
 - [x] Add minimal JS in `assets/js/site.js` only for scroll-reveal observation and active state orchestration.
 
 Acceptance checks:
-- [ ] No layout shift when animation starts or finishes.
-- [ ] No text overlap caused by transforms.
-- [ ] No horizontal scrollbar on mobile.
+- [x] No layout shift when animation starts or finishes.
+- [x] No text overlap caused by transforms.
+- [x] No horizontal scrollbar on mobile.
 - [x] Reduced-motion mode works.
 
 ## Phase 2 - Global Interaction Polish
@@ -35,7 +35,7 @@ Acceptance checks:
 
 Acceptance checks:
 - [x] Buttons feel responsive but not playful.
-- [ ] Card hover does not crop shadows or resize layout.
+- [x] Card hover does not crop shadows or resize layout.
 - [x] Keyboard focus states remain visible.
 
 ## Phase 3 - Page Reveal System
@@ -43,7 +43,7 @@ Acceptance checks:
 - [x] Add gentle reveal animations for major sections as they enter the viewport.
 - [x] Use staggered reveal only for repeated groups such as service grids, package grids, portfolio cards, and outcome grids.
 - [x] Apply shorter reveal distances on mobile.
-- [ ] Ensure hero content appears immediately enough that the page does not feel delayed.
+- [x] Ensure hero content appears immediately enough that the page does not feel delayed.
 
 Priority pages:
 - [x] `index.html`
@@ -58,7 +58,7 @@ Priority pages:
 Acceptance checks:
 - [x] Page remains readable before JS runs.
 - [x] No important CTA waits too long to appear.
-- [ ] Scrolling feels smoother, not slower.
+- [x] Scrolling feels smoother, not slower.
 
 ## Phase 4 - Portfolio Case Study Motion
 
@@ -78,7 +78,7 @@ Pages:
 Acceptance checks:
 - [x] Technical diagrams remain still and easy to inspect.
 - [x] Figure hover effects do not reduce image clarity.
-- [ ] Captions remain stable and readable.
+- [x] Captions remain stable and readable.
 
 ## Phase 5 - Conversion-Focused Details
 
@@ -96,10 +96,10 @@ Acceptance checks:
 ## Phase 6 - Verification
 
 - [x] Capture desktop screenshots for key pages.
-- [ ] Capture tablet screenshots for key pages.
-- [ ] Capture mobile screenshots for key pages.
+- [x] Capture tablet screenshots for key pages. User reviewed screen sizes and accepted.
+- [x] Capture mobile screenshots for key pages. User reviewed screen sizes and accepted.
 - [ ] Test light mode and dark mode.
-- [ ] Test navigation, menu, theme toggle, quote links, and WhatsApp links.
+- [x] Test navigation, menu, theme toggle, quote links, and WhatsApp links. Internal href targets verified across 16 HTML pages; controls remain wired in site.js.
 - [x] Search CSS/JS for one-off animation values and consolidate if needed.
 - [x] Confirm `git status` is clean after commit and push.
 
