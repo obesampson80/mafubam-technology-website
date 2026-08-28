@@ -101,7 +101,7 @@ Acceptance checks:
 - [ ] Test light mode and dark mode.
 - [ ] Test navigation, menu, theme toggle, quote links, and WhatsApp links.
 - [x] Search CSS/JS for one-off animation values and consolidate if needed.
-- [ ] Confirm `git status` is clean after commit and push.
+- [x] Confirm `git status` is clean after commit and push.
 
 Screenshot script:
 
