@@ -63,7 +63,7 @@
   <rect class="teal" x="278" y="458" width="18" height="12" rx="3"/>
   <rect class="orange" x="306" y="452" width="18" height="18" rx="3"/>
   <rect class="dark" x="334" y="442" width="18" height="28" rx="3"/>
-  <text class="muted small" x="206" y="532">Clean headings, body spacing and figure placement.</text>
+  <text class="muted small" x="206" y="522"><tspan x="206" dy="0">Clean headings, body spacing</tspan><tspan x="206" dy="22">and figure placement.</tspan></text>
 
   <rect class="card" x="558" y="272" width="262" height="282" rx="22"/>
   <text class="ink label" x="588" y="312">Style system</text>
@@ -76,7 +76,7 @@
   <rect class="teal" x="742" y="356" width="28" height="10" rx="5"/>
   <rect class="teal" x="742" y="412" width="28" height="10" rx="5"/>
   <rect class="orange" x="742" y="468" width="28" height="10" rx="5"/>
-  <text class="muted small" x="588" y="532">Styles make later edits and exports predictable.</text>
+  <text class="muted small" x="588" y="522"><tspan x="588" dy="0">Styles make later edits</tspan><tspan x="588" dy="22">and exports predictable.</tspan></text>
 
   <rect class="card" x="852" y="272" width="222" height="282" rx="22"/>
   <text class="ink label" x="882" y="312">Output checks</text>
@@ -85,7 +85,8 @@
   <circle class="warn" cx="894" cy="444" r="7"/><text class="muted small" x="914" y="450">Equation labels</text>
   <circle class="success" cx="894" cy="488" r="7"/><text class="muted small" x="914" y="494">PDF export</text>
 
-  <rect class="soft" x="176" y="584" width="898" height="36" rx="14"/>
-  <text class="ink tiny" x="204" y="607">Formatting goal:</text>
-  <text class="muted tiny" x="316" y="607">make the article navigable, consistent and ready for Word/PDF review without changing the technical argument.</text>
+  <rect class="soft" x="176" y="574" width="898" height="58" rx="16"/>
+  <text class="ink tiny" x="204" y="599">Formatting goal:</text>
+  <text class="muted tiny" x="316" y="599"><tspan x="316" dy="0">make the article navigable, consistent and ready for Word/PDF review</tspan><tspan x="316" dy="20">without changing the technical argument.</tspan></text>
 </svg>
+
