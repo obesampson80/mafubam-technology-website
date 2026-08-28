@@ -1,24 +1,61 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
   <title id="title">Student support dashboard user flow</title>
   <desc id="desc">A recreated user flow showing data intake, risk screening, work queue, case review, intervention tracking and reports.</desc>
-  <defs><style>.bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:18px}.line{stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.soft{fill:#eaf3f6}</style></defs>
+  <defs>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0e9aac"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f68a3c"/>
+    </marker>
+    <style>
+      .bg{fill:#f4f9fb}.card{fill:#fff;stroke:#cfe0e8;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.small{font-size:16px}.title{font-size:30px}.label{font-size:18px}.line{fill:none;stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-teal)}.feedback{fill:none;stroke:#f68a3c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-orange)}.accent{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.soft{fill:#eaf3f6}
+    </style>
+  </defs>
   <rect class="bg" width="1100" height="600"/>
   <rect class="card" x="30" y="28" width="1040" height="544" rx="26"/>
   <text class="ink title" x="70" y="84">Interface workflow</text>
   <text class="muted small" x="72" y="114">The screen order follows the real decision path of a staff reviewer.</text>
-  <g transform="translate(70 176)">
-    <rect class="card" width="142" height="112" rx="16"/><text class="ink label" x="30" y="44">Data</text><text class="ink label" x="30" y="68">intake</text><text class="muted small" x="30" y="94">CSV/schema</text>
-    <path class="line" d="M152 56 H205"/><path class="accent" d="M205 42 L237 56 L205 70 Z"/>
-    <rect class="card" x="248" width="142" height="112" rx="16"/><text class="ink label" x="278" y="44">Risk</text><text class="ink label" x="278" y="68">screen</text><text class="muted small" x="278" y="94">Model score</text>
-    <path class="line" d="M400 56 H453"/><path class="accent" d="M453 42 L485 56 L453 70 Z"/>
-    <rect class="dark" x="496" width="142" height="112" rx="16"/><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="18" x="526" y="44">Work</text><text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="18" x="526" y="68">queue</text><text fill="#a9dfe7" font-family="Arial,Helvetica,sans-serif" font-size="16" x="526" y="94">Prioritise</text>
-    <path class="line" d="M648 56 H701"/><path class="accent" d="M701 42 L733 56 L701 70 Z"/>
-    <rect class="card" x="744" width="142" height="112" rx="16"/><text class="ink label" x="774" y="44">Case</text><text class="ink label" x="774" y="68">review</text><text class="muted small" x="774" y="94">Explain</text>
-  </g>
-  <path class="line" d="M884 288 C936 330 936 398 884 436 H688"/><path class="accent" d="M688 422 L656 436 L688 450 Z"/>
-  <rect class="card" x="438" y="380" width="218" height="112" rx="16"/><text class="ink label" x="474" y="424">Interventions</text><text class="muted small" x="474" y="452">Assign and track</text>
-  <path class="line" d="M428 436 H282"/><path class="accent" d="M282 422 L250 436 L282 450 Z"/>
-  <rect class="card" x="70" y="380" width="180" height="112" rx="16"/><text class="ink label" x="108" y="424">Reports</text><text class="muted small" x="108" y="452">Export evidence</text>
-  <path d="M158 360 C160 332 176 308 208 288" fill="none" stroke="#f68a3c" stroke-width="5" stroke-linecap="round"/>
-  <path class="orange" d="M196 276 L238 272 L216 308 Z"/>
+
+  <rect class="card" x="74" y="176" width="152" height="116" rx="16"/>
+  <text class="ink label" x="106" y="222">Data</text>
+  <text class="ink label" x="106" y="248">intake</text>
+  <text class="muted small" x="106" y="274">CSV/schema</text>
+
+  <path class="line" d="M236 234 H286"/>
+
+  <rect class="card" x="296" y="176" width="152" height="116" rx="16"/>
+  <text class="ink label" x="328" y="222">Risk</text>
+  <text class="ink label" x="328" y="248">screen</text>
+  <text class="muted small" x="328" y="274">Model score</text>
+
+  <path class="line" d="M458 234 H508"/>
+
+  <rect class="dark" x="518" y="176" width="152" height="116" rx="16"/>
+  <text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="18" x="552" y="222">Work</text>
+  <text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="18" x="552" y="248">queue</text>
+  <text fill="#a9dfe7" font-family="Arial,Helvetica,sans-serif" font-size="16" x="552" y="274">Prioritise</text>
+
+  <path class="line" d="M680 234 H730"/>
+
+  <rect class="card" x="740" y="176" width="152" height="116" rx="16"/>
+  <text class="ink label" x="772" y="222">Case</text>
+  <text class="ink label" x="772" y="248">review</text>
+  <text class="muted small" x="772" y="274">Explain</text>
+
+  <path class="line" d="M816 302 V366"/>
+
+  <rect class="card" x="740" y="378" width="152" height="116" rx="16"/>
+  <text class="ink label" x="766" y="426">Interventions</text>
+  <text class="muted small" x="766" y="454">Assign action</text>
+
+  <path class="line" d="M902 436 H952"/>
+
+  <rect class="card" x="962" y="378" width="96" height="116" rx="16"/>
+  <text class="ink label" x="984" y="426">Reports</text>
+  <text class="muted small" x="984" y="454">Export</text>
+
+  <path class="feedback" d="M1010 506 C790 548 368 548 150 506 V316"/>
+  <rect x="330" y="516" width="440" height="38" rx="19" fill="#fff7ef" stroke="#f7bd8d" stroke-width="2"/>
+  <text class="ink small" x="384" y="541">Exported reports support review, follow-up and later screening</text>
 </svg>
