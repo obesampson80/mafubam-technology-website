@@ -1,37 +1,27 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" role="img" aria-labelledby="title desc">
   <title id="title">LoRaWAN simulator report export summary</title>
-  <desc id="desc">A professional reports view showing certificate summary, communication summary, baseline comparison and CSV export files.</desc>
-  <defs><style>
-    .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
-    .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
-    .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
-    .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
-    .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
-    .card { fill: #ffffff; stroke: #d7e2ea; stroke-width: 1.4; }
-    .soft { fill: #f8fafc; stroke: #d7e2ea; stroke-width: 1.2; }
-    .teal { fill: #0e9caf; } .orange { fill: #f97316; } .navy { fill: #0b1f35; }
-    .grid { stroke: #e2e8f0; stroke-width: 1; }
-  </style></defs>
-  <rect width="960" height="540" fill="#ffffff"/>
-  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
-  <text x="72" y="82" class="title">Report and Export Evidence</text>
-  <rect x="72" y="124" width="260" height="300" rx="4" class="card"/>
-  <text x="102" y="162" class="head">CSV exports</text>
-  <rect x="102" y="194" width="178" height="30" rx="4" class="soft"/><text x="120" y="214" class="copy">certificate_registry.csv</text>
-  <rect x="102" y="236" width="178" height="30" rx="4" class="soft"/><text x="120" y="256" class="copy">communication_events.csv</text>
-  <rect x="102" y="278" width="178" height="30" rx="4" class="soft"/><text x="120" y="298" class="copy">blocked_events.csv</text>
-  <rect x="102" y="320" width="178" height="30" rx="4" class="soft"/><text x="120" y="340" class="copy">scenario_summary.csv</text>
-  <rect x="102" y="362" width="178" height="30" rx="4" class="soft"/><text x="120" y="382" class="copy">baseline_comparison.csv</text>
-  <rect x="372" y="124" width="240" height="300" rx="4" class="card"/>
-  <text x="402" y="162" class="head">Communication summary</text>
-  <g class="grid"><path d="M414 360H560"/><path d="M414 314H560"/><path d="M414 268H560"/></g>
-  <rect x="430" y="238" width="36" height="122" rx="4" class="teal"/><rect x="502" y="290" width="36" height="70" rx="4" class="orange"/>
-  <text x="422" y="388" class="small">Allowed</text><text x="494" y="388" class="small">Blocked</text>
-  <rect x="652" y="124" width="236" height="300" rx="4" class="card"/>
-  <text x="682" y="162" class="head">Baseline comparison</text>
-  <text x="682" y="212" class="copy">Proposed protocol</text><rect x="682" y="226" width="62" height="10" rx="5" class="teal"/>
-  <text x="682" y="262" class="copy">TinyOCSP</text><rect x="682" y="276" width="126" height="10" rx="5" class="orange"/>
-  <text x="682" y="312" class="copy">OCSP</text><rect x="682" y="326" width="154" height="10" rx="5" class="orange"/>
-  <text x="682" y="362" class="copy">CRL</text><rect x="682" y="376" width="186" height="10" rx="5" class="navy"/>
-  <text x="72" y="472" class="copy">The prototype exports the evidence needed for report tables, appendix records and supervisor review.</text>
+  <desc id="desc">A modern reports view showing CSV evidence files, communication summary and baseline comparison for the LoRaWAN simulator.</desc>
+  <defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#082744" flood-opacity="0.12"/></filter><style>.bg{fill:#eef7fa}.panel{fill:#fff;stroke:#cfe0e8;stroke-width:2}.card{fill:#fff;stroke:#d8e7ee;stroke-width:1.5}.soft{fill:#eaf3f6}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.title{font-size:29px}.label{font-size:18px}.small{font-size:15px}.tiny{font-size:12px}.teal{fill:#0e9aac}.orange{fill:#f68a3c}.dark{fill:#082744}.rule{stroke:#d8e7ee;stroke-width:1.4}.success{fill:#25a96a}</style></defs>
+  <rect class="bg" width="1100" height="660"/><rect class="panel" x="32" y="30" width="1036" height="600" rx="26" filter="url(#shadow)"/>
+  <text class="ink title" x="72" y="84">Report and export evidence</text><text class="muted small" x="74" y="112">Export files turn simulator activity into report tables and appendix records.</text>
+  <rect class="card" x="72" y="154" width="300" height="386" rx="22"/>
+  <text class="ink label" x="104" y="198">CSV exports</text>
+  <rect class="soft" x="104" y="232" width="220" height="36" rx="12"/><text class="ink tiny" x="128" y="255">certificate_registry.csv</text>
+  <rect class="soft" x="104" y="286" width="220" height="36" rx="12"/><text class="ink tiny" x="128" y="309">communication_events.csv</text>
+  <rect class="soft" x="104" y="340" width="220" height="36" rx="12"/><text class="ink tiny" x="128" y="363">blocked_events.csv</text>
+  <rect class="soft" x="104" y="394" width="220" height="36" rx="12"/><text class="ink tiny" x="128" y="417">scenario_summary.csv</text>
+  <rect class="soft" x="104" y="448" width="220" height="36" rx="12"/><text class="ink tiny" x="128" y="471">baseline_comparison.csv</text>
+  <rect class="card" x="408" y="154" width="292" height="386" rx="22"/>
+  <text class="ink label" x="440" y="198">Communication summary</text>
+  <path d="M458 430H626M458 370H626M458 310H626" class="rule"/>
+  <rect class="teal" x="480" y="278" width="42" height="152" rx="7"/><rect class="orange" x="564" y="338" width="42" height="92" rx="7"/>
+  <text class="muted tiny" x="472" y="466">Allowed</text><text class="muted tiny" x="558" y="466">Blocked</text>
+  <text class="muted small" x="440" y="512">Counts separate successful and denied events.</text>
+  <rect class="card" x="736" y="154" width="292" height="386" rx="22"/>
+  <text class="ink label" x="768" y="198">Baseline comparison</text>
+  <text class="muted small" x="768" y="250">Proposed protocol</text><rect class="teal" x="768" y="266" width="74" height="11" rx="6"/>
+  <text class="muted small" x="768" y="306">TinyOCSP</text><rect class="orange" x="768" y="322" width="136" height="11" rx="6"/>
+  <text class="muted small" x="768" y="362">OCSP</text><rect class="orange" x="768" y="378" width="172" height="11" rx="6"/>
+  <text class="muted small" x="768" y="418">CRL</text><rect class="dark" x="768" y="434" width="218" height="11" rx="6"/>
+  <text class="muted small" x="768" y="496"><tspan x="768" dy="0">Baselines make the lightweight</tspan><tspan x="768" dy="22">protocol claim easier to inspect.</tspan></text>
 </svg>
