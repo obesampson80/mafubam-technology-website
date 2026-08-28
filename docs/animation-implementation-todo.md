@@ -98,7 +98,7 @@ Acceptance checks:
 - [x] Capture desktop screenshots for key pages.
 - [x] Capture tablet screenshots for key pages. User reviewed screen sizes and accepted.
 - [x] Capture mobile screenshots for key pages. User reviewed screen sizes and accepted.
-- [ ] Test light mode and dark mode.
+- [x] Test light mode and dark mode. Dark mode reviewed and accepted by user.
 - [x] Test navigation, menu, theme toggle, quote links, and WhatsApp links. Internal href targets verified across 16 HTML pages; controls remain wired in site.js.
 - [x] Search CSS/JS for one-off animation values and consolidate if needed.
 - [x] Confirm `git status` is clean after commit and push.
@@ -126,4 +126,4 @@ Screenshot script:
 4. [x] Extend reveal to service and package pages.
 5. [x] Extend reveal to portfolio and case-study pages.
 6. [x] Polish quote/contact conversion details.
-7. [ ] Run full screenshot and interaction verification.
+7. [x] Run full screenshot and interaction verification.
