@@ -1,35 +1,56 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
   <title id="title">Manuscript formatting workflow</title>
-  <desc id="desc">A clean workflow showing manuscript source review, structure cleanup, Word conversion, caption-field handling and final review package.</desc>
+  <desc id="desc">A clean workflow showing manuscript source review, structure cleanup, Word style control, caption-field handling and final review package.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L11 6L1 11Z" fill="#0f172a"/></marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0e9aac"/>
+    </marker>
     <style>
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 600; fill: #475569; }
-      .head { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
-      .copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
-      .small { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
-      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
-      .stage { fill: #ffffff; stroke: #334155; stroke-width: 1.5; }
-      .input { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.6; }
-      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.6; }
-      .flow { stroke: #0f172a; stroke-width: 2.3; fill: none; stroke-linecap: round; marker-end: url(#arrow); }
+      .bg{fill:#f4f9fb}.panel{fill:#fff;stroke:#cfe0e8;stroke-width:2}.stage{fill:#fff;stroke:#cfe0e8;stroke-width:2}.input{fill:#e8f7fb;stroke:#0e9aac;stroke-width:2}.output{fill:#fff7ef;stroke:#f7bd8d;stroke-width:2}.ink{fill:#062746;font-family:Arial,Helvetica,sans-serif;font-weight:700}.muted{fill:#4f6680;font-family:Arial,Helvetica,sans-serif}.title{font-size:30px}.label{font-size:18px}.small{font-size:15px}.tiny{font-size:13px}.line{fill:none;stroke:#0e9aac;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow-teal)}.soft{fill:#eaf3f6}.accent{fill:#0e9aac}.dark{fill:#082744}
     </style>
   </defs>
-  <rect width="960" height="540" fill="#ffffff"/>
-  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
-  <text x="72" y="82" class="title">Formatting Workflow</text>
-  <text x="72" y="108" class="subtitle">From draft manuscript and figures to a clean Word-ready article.</text>
-  <rect x="72" y="170" width="142" height="170" rx="4" class="input"/>
-  <text x="98" y="202" class="head">Source review</text><text x="98" y="232" class="copy">draft text</text><text x="98" y="254" class="copy">figures</text><text x="98" y="276" class="copy">target rules</text>
-  <rect x="256" y="170" width="142" height="170" rx="4" class="stage"/>
-  <text x="282" y="202" class="head">Structure</text><text x="282" y="232" class="copy">IMRaD sections</text><text x="282" y="254" class="copy">headings</text><text x="282" y="276" class="copy">keywords</text>
-  <rect x="440" y="170" width="142" height="170" rx="4" class="stage"/>
-  <text x="466" y="202" class="head">Word styles</text><text x="466" y="232" class="copy">font and spacing</text><text x="466" y="254" class="copy">paragraph rules</text><text x="466" y="276" class="copy">table widths</text>
-  <rect x="624" y="170" width="142" height="170" rx="4" class="stage"/>
-  <text x="650" y="202" class="head">Fields</text><text x="650" y="232" class="copy">captions</text><text x="650" y="254" class="copy">equations</text><text x="650" y="276" class="copy">references</text>
-  <rect x="360" y="392" width="240" height="64" rx="4" class="output"/>
-  <text x="392" y="420" class="head">Review package</text><text x="392" y="442" class="copy">formatted DOCX and PDF-ready layout</text>
-  <path d="M214 255H248" class="flow"/><path d="M398 255H432" class="flow"/><path d="M582 255H616" class="flow"/><path d="M695 340V366Q695 424 608 424" class="flow"/>
-  <text x="72" y="482" class="small">The process keeps the author's technical content intact while making the document easier to review.</text>
+  <rect class="bg" width="1100" height="600"/>
+  <rect class="panel" x="30" y="28" width="1040" height="544" rx="26"/>
+  <text class="ink title" x="70" y="84">Formatting workflow</text>
+  <text class="muted small" x="72" y="114">From draft manuscript and figures to a clean Word-ready article.</text>
+
+  <rect class="input" x="70" y="178" width="168" height="162" rx="16"/>
+  <text class="ink label" x="104" y="222">Source review</text>
+  <text class="muted small" x="104" y="254">Draft text</text>
+  <text class="muted small" x="104" y="278">Figures and tables</text>
+  <text class="muted small" x="104" y="302">Target rules</text>
+
+  <path class="line" d="M248 259 H300"/>
+
+  <rect class="stage" x="310" y="178" width="168" height="162" rx="16"/>
+  <text class="ink label" x="344" y="222">Structure</text>
+  <text class="muted small" x="344" y="254">Article sections</text>
+  <text class="muted small" x="344" y="278">Headings</text>
+  <text class="muted small" x="344" y="302">Keywords</text>
+
+  <path class="line" d="M488 259 H540"/>
+
+  <rect class="stage" x="550" y="178" width="168" height="162" rx="16"/>
+  <text class="ink label" x="584" y="222">Word styles</text>
+  <text class="muted small" x="584" y="254">Font and spacing</text>
+  <text class="muted small" x="584" y="278">Paragraph rules</text>
+  <text class="muted small" x="584" y="302">Table widths</text>
+
+  <path class="line" d="M728 259 H780"/>
+
+  <rect class="stage" x="790" y="178" width="168" height="162" rx="16"/>
+  <text class="ink label" x="824" y="222">Fields</text>
+  <text class="muted small" x="824" y="254">Captions</text>
+  <text class="muted small" x="824" y="278">Equations</text>
+  <text class="muted small" x="824" y="302">References</text>
+
+  <path class="line" d="M874 350 V396"/>
+
+  <rect class="output" x="724" y="408" width="300" height="86" rx="18"/>
+  <text class="ink label" x="762" y="442">Review package</text>
+  <text class="muted small" x="762" y="470">Formatted DOCX and PDF-ready layout</text>
+
+  <rect class="soft" x="70" y="408" width="516" height="86" rx="18"/>
+  <text class="ink label" x="104" y="442">Formatting principle</text>
+  <text class="muted small" x="104" y="470">Keep the author's technical content intact while improving review readability.</text>
 </svg>
