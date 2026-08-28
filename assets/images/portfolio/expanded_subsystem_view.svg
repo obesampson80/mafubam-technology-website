@@ -1,75 +1,55 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
   <title id="title">Subsystem process view for context-aware notification delivery</title>
-  <desc id="desc">A clean process diagram showing how notification evidence becomes a delivery decision through intake, context preparation, decision scoring and delivery control.</desc>
+  <desc id="desc">A professional subsystem process diagram showing notification evidence moving through intake, context preparation, scoring, delivery control and delivery decision output.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
-    </marker>
-    <marker id="feedback-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#b45309"/>
-    </marker>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L11 6L1 11Z" fill="#0f172a"/></marker>
+    <marker id="feedback-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L11 6L1 11Z" fill="#b45309"/></marker>
     <style>
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 600; fill: #475569; }
-      .stage-title { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; fill: #0b1f35; }
-      .stage-copy { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 600; fill: #475569; }
-      .label { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700; fill: #64748b; }
-      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
-      .stage { fill: #ffffff; stroke: #334155; stroke-width: 1.7; }
-      .input { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.7; }
-      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.8; }
-      .flow { stroke: #0f172a; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
-      .feedback { stroke: #b45309; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 8 7; marker-end: url(#feedback-arrow); }
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;fill:#0b1f35}.subtitle{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:600;fill:#475569}.section{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;fill:#0b1f35}.box-title{font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:700;fill:#0b1f35}.box-copy{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:600;fill:#475569}.small{font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;fill:#64748b}.panel{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.8}.system{fill:#fff;stroke:#0f172a;stroke-width:2.1}.module{fill:#fff;stroke:#334155;stroke-width:1.7}.accent{fill:#e8f7fb;stroke:#0e9aac;stroke-width:1.7}.output{fill:#fff7ed;stroke:#c2410c;stroke-width:1.8}.flow{stroke:#0f172a;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.feedback{stroke:#b45309;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:8 7;marker-end:url(#feedback-arrow)}.note{fill:#fff;stroke:#cbd5e1;stroke-width:1.4}
     </style>
   </defs>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="56" y="56" class="title">Subsystem Process View</text>
+  <text x="56" y="84" class="subtitle">A lower-level view of how notification evidence becomes a delivery decision.</text>
 
-  <rect width="1200" height="520" fill="#ffffff"/>
-  <rect x="34" y="30" width="1132" height="456" rx="5" class="panel"/>
-  <text x="64" y="76" class="title">Subsystem Process View</text>
-  <text x="64" y="104" class="subtitle">How notification evidence is transformed into an operational delivery decision.</text>
+  <rect x="56" y="124" width="1088" height="420" rx="5" class="panel"/>
+  <rect x="92" y="216" width="190" height="178" rx="4" class="accent"/>
+  <text x="120" y="250" class="section">Evidence intake</text>
+  <text x="120" y="288" class="box-copy">notification request</text>
+  <text x="120" y="312" class="box-copy">context state</text>
+  <text x="120" y="336" class="box-copy">interaction history</text>
 
-  <rect x="72" y="176" width="176" height="120" rx="4" class="input"/>
-  <text x="102" y="212" class="stage-title">Evidence intake</text>
-  <text x="102" y="240" class="stage-copy">notification request</text>
-  <text x="102" y="262" class="stage-copy">context signals</text>
-  <text x="102" y="284" class="stage-copy">interaction history</text>
+  <rect x="354" y="216" width="190" height="178" rx="4" class="module"/>
+  <text x="382" y="250" class="section">Context preparation</text>
+  <text x="382" y="288" class="box-copy">validate records</text>
+  <text x="382" y="312" class="box-copy">normalise values</text>
+  <text x="382" y="336" class="box-copy">build feature set</text>
 
-  <rect x="306" y="176" width="176" height="120" rx="4" class="stage"/>
-  <text x="336" y="212" class="stage-title">Context preparation</text>
-  <text x="336" y="240" class="stage-copy">validate records</text>
-  <text x="336" y="262" class="stage-copy">normalise values</text>
-  <text x="336" y="284" class="stage-copy">build feature set</text>
+  <rect x="616" y="216" width="190" height="178" rx="4" class="module"/>
+  <text x="644" y="250" class="section">Decision scoring</text>
+  <text x="644" y="288" class="box-copy">estimate receptivity</text>
+  <text x="644" y="312" class="box-copy">apply priority rules</text>
+  <text x="644" y="336" class="box-copy">rank delivery options</text>
 
-  <rect x="540" y="176" width="176" height="120" rx="4" class="stage"/>
-  <text x="570" y="212" class="stage-title">Decision scoring</text>
-  <text x="570" y="240" class="stage-copy">estimate receptivity</text>
-  <text x="570" y="262" class="stage-copy">apply priority rules</text>
-  <text x="570" y="284" class="stage-copy">rank delivery options</text>
+  <rect x="878" y="216" width="190" height="178" rx="4" class="module"/>
+  <text x="906" y="250" class="section">Delivery control</text>
+  <text x="906" y="288" class="box-copy">select action</text>
+  <text x="906" y="312" class="box-copy">set timing window</text>
+  <text x="906" y="336" class="box-copy">record response state</text>
 
-  <rect x="774" y="176" width="176" height="120" rx="4" class="stage"/>
-  <text x="804" y="212" class="stage-title">Delivery control</text>
-  <text x="804" y="240" class="stage-copy">select action</text>
-  <text x="804" y="262" class="stage-copy">set timing window</text>
-  <text x="804" y="284" class="stage-copy">record response state</text>
+  <path d="M282 305H346" class="flow"/>
+  <path d="M544 305H608" class="flow"/>
+  <path d="M806 305H870" class="flow"/>
 
-  <rect x="1010" y="176" width="134" height="120" rx="4" class="output"/>
-  <text x="1038" y="212" class="stage-title">Output</text>
-  <text x="1038" y="240" class="stage-copy">deliver now</text>
-  <text x="1038" y="262" class="stage-copy">defer</text>
-  <text x="1038" y="284" class="stage-copy">batch</text>
+  <rect x="738" y="466" width="330" height="58" rx="4" class="output"/>
+  <text x="766" y="492" class="box-title">Delivery decision</text>
+  <text x="766" y="512" class="box-copy">deliver now, defer or batch notification</text>
+  <path d="M973 394V456" class="flow"/>
 
-  <path d="M248 236H298" class="flow"/>
-  <path d="M482 236H532" class="flow"/>
-  <path d="M716 236H766" class="flow"/>
-  <path d="M950 236H1002" class="flow"/>
+  <rect x="354" y="466" width="250" height="58" rx="4" class="note"/>
+  <text x="382" y="492" class="box-title">Feature evidence</text>
+  <text x="382" y="512" class="box-copy">validated context and priority values</text>
 
-  <rect x="322" y="354" width="172" height="36" rx="3" fill="#f8fafc" stroke="#cbd5e1"/>
-  <text x="350" y="377" class="label">validated context features</text>
-  <rect x="590" y="354" width="150" height="36" rx="3" fill="#f8fafc" stroke="#cbd5e1"/>
-  <text x="618" y="377" class="label">receptivity score</text>
-  <rect x="832" y="354" width="178" height="36" rx="3" fill="#f8fafc" stroke="#cbd5e1"/>
-  <text x="860" y="377" class="label">selected delivery policy</text>
-
-  <path d="M1078 296V438H160V304" class="feedback"/>
-  <text x="418" y="464" class="label">Feedback from the user's response updates later interaction-history evidence.</text>
+  <path d="M904 524V604H188V402" class="feedback"/>
+  <text x="360" y="632" class="small">Feedback from user response updates interaction history for later decisions.</text>
 </svg>

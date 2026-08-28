@@ -1,94 +1,30 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
   <title id="title">Notification management UML class model</title>
-  <desc id="desc">A UML-style class diagram with attributes and operations for the notification request, context snapshot, feature vector, decision engine, delivery controller and delivery decision.</desc>
+  <desc id="desc">A professional UML-style class diagram with attributes, operations and associations for the notification management system.</desc>
   <defs>
-    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M1 1L11 6L1 11Z" fill="#0f172a"/>
-    </marker>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1L11 6L1 11Z" fill="#0f172a"/></marker>
     <style>
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #0b1f35; }
-      .class { fill: #ffffff; stroke: #334155; stroke-width: 1.5; }
-      .entity { fill: #e8f7fb; stroke: #0e9caf; stroke-width: 1.6; }
-      .output { fill: #fff7ed; stroke: #c2410c; stroke-width: 1.6; }
-      .head { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: 700; fill: #0b1f35; }
-      .member { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 600; fill: #475569; }
-      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.8; }
-      .rule { stroke: #cbd5e1; stroke-width: 1; }
-      .output-rule { stroke: #fed7aa; stroke-width: 1; }
-      .rel { stroke: #0f172a; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrow); }
-      .assoc { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 700; fill: #64748b; }
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;fill:#0b1f35}.subtitle{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:600;fill:#475569}.head{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;fill:#0b1f35}.member{font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:600;fill:#475569}.assoc{font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;fill:#64748b}.panel{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.8}.class{fill:#fff;stroke:#334155;stroke-width:1.5}.entity{fill:#e8f7fb;stroke:#0e9aac;stroke-width:1.6}.output{fill:#fff7ed;stroke:#c2410c;stroke-width:1.6}.rule{stroke:#cbd5e1;stroke-width:1}.output-rule{stroke:#fed7aa;stroke-width:1}.rel{stroke:#0f172a;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
     </style>
   </defs>
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <text x="56" y="56" class="title">UML Class Model</text>
+  <text x="56" y="84" class="subtitle">Core responsibilities separated into request, context, features, decision and delivery output classes.</text>
+  <rect x="56" y="118" width="1088" height="508" rx="5" class="panel"/>
 
-  <rect width="960" height="540" fill="#ffffff"/>
-  <rect x="38" y="34" width="884" height="468" rx="5" class="panel"/>
-  <text x="72" y="82" class="title">UML Class Model</text>
+  <g transform="translate(92 154)">
+    <rect width="240" height="158" rx="4" class="entity"/><text x="24" y="30" class="head">NotificationRequest</text><line x1="0" y1="46" x2="240" y2="46" class="rule"/><text x="24" y="70" class="member">+ requestId: String</text><text x="24" y="90" class="member">+ source: String</text><text x="24" y="110" class="member">+ priority: PriorityLevel</text><line x1="0" y1="124" x2="240" y2="124" class="rule"/><text x="24" y="146" class="member">+ isActionable(): Boolean</text>
+    <rect x="322" width="240" height="158" rx="4" class="entity"/><text x="346" y="30" class="head">ContextSnapshot</text><line x1="322" y1="46" x2="562" y2="46" class="rule"/><text x="346" y="70" class="member">+ timeWindow: String</text><text x="346" y="90" class="member">+ activityState: String</text><text x="346" y="110" class="member">+ recentLoad: Integer</text><line x1="322" y1="124" x2="562" y2="124" class="rule"/><text x="346" y="146" class="member">+ summarise(): ContextData</text>
+    <rect x="644" width="240" height="158" rx="4" class="class"/><text x="668" y="30" class="head">FeatureVector</text><line x1="644" y1="46" x2="884" y2="46" class="rule"/><text x="668" y="70" class="member">+ contextScore: Decimal</text><text x="668" y="90" class="member">+ priorityScore: Decimal</text><text x="668" y="110" class="member">+ historyScore: Decimal</text><line x1="644" y1="124" x2="884" y2="124" class="rule"/><text x="668" y="146" class="member">+ fromInputs(): FeatureVector</text>
 
-  <rect x="72" y="126" width="216" height="150" rx="4" class="entity"/>
-  <text x="100" y="154" class="head">NotificationRequest</text>
-  <line x1="72" y1="166" x2="288" y2="166" class="rule"/>
-  <text x="100" y="190" class="member">+ requestId: String</text>
-  <text x="100" y="210" class="member">+ source: String</text>
-  <text x="100" y="230" class="member">+ priority: PriorityLevel</text>
-  <line x1="72" y1="242" x2="288" y2="242" class="rule"/>
-  <text x="100" y="264" class="member">+ isActionable(): Boolean</text>
+    <rect y="242" width="240" height="166" rx="4" class="class"/><text x="24" y="272" class="head">DecisionEngine</text><line x1="0" y1="288" x2="240" y2="288" class="rule"/><text x="24" y="312" class="member">+ modelVersion: String</text><text x="24" y="332" class="member">+ decisionThreshold: Decimal</text><text x="24" y="352" class="member">+ rulePolicy: PolicySet</text><line x1="0" y1="366" x2="240" y2="366" class="rule"/><text x="24" y="388" class="member">+ recommendAction(): ActionType</text>
+    <rect x="322" y="242" width="240" height="166" rx="4" class="class"/><text x="346" y="272" class="head">DeliveryController</text><line x1="322" y1="288" x2="562" y2="288" class="rule"/><text x="346" y="312" class="member">+ queueState: QueueState</text><text x="346" y="332" class="member">+ deliveryWindow: TimeRange</text><text x="346" y="352" class="member">+ retryPolicy: PolicySet</text><line x1="322" y1="366" x2="562" y2="366" class="rule"/><text x="346" y="388" class="member">+ dispatchOrDefer(): Decision</text>
+    <rect x="644" y="242" width="240" height="166" rx="4" class="output"/><text x="668" y="272" class="head">DeliveryDecision</text><line x1="644" y1="288" x2="884" y2="288" class="output-rule"/><text x="668" y="312" class="member">+ action: ActionType</text><text x="668" y="332" class="member">+ scheduledAt: DateTime</text><text x="668" y="352" class="member">+ reasonCode: String</text><line x1="644" y1="366" x2="884" y2="366" class="output-rule"/><text x="668" y="388" class="member">+ apply(): DeliveryResult</text>
 
-  <rect x="372" y="126" width="216" height="150" rx="4" class="entity"/>
-  <text x="400" y="154" class="head">ContextSnapshot</text>
-  <line x1="372" y1="166" x2="588" y2="166" class="rule"/>
-  <text x="400" y="190" class="member">+ timeWindow: String</text>
-  <text x="400" y="210" class="member">+ activityState: String</text>
-  <text x="400" y="230" class="member">+ recentLoad: Integer</text>
-  <line x1="372" y1="242" x2="588" y2="242" class="rule"/>
-  <text x="400" y="264" class="member">+ summarise(): ContextData</text>
-
-  <rect x="672" y="126" width="216" height="150" rx="4" class="class"/>
-  <text x="700" y="154" class="head">FeatureVector</text>
-  <line x1="672" y1="166" x2="888" y2="166" class="rule"/>
-  <text x="700" y="190" class="member">+ contextScore: Decimal</text>
-  <text x="700" y="210" class="member">+ priorityScore: Decimal</text>
-  <text x="700" y="230" class="member">+ historyScore: Decimal</text>
-  <line x1="672" y1="242" x2="888" y2="242" class="rule"/>
-  <text x="700" y="264" class="member">+ fromInputs(): FeatureVector</text>
-
-  <rect x="72" y="336" width="216" height="150" rx="4" class="class"/>
-  <text x="100" y="364" class="head">DecisionEngine</text>
-  <line x1="72" y1="376" x2="288" y2="376" class="rule"/>
-  <text x="100" y="400" class="member">+ modelVersion: String</text>
-  <text x="100" y="420" class="member">+ decisionThreshold: Decimal</text>
-  <text x="100" y="440" class="member">+ rulePolicy: PolicySet</text>
-  <line x1="72" y1="452" x2="288" y2="452" class="rule"/>
-  <text x="100" y="474" class="member">+ recommendAction(): ActionType</text>
-
-  <rect x="372" y="336" width="216" height="150" rx="4" class="class"/>
-  <text x="400" y="364" class="head">DeliveryController</text>
-  <line x1="372" y1="376" x2="588" y2="376" class="rule"/>
-  <text x="400" y="400" class="member">+ queueState: QueueState</text>
-  <text x="400" y="420" class="member">+ deliveryWindow: TimeRange</text>
-  <text x="400" y="440" class="member">+ retryPolicy: PolicySet</text>
-  <line x1="372" y1="452" x2="588" y2="452" class="rule"/>
-  <text x="400" y="474" class="member">+ dispatchOrDefer(): Decision</text>
-
-  <rect x="672" y="336" width="216" height="150" rx="4" class="output"/>
-  <text x="700" y="364" class="head">DeliveryDecision</text>
-  <line x1="672" y1="376" x2="888" y2="376" class="output-rule"/>
-  <text x="700" y="400" class="member">+ action: ActionType</text>
-  <text x="700" y="420" class="member">+ scheduledAt: DateTime</text>
-  <text x="700" y="440" class="member">+ reasonCode: String</text>
-  <line x1="672" y1="452" x2="888" y2="452" class="output-rule"/>
-  <text x="700" y="474" class="member">+ apply(): DeliveryResult</text>
-
-  <path d="M288 201H364" class="rel"/>
-  <text x="306" y="192" class="assoc">adds context</text>
-  <path d="M588 201H664" class="rel"/>
-  <text x="606" y="192" class="assoc">builds</text>
-  <path d="M780 276V306H180V336" class="rel"/>
-  <text x="424" y="316" class="assoc">scores</text>
-  <path d="M288 411H364" class="rel"/>
-  <text x="306" y="402" class="assoc">recommends</text>
-  <path d="M588 411H664" class="rel"/>
-  <text x="606" y="402" class="assoc">creates</text>
+    <path d="M240 79H314" class="rel"/><text x="260" y="68" class="assoc">adds context</text>
+    <path d="M562 79H636" class="rel"/><text x="584" y="68" class="assoc">builds</text>
+    <path d="M764 158V210H120V242" class="rel"/><text x="422" y="222" class="assoc">scores</text>
+    <path d="M240 325H314" class="rel"/><text x="260" y="314" class="assoc">recommends</text>
+    <path d="M562 325H636" class="rel"/><text x="584" y="314" class="assoc">creates</text>
+  </g>
 </svg>
-
-
-
