@@ -1,4 +1,4 @@
-﻿# OS and editor noise
+# OS and editor noise
 .DS_Store
 Thumbs.db
 Desktop.ini
@@ -24,7 +24,3 @@ build/
 !assets/images/**/*.jpeg
 !assets/images/**/*.webp
 !assets/images/**/*.avif
-
-# Local rendered SVG review artefacts
-docs/ui-screenshots/svg-review/
-
